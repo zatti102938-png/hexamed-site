@@ -4,6 +4,7 @@ import { navigation } from "@/data/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logoBanner from "@/assets/logo-banner.webp";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,16 +15,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-card/95 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
-          <div className="flex items-center gap-1.5">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-              <span className="text-lg font-bold text-primary-foreground">H</span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-base font-bold tracking-tight text-foreground">HEXA</span>
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-accent">MEDICAL</span>
-            </div>
-          </div>
+        <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
+          <img src={logoBanner} alt="Hexamedical — Taking Care Your Equipment" className="h-9 w-auto md:h-10" />
         </Link>
 
         {/* Desktop Nav */}
