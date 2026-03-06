@@ -10,7 +10,7 @@ const features = [
 
 const HexAIHighlight = () => {
   return (
-    <section className="relative overflow-hidden bg-primary py-16 text-primary-foreground md:py-24">
+    <section className="relative overflow-hidden bg-dark-surface py-16 text-dark-surface-foreground md:py-24">
       <div className="absolute inset-0">
         <div className="absolute left-1/2 top-0 h-full w-full -translate-x-1/2 bg-gradient-to-b from-accent/5 to-transparent" />
       </div>
