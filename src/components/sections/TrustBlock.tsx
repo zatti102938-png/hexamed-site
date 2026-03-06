@@ -2,9 +2,9 @@ import { TrendingUp, MapPin, Award, Wrench } from "lucide-react";
 
 const stats = [
   { icon: TrendingUp, value: "+500", label: "Equipamentos atendidos" },
-  { icon: MapPin, value: "Nacional", label: "Cobertura em todo o Brasil" },
-  { icon: Award, value: "+15 anos", label: "De experiência no mercado" },
-  { icon: Wrench, value: "+10.000", label: "Serviços realizados" },
+  { icon: MapPin, value: "5 Unidades", label: "SP, RJ, BH, GO e SC" },
+  { icon: Award, value: "+16 anos", label: "De experiência no mercado" },
+  { icon: Wrench, value: "3 Salas", label: "De testes para equipamentos" },
 ];
 
 const TrustBlock = () => {

@@ -3,24 +3,24 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 const posts = [
   {
-    slug: "manutencao-preventiva-rm",
-    title: "Por que a manutenção preventiva é essencial para sua RM",
-    excerpt: "Entenda como um programa de manutenção preventiva reduz custos e aumenta a vida útil do seu equipamento de ressonância magnética.",
-    date: "2025-01-15",
-    category: "Manutenção",
-  },
-  {
-    slug: "ia-diagnostico-imagem",
-    title: "Como a IA está transformando o diagnóstico por imagem",
-    excerpt: "Descubra as aplicações práticas da inteligência artificial na análise de exames e como o HexAI pode beneficiar sua instituição.",
-    date: "2025-01-08",
+    slug: "avancos-ressonancia-coluna",
+    title: "Avanços na Ressonância Magnética da Coluna Vertebral: Inovação e Diagnósticos Mais Precisos",
+    excerpt: "Descubra como as novas tecnologias de RM estão revolucionando o diagnóstico de patologias da coluna vertebral com maior precisão e conforto.",
+    date: "2025-05-10",
     category: "Tecnologia",
   },
   {
-    slug: "escolher-rm-clinica",
-    title: "Como escolher o equipamento de RM ideal para sua clínica",
-    excerpt: "Guia completo com critérios técnicos e financeiros para tomar a melhor decisão na aquisição do seu equipamento.",
-    date: "2024-12-20",
+    slug: "mitos-e-verdades-ressonancia-magnetica",
+    title: "Mitos e verdades que você precisa saber sobre a ressonância magnética",
+    excerpt: "O exame de RM oferece imagens de alta resolução que auxiliam no diagnóstico e tratamento de lesões. Saiba o que é verdade e o que é mito.",
+    date: "2024-10-15",
+    category: "Educação",
+  },
+  {
+    slug: "ressonancia-magnetica-baixo-campo",
+    title: "Tudo o que você precisa saber sobre a ressonância magnética de baixo campo",
+    excerpt: "Conheça o sistema de RM de baixo campo e como essa ferramenta atua com campos magnéticos de menor intensidade para diagnósticos eficazes.",
+    date: "2024-10-08",
     category: "Guia",
   },
 ];

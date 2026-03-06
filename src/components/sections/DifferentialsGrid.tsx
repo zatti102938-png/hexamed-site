@@ -9,33 +9,33 @@ interface Differential {
 const differentials: Differential[] = [
   {
     icon: Shield,
-    title: "Suporte Nacional",
-    description: "Cobertura em todo o Brasil com atendimento presencial e remoto, garantindo agilidade nos chamados.",
+    title: "Cobertura Nacional",
+    description: "Unidades em SP, RJ, BH, Goiânia e Florianópolis. Atendimento presencial e remoto em todo o Brasil.",
   },
   {
     icon: Microscope,
     title: "Laboratório Próprio",
-    description: "Capacidade de reparo de bobinas e componentes com controle de qualidade interno.",
+    description: "Reparo de bobinas, placas eletrônicas, fontes e periféricos com 3 salas de testes dedicadas.",
   },
   {
     icon: Users,
-    title: "Equipe Especializada",
-    description: "Engenheiros e técnicos certificados com experiência exclusiva em ressonância magnética.",
+    title: "Equipe Certificada Internacionalmente",
+    description: "Técnicos de campo e laboratório com vasta experiência em equipamentos de múltiplos fabricantes.",
   },
   {
     icon: Package,
     title: "Peças Originais",
-    description: "Trabalhamos com peças originais e homologadas, preservando a integridade do equipamento.",
+    description: "Trabalhamos com peças originais e homologadas, com logística express para entrega rápida.",
   },
   {
     icon: FileCheck,
     title: "Contratos Flexíveis",
-    description: "Planos de manutenção adaptados à sua realidade operacional e financeira.",
+    description: "Planos personalizados com ou sem peças, preventiva e corretiva, adaptados à sua realidade.",
   },
   {
     icon: Clock,
-    title: "+15 Anos de Experiência",
-    description: "Mais de uma década de atuação dedicada ao mercado de diagnóstico por imagem.",
+    title: "+16 Anos de Experiência",
+    description: "Mais de 16 anos dedicados ao mercado de diagnóstico por imagem com foco em Ressonância Magnética.",
   },
 ];
 
