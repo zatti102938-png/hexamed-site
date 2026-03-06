@@ -27,10 +27,10 @@ const TestimonialsBlock = () => {
       <div className="container">
         <div className="mb-12 text-center">
           <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">
-            O que dizem nossos clientes
+            Clientes que recomendam. Resultados que comprovam.
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
-            A confiança de quem escolheu a Hexamedical como parceira estratégica.
+            Hexamedical vai além da entrega: oferece suporte contínuo, agilidade e compromisso real com o sucesso dos seus parceiros.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
