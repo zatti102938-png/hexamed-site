@@ -1,22 +1,25 @@
+import { useTranslation } from "react-i18next";
 import { TrendingUp, MapPin, Award, Wrench } from "lucide-react";
 
-const stats = [
-  { icon: TrendingUp, value: "+500", label: "Equipamentos atendidos" },
-  { icon: MapPin, value: "5 Unidades", label: "SP, RJ, BH, GO e SC" },
-  { icon: Award, value: "+16 anos", label: "De experiência no mercado" },
-  { icon: Wrench, value: "3 Salas", label: "De testes para equipamentos" },
-];
-
 const TrustBlock = () => {
+  const { t } = useTranslation();
+
+  const stats = [
+    { icon: TrendingUp, value: "+500", label: t("trust.equipments") },
+    { icon: MapPin, value: "5", label: t("trust.units") },
+    { icon: Award, value: "+16", label: t("trust.years") },
+    { icon: Wrench, value: "3", label: t("trust.testRooms") },
+  ];
+
   return (
     <section className="border-y border-border bg-card py-16 md:py-20">
       <div className="container">
         <div className="mb-12 text-center">
           <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">
-            Confiança comprovada
+            {t("trust.title")}
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
-            Números que refletem nossa dedicação ao mercado de diagnóstico por imagem.
+            {t("trust.subtitle")}
           </p>
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

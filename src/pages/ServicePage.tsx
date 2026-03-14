@@ -1,5 +1,6 @@
 import { useParams, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import Layout from "@/components/layout/Layout";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroSection from "@/components/sections/HeroSection";
@@ -13,6 +14,7 @@ import { CheckCircle2, MapPin, Users } from "lucide-react";
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = services.find((s) => s.slug === slug);
+  const { t } = useTranslation();
 
   if (!service) return <Navigate to="/servicos" replace />;
 
@@ -25,7 +27,7 @@ const ServicePage = () => {
 
       <PageBreadcrumb
         items={[
-          { label: "Serviços", href: "/servicos" },
+          { label: t("nav.services"), href: "/servicos" },
           { label: service.title },
         ]}
       />
@@ -33,24 +35,24 @@ const ServicePage = () => {
       <HeroSection
         headline={service.heroHeadline}
         subtitle={service.heroSubtitle}
-        ctaPrimaryLabel="Solicitar Orçamento"
-        ctaSecondaryLabel="Falar com Especialista"
+        ctaPrimaryLabel={t("common.requestQuote")}
+        ctaSecondaryLabel={t("common.talkToSpecialist")}
         ctaSecondaryHref="/contato"
         backgroundImage={service.image}
       />
 
-      {/* Escopo do serviço */}
+      {/* Scope */}
       <section className="py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-            O que inclui
+            {t("servicePage.whatIncludes")}
           </h2>
           <div className={`mx-auto grid gap-8 ${service.contentImage ? "max-w-5xl lg:grid-cols-2 items-center" : "max-w-2xl"}`}>
             {service.contentImage && (
               <div className="overflow-hidden rounded-2xl border border-border">
                 <img
                   src={service.contentImage}
-                  alt={`${service.title} — serviço Hexamedical`}
+                  alt={`${service.title} — Hexamedical`}
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
@@ -68,7 +70,7 @@ const ServicePage = () => {
         </div>
       </section>
 
-      {/* Cobertura Nacional */}
+      {/* Coverage */}
       <section className="border-t border-border bg-muted/30 py-16 md:py-24">
         <div className="container">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -76,7 +78,7 @@ const ServicePage = () => {
               <div className="overflow-hidden rounded-2xl border border-border">
                 <img
                   src={images.servicos.equipeCertificada}
-                  alt="Equipe certificada Hexamedical — manutenção de equipamentos médicos"
+                  alt="Hexamedical team"
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
@@ -86,7 +88,7 @@ const ServicePage = () => {
               <div className="mb-4 flex items-center gap-2">
                 <MapPin className="h-6 w-6 text-accent" />
                 <h2 className="text-3xl font-bold text-foreground md:text-4xl">
-                  Cobertura Nacional
+                  {t("servicePage.nationalCoverage")}
                 </h2>
               </div>
               <p className="mb-8 text-lg text-muted-foreground leading-relaxed">
@@ -95,7 +97,7 @@ const ServicePage = () => {
               <div className="mb-4 flex items-center gap-2">
                 <Users className="h-6 w-6 text-accent" />
                 <h3 className="text-xl font-bold text-foreground">
-                  Equipe Certificada Internacionalmente
+                  {t("servicePage.certifiedTeam")}
                 </h3>
               </div>
               <ul className="space-y-3">
@@ -112,14 +114,8 @@ const ServicePage = () => {
       </section>
 
       <TrustBlock />
-
       <FAQSection items={service.faq} />
-
-      <CTABanner
-        headline={`Precisa de ${service.title.toLowerCase()}?`}
-        subtitle="Solicite um orçamento personalizado para sua instituição."
-        ctaLabel="Solicitar Orçamento"
-      />
+      <CTABanner />
     </Layout>
   );
 };

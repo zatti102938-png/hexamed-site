@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Radio } from "lucide-react";
 import { mindrayProducts } from "@/data/mindray-products";
 
 const MindrayHighlight = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="border-t border-border py-16 md:py-24">
       <div className="container">
@@ -11,17 +14,17 @@ const MindrayHighlight = () => {
           <div>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent">
               <Radio className="h-4 w-4" />
-              Radiologia Digital
+              {t("mindray.badge")}
             </div>
             <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-              Linha Mindray: Radiologia Digital de Alta Performance
+              {t("mindray.title")}
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              Distribuidora autorizada Mindray no Brasil. Detectores digitais, sistemas fixos e móveis com suporte técnico completo e cobertura nacional.
+              {t("mindray.description")}
             </p>
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
               <Link to="/produtos-mindray">
-                Ver todos os produtos Mindray
+                {t("common.viewAllMindray")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

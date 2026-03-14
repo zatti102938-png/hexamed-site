@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import Layout from "@/components/layout/Layout";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroSection from "@/components/sections/HeroSection";
@@ -17,26 +18,28 @@ const videos = [
 ];
 
 const Apoio = () => {
+  const { t } = useTranslation();
+
   return (
     <Layout>
       <Helmet>
-        <title>Materiais de Apoio — Hexamedical | Tutoriais e Vídeos</title>
-        <meta name="description" content="Acesse tutoriais em vídeo, guias de posicionamento e materiais de apoio para equipamentos de ressonância magnética Esaote." />
+        <title>{t("apoio.pageTitle")}</title>
+        <meta name="description" content={t("apoio.heroSubtitle")} />
       </Helmet>
 
-      <PageBreadcrumb items={[{ label: "Apoio" }]} />
+      <PageBreadcrumb items={[{ label: t("nav.support") }]} />
 
       <HeroSection
-        headline="Materiais de Apoio"
-        subtitle="Tutoriais em vídeo, guias de posicionamento e conteúdo técnico para operadores de equipamentos Esaote."
+        headline={t("apoio.heroHeadline")}
+        subtitle={t("apoio.heroSubtitle")}
       />
 
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="mb-12 text-center">
-            <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">Vídeos Tutoriais</h2>
+            <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">{t("apoio.videosTitle")}</h2>
             <p className="mx-auto max-w-2xl text-muted-foreground">
-              Conteúdo exclusivo para auxiliar operadores no dia a dia com equipamentos de ressonância magnética Esaote.
+              {t("apoio.videosSubtitle")}
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -58,7 +61,7 @@ const Apoio = () => {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-muted-foreground">
-            Os vídeos serão disponibilizados em breve. Entre em contato para acesso antecipado.
+            {t("apoio.comingSoon")}
           </p>
         </div>
       </section>

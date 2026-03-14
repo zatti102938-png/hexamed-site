@@ -1,25 +1,42 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { navigation } from "@/data/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import logoBanner from "@/assets/logo-banner.webp";
+import LanguageSelector from "./LanguageSelector";
+
+const navKeys: Record<string, string> = {
+  "Produtos": "nav.products",
+  "Serviços": "nav.services",
+  "Estrutura": "nav.structure",
+  "Blog": "nav.blog",
+  "Apoio": "nav.support",
+  "Contato": "nav.contact",
+};
+
+const groupKeys: Record<string, string> = {
+  "Esaote — Ressonância Magnética": "nav.esaoteGroup",
+  "Mindray — Radiologia Digital": "nav.mindrayGroup",
+};
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openMobileGroup, setOpenMobileGroup] = useState<string | null>(null);
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <>
       {/* Announcement Bar */}
       <div className="bg-primary text-primary-foreground">
         <div className="container flex items-center justify-center gap-2 py-2 text-center text-xs font-medium sm:text-sm">
-          <span>CLIQUE AQUI E CONHEÇA HEXAI E REVOLUCIONE SEU CENTRO DE IMAGEM</span>
+          <span>{t("announcement.text")}</span>
           <Link to="/hexai" className="inline-flex items-center gap-1 font-bold underline underline-offset-2 hover:opacity-80">
-            Saiba mais <ArrowRight className="h-3.5 w-3.5" />
+            {t("announcement.cta")} <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
       </div>
@@ -51,7 +68,7 @@ const Header = () => {
                         : "text-white/80"
                     )}
                   >
-                    {item.label}
+                    {t(navKeys[item.label] || item.label)}
                     {hasDropdown && (
                       <ChevronDown className="h-3.5 w-3.5 transition-transform group-hover:rotate-180" />
                     )}
@@ -64,7 +81,7 @@ const Header = () => {
                         {item.groups.map((group) => (
                           <div key={group.groupLabel} className="min-w-[200px]">
                             <div className="mb-2 px-3 text-xs font-bold uppercase tracking-widest text-primary">
-                              {group.groupLabel}
+                              {t(groupKeys[group.groupLabel] || group.groupLabel)}
                             </div>
                             <div className="space-y-0.5">
                               {group.items.map((child) => (
@@ -85,7 +102,7 @@ const Header = () => {
                           to={item.href}
                           className="flex items-center gap-1 px-3 text-xs font-semibold text-primary hover:underline"
                         >
-                          Ver todos os produtos
+                          {t("nav.viewAllProducts")}
                           <ArrowRight className="h-3 w-3" />
                         </Link>
                       </div>
@@ -111,8 +128,9 @@ const Header = () => {
             })}
           </nav>
 
-          {/* CTA + Mobile Toggle */}
-          <div className="flex items-center gap-3">
+          {/* Language Selector + Mobile Toggle */}
+          <div className="flex items-center gap-2">
+            <LanguageSelector />
             <button
               className="inline-flex items-center justify-center rounded-md p-2 text-white lg:hidden"
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -129,14 +147,13 @@ const Header = () => {
             <div className="container space-y-1 py-4">
               {navigation.map((item) => (
                 <div key={item.label}>
-                  {/* Grouped nav (Produtos) */}
                   {item.groups ? (
                     <>
                       <button
                         onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                         className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm font-medium text-foreground/80"
                       >
-                        {item.label}
+                        {t(navKeys[item.label] || item.label)}
                         <ChevronDown className={cn("h-4 w-4 transition-transform", openDropdown === item.label && "rotate-180")} />
                       </button>
                       {openDropdown === item.label && (
@@ -147,7 +164,7 @@ const Header = () => {
                                 onClick={() => setOpenMobileGroup(openMobileGroup === group.groupLabel ? null : group.groupLabel)}
                                 className="flex w-full items-center justify-between py-1.5 text-xs font-bold uppercase tracking-widest text-primary"
                               >
-                                {group.groupLabel}
+                                {t(groupKeys[group.groupLabel] || group.groupLabel)}
                                 <ChevronDown className={cn("h-3 w-3 transition-transform", openMobileGroup === group.groupLabel && "rotate-180")} />
                               </button>
                               {openMobileGroup === group.groupLabel && (
@@ -175,7 +192,7 @@ const Header = () => {
                         onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                         className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-sm font-medium text-foreground/80"
                       >
-                        {item.label}
+                        {t(navKeys[item.label] || item.label)}
                         <ChevronDown className={cn("h-4 w-4 transition-transform", openDropdown === item.label && "rotate-180")} />
                       </button>
                       {openDropdown === item.label && (
@@ -199,7 +216,7 @@ const Header = () => {
                       className="block rounded-md px-3 py-2.5 text-sm font-medium text-foreground/80 hover:text-primary"
                       onClick={() => setMobileOpen(false)}
                     >
-                      {item.label}
+                      {t(navKeys[item.label] || item.label)}
                     </Link>
                   )}
                 </div>

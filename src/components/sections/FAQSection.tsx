@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useTranslation } from "react-i18next";
 
 interface FAQItem {
   question: string;
@@ -13,16 +14,18 @@ interface FAQSectionProps {
 
 const FAQSection = ({
   items,
-  title = "Perguntas Frequentes",
+  title,
   subtitle,
 }: FAQSectionProps) => {
+  const { t } = useTranslation();
+
   if (!items.length) return null;
 
   return (
     <section className="py-16 md:py-24">
       <div className="container">
         <div className="mb-10 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">{title}</h2>
+          <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">{title || t("faq.title")}</h2>
           {subtitle && <p className="mx-auto max-w-2xl text-lg text-muted-foreground">{subtitle}</p>}
         </div>
         <div className="mx-auto max-w-3xl">

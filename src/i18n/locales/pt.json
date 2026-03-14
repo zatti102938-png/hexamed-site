@@ -1,0 +1,278 @@
+{
+  "nav": {
+    "products": "Produtos",
+    "services": "Serviços",
+    "structure": "Estrutura",
+    "blog": "Blog",
+    "support": "Apoio",
+    "contact": "Contato",
+    "viewAllProducts": "Ver todos os produtos",
+    "esaoteGroup": "Esaote — Ressonância Magnética",
+    "mindrayGroup": "Mindray — Radiologia Digital"
+  },
+  "announcement": {
+    "text": "CLIQUE AQUI E CONHEÇA HEXAI E REVOLUCIONE SEU CENTRO DE IMAGEM",
+    "cta": "Saiba mais"
+  },
+  "hero": {
+    "headline": "Seu negócio merece as soluções certas.",
+    "subtitle": "Ofereça aos seus pacientes o melhor em prevenção, diagnóstico, terapia e acompanhamento, elevando o padrão do seu atendimento enquanto reduz riscos operacionais e custos com manutenções graças à robustez e alta durabilidade dos nossos equipamentos.",
+    "ctaPrimary": "Falar com equipe de vendas",
+    "ctaSecondary": "Conheça nossas soluções",
+    "sideText": "Entregamos mais que produtos, soluções personalizadas para atender as necessidades para serviços exigentes com soluções efetivas para cada realidade e expectativa sendo clínicas, universidades e hospitais."
+  },
+  "common": {
+    "talkToSpecialist": "Falar com Especialista",
+    "talkToSales": "Falar com equipe de vendas",
+    "requestQuote": "Solicitar Orçamento",
+    "viewDetails": "Ver detalhes",
+    "viewAll": "Ver todos",
+    "viewAllArticles": "Ver todos os artigos",
+    "learnMore": "Saiba mais",
+    "viewFullLine": "Ver linha completa",
+    "viewServices": "Ver serviços",
+    "requestDemo": "Solicitar Demonstração",
+    "send": "Enviar",
+    "scheduleVisit": "Agendar Visita",
+    "chatWhatsApp": "💬 Falar pelo WhatsApp",
+    "viewAllMindray": "Ver todos os produtos Mindray",
+    "knowHexAI": "Conhecer o HexAI",
+    "downloadBrochure": "Baixar Folheto PDF",
+    "requestBudget": "Peça um orçamento"
+  },
+  "cards": {
+    "productsTitle": "Produtos",
+    "productsDesc": "Tecnologia Italiana para as mais diversas áreas da saúde. Tenha eficiência energética e alta qualidade e confiabilidade, da Esaote.",
+    "servicesTitle": "Serviços",
+    "servicesDesc": "Seja uma visita técnica, manutenção ou uma consultoria completa. Estamos aqui para te atender com excelência."
+  },
+  "techSection": {
+    "title": "Tecnologia e expertise reunidas em um só lugar",
+    "subtitle": "Um centro equipado para atender todas as demandas em manutenção, testes e reparos de equipamentos médicos, com equipe certificada internacionalmente e cobertura nacional.",
+    "maintenanceTitle": "Serviços de Manutenção",
+    "maintenanceDesc": "Atuamos com nossos serviços em todo território nacional realizando manutenções preventivas e corretivas que podem ser realizadas avulsas ou em contratos de prestação de serviço de mão de obra com e sem peças.",
+    "labTitle": "Laboratório de Eletrônica",
+    "labDesc": "Contamos com um laboratório próprio especializado no reparo de bobinas, fontes, placas e periféricos. Processo rigoroso de análise, recuperação e testes."
+  },
+  "testimonials": {
+    "title": "Clientes que recomendam. Resultados que comprovam.",
+    "subtitle": "Hexamedical vai além da entrega: oferece suporte contínuo, agilidade e compromisso real com o sucesso dos seus parceiros."
+  },
+  "ceo": {
+    "label": "Palavra do CEO",
+    "name": "Fabio Zatti",
+    "description": "Conheça a visão do fundador da Hexamedical sobre inovação, compromisso com a qualidade e o futuro da tecnologia em diagnóstico por imagem no Brasil.",
+    "stat": "Anos à frente da Hexamedical, liderando inovação em equipamentos médicos"
+  },
+  "team": {
+    "label": "Time Hexa",
+    "title": "Comprometidos com o sucesso de nossos clientes",
+    "description": "Nosso time tem como premissa a busca pela melhoria contínua, entendendo a necessidade do cliente e oferecendo desde o atendimento eficiente até o suporte técnico rápido e assertivo.",
+    "stats": {
+      "experience": "Anos de experiência em equipamentos médicos",
+      "units": "Unidades estratégicas pelo Brasil",
+      "testRooms": "Salas de testes para equipamentos",
+      "sla": "SLA de atendimento presencial"
+    }
+  },
+  "hexai": {
+    "badge": "Novidade",
+    "title": "HexAI: Inteligência Artificial para Diagnóstico por Imagem",
+    "description": "Potencialize a precisão diagnóstica e a produtividade da sua equipe com inteligência artificial aplicada à análise de exames de ressonância magnética.",
+    "feat1Title": "Análise Inteligente",
+    "feat1Desc": "IA que auxilia na interpretação de exames com precisão e agilidade.",
+    "feat2Title": "Produtividade",
+    "feat2Desc": "Reduza o tempo de laudo e aumente o volume de atendimentos.",
+    "feat3Title": "Integração",
+    "feat3Desc": "Compatível com os principais sistemas PACS e RIS do mercado."
+  },
+  "blog": {
+    "title": "Conteúdo em destaque",
+    "subtitle": "Insights, guias técnicos e novidades do mercado de diagnóstico por imagem."
+  },
+  "differentials": {
+    "title": "Por que escolher a Hexamedical?",
+    "subtitle": "Somos referência em soluções de Ressonância Magnética com diferenciais que garantem segurança, performance e previsibilidade para sua operação.",
+    "nationalCoverage": "Cobertura Nacional",
+    "nationalCoverageDesc": "Unidades em SP, RJ, BH, Goiânia e Florianópolis. Atendimento presencial e remoto em todo o Brasil.",
+    "ownLab": "Laboratório Próprio",
+    "ownLabDesc": "Reparo de bobinas, placas eletrônicas, fontes e periféricos com 3 salas de testes dedicadas.",
+    "certifiedTeam": "Equipe Certificada Internacionalmente",
+    "certifiedTeamDesc": "Técnicos de campo e laboratório com vasta experiência em equipamentos de múltiplos fabricantes.",
+    "originalParts": "Peças Originais",
+    "originalPartsDesc": "Trabalhamos com peças originais e homologadas, com logística express para entrega rápida.",
+    "flexibleContracts": "Contratos Flexíveis",
+    "flexibleContractsDesc": "Planos personalizados com ou sem peças, preventiva e corretiva, adaptados à sua realidade.",
+    "experience": "+16 Anos de Experiência",
+    "experienceDesc": "Mais de 16 anos dedicados ao mercado de diagnóstico por imagem com foco em Ressonância Magnética."
+  },
+  "contactSection": {
+    "title": "Vamos conversar sobre sua operação?",
+    "subtitle": "Preencha o formulário e receba uma avaliação personalizada de um especialista Hexamedical. Sem compromisso.",
+    "bullets": {
+      "response": "Resposta em até 24 horas úteis",
+      "evaluation": "Avaliação técnica gratuita",
+      "experience": "16+ anos de experiência em equipamentos médicos",
+      "coverage": "Cobertura em todo o território nacional"
+    }
+  },
+  "ctaBanner": {
+    "headline": "Pronto para otimizar sua operação de diagnóstico por imagem?",
+    "subtitle": "Fale com um especialista Hexamedical e descubra a solução ideal para sua instituição."
+  },
+  "trust": {
+    "title": "Confiança comprovada",
+    "subtitle": "Números que refletem nossa dedicação ao mercado de diagnóstico por imagem.",
+    "equipments": "Equipamentos atendidos",
+    "units": "SP, RJ, BH, GO e SC",
+    "years": "De experiência no mercado",
+    "testRooms": "De testes para equipamentos"
+  },
+  "mindray": {
+    "badge": "Radiologia Digital",
+    "title": "Linha Mindray: Radiologia Digital de Alta Performance",
+    "description": "Distribuidora autorizada Mindray no Brasil. Detectores digitais, sistemas fixos e móveis com suporte técnico completo e cobertura nacional."
+  },
+  "footer": {
+    "description": "Especialistas em soluções de diagnóstico por imagem, serviços técnicos e suporte de alta performance para instituições de saúde em todo o Brasil.",
+    "products": "Produtos",
+    "services": "Serviços",
+    "mindrayProducts": "Produtos Mindray",
+    "company": "Empresa",
+    "location": "São Paulo, SP — Cobertura Nacional",
+    "rights": "© {{year}} Hexamedical. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso",
+    "office": "Horário Comercial",
+    "officeHours": "Segunda a Quinta – 8h às 18h\nSexta – 8h às 17h"
+  },
+  "form": {
+    "name": "Nome",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "company": "Empresa",
+    "address": "Endereço",
+    "interest": "Interesse",
+    "message": "Mensagem",
+    "namePlaceholder": "Seu nome completo",
+    "emailPlaceholder": "seu@email.com",
+    "phonePlaceholder": "(11) 99999-9999",
+    "companyPlaceholder": "Nome da empresa",
+    "addressPlaceholder": "Cidade/UF",
+    "interestPlaceholder": "Selecione uma opção",
+    "messagePlaceholder": "Descreva sua necessidade...",
+    "successTitle": "Mensagem enviada!",
+    "successDesc": "Nosso time entrará em contato em breve.",
+    "nameError": "Nome é obrigatório",
+    "companyError": "Empresa é obrigatória",
+    "phoneError": "Telefone é obrigatório",
+    "emailError": "E-mail inválido",
+    "interestError": "Selecione um interesse",
+    "interests": {
+      "rm": "Ressonância Magnética",
+      "tomografia": "Tomografia",
+      "raioX": "Raio-X",
+      "mindray": "Produtos Mindray",
+      "bombas": "Bombas Injetoras",
+      "hexai": "HexAI",
+      "veterinario": "Área Veterinária",
+      "manutencao": "Manutenção",
+      "contrato": "Contrato de Manutenção",
+      "instalacao": "Instalação / Desinstalação",
+      "reparo": "Reparo de Peças",
+      "visita": "Visita Técnica",
+      "outro": "Outro"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes"
+  },
+  "servicesHub": {
+    "pageTitle": "Serviços Técnicos Especializados — Hexamedical",
+    "heroHeadline": "Serviços técnicos que garantem sua operação",
+    "heroSubtitle": "Manutenção preventiva e corretiva, contratos flexíveis, instalação profissional e suporte especializado com cobertura nacional.",
+    "sectionTitle": "Nossos serviços",
+    "sectionSubtitle": "Soluções completas de suporte para manter seus equipamentos em máxima performance."
+  },
+  "solucoesHub": {
+    "pageTitle": "Soluções em Equipamentos — Hexamedical",
+    "heroHeadline": "Soluções em Equipamentos Médicos",
+    "heroSubtitle": "Equipamentos Esaote de ressonância magnética com suporte técnico completo.",
+    "rmTitle": "Ressonância Magnética Esaote"
+  },
+  "structure": {
+    "pageTitle": "Nossa Estrutura — Hexamedical",
+    "heroHeadline": "Nossa Estrutura",
+    "heroSubtitle": "Contamos com uma estrutura completa planejada para a entrega de serviços precisos aos nossos clientes. Infraestrutura de ponta para manutenção, testes e reparos de equipamentos médicos.",
+    "includesTitle": "Nossa estrutura <1>robusta</1> inclui:",
+    "labTitle": "Laboratório Especializado",
+    "labDesc": "Altamente equipado para reparos especializados de peças de equipamentos médicos, com processo rigoroso de análise, recuperação e testes.",
+    "coverageTitle": "Cobertura Nacional",
+    "coverageSubtitle": "Unidades estrategicamente localizadas para atendimento ágil em todo o Brasil.",
+    "ctaHeadline": "Quer conhecer nossa estrutura de perto?",
+    "ctaSubtitle": "Agende uma visita e conheça nossos laboratórios, salas de testes e showroom.",
+    "facilities": {
+      "testRooms": "3 Salas de Testes",
+      "testRoomsDesc": "Para equipamentos de tomografia, raio-x e mamografia.",
+      "lab": "Laboratório de Eletrônica",
+      "labDesc": "Equipado para reparos especializados de módulos, fontes, bobinas e placas.",
+      "cryogenics": "Laboratório de Criogenia",
+      "cryogenicsDesc": "Infraestrutura para serviços criogênicos de alta precisão.",
+      "training": "Salas de Treinamento",
+      "trainingDesc": "Para educação continuada da equipe interna e treinamento de terceiros.",
+      "showroom": "Showroom com Gaiola para RM",
+      "showroomDesc": "Ambiente de demonstração com gaiola para ressonância magnética."
+    },
+    "capabilities": {
+      "coils": "Reparo de bobinas de ressonância magnética",
+      "boards": "Reparo de placas eletrônicas e módulos",
+      "powerSupply": "Reparo de fontes de alimentação",
+      "peripherals": "Recondicionamento de periféricos de diagnóstico por imagem",
+      "qualityTests": "Testes rigorosos de qualidade e confiabilidade pós-reparo",
+      "fullProcess": "Processo completo de análise, recuperação e validação"
+    }
+  },
+  "contactPage": {
+    "pageTitle": "Fale com a Hexamedical — Contato",
+    "heroHeadline": "Fale com a Hexamedical",
+    "heroSubtitle": "Entre em contato para tirar dúvidas, solicitar serviços ou saber mais sobre nossas soluções em equipamentos médicos.",
+    "officeTitle": "O Escritório",
+    "formTitle": "Fale conosco",
+    "whyTitle": "Por que falar com a Hexamedical?",
+    "whyItems": {
+      "consultative": "Atendimento consultivo e não comercial",
+      "freeEval": "Avaliação técnica gratuita",
+      "experience": "+16 anos de experiência no mercado",
+      "nationalCoverage": "Cobertura nacional com suporte local"
+    },
+    "contactLabels": {
+      "phone": "Telefone",
+      "email": "E-mail",
+      "location": "Localização",
+      "hours": "Horário Comercial"
+    }
+  },
+  "apoio": {
+    "pageTitle": "Materiais de Apoio — Hexamedical | Tutoriais e Vídeos",
+    "heroHeadline": "Materiais de Apoio",
+    "heroSubtitle": "Tutoriais em vídeo, guias de posicionamento e conteúdo técnico para operadores de equipamentos Esaote.",
+    "videosTitle": "Vídeos Tutoriais",
+    "videosSubtitle": "Conteúdo exclusivo para auxiliar operadores no dia a dia com equipamentos de ressonância magnética Esaote.",
+    "comingSoon": "Os vídeos serão disponibilizados em breve. Entre em contato para acesso antecipado."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Ops! Página não encontrada",
+    "back": "Voltar para a Página Inicial"
+  },
+  "servicePage": {
+    "whatIncludes": "O que inclui",
+    "nationalCoverage": "Cobertura Nacional",
+    "certifiedTeam": "Equipe Certificada Internacionalmente"
+  },
+  "lang": {
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  }
+}
