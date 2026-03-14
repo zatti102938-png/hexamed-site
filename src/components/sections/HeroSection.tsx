@@ -10,6 +10,7 @@ interface HeroSectionProps {
   ctaSecondaryLabel?: string;
   ctaSecondaryHref?: string;
   variant?: "dark" | "light";
+  backgroundImage?: string;
 }
 
 const HeroSection = ({
