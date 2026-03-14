@@ -424,6 +424,7 @@ export const solutions: Record<string, Solution> = {
     shortTitle: "Bombas Injetoras",
     description: "Soluções em bombas injetoras de contraste com manutenção e suporte especializados para centros de diagnóstico por imagem.",
     icon: Syringe,
+    image: images.produtos.bombasInjetoras.hero,
     heroHeadline: "Bombas Injetoras de Contraste",
     heroSubtitle: "Equipamentos de injeção de contraste de alta precisão para exames de tomografia e ressonância, com suporte técnico completo e cobertura nacional.",
     audience: [
