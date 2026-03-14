@@ -83,7 +83,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 5. HexAI */}
+      {/* 5. Mindray */}
+      <MindrayHighlight />
+
+      {/* 6. HexAI */}
       <HexAIHighlight />
 
       {/* 6. Diferenciais */}
