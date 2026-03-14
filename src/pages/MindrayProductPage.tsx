@@ -222,7 +222,7 @@ const MindrayProductPage = () => {
                 to={`/produtos-mindray/${p.slug}`}
                 className="group overflow-hidden rounded-xl border border-border bg-card transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
               >
-                <div className="h-40 overflow-hidden bg-white p-4">
+                <div className="aspect-[4/3] overflow-hidden bg-white p-4">
                   <img
                     src={p.image.thumb}
                     alt={p.shortTitle}

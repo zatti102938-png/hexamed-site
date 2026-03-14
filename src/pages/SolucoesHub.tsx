@@ -74,7 +74,7 @@ const SolucoesHub = () => {
                 to={`/solucoes/${product.slug}`}
                 className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg"
               >
-                <div className="h-40 overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img src={product.image} alt={`RM Esaote ${product.title}`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="p-6">
