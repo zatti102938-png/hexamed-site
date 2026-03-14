@@ -51,8 +51,8 @@ const AreaVeterinaria = () => {
       {/* Hero */}
       <section className="relative overflow-hidden bg-dark-surface text-white">
         <div className="absolute inset-0">
-          <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+          <img src={images.veterinaria.hero} alt="" className="h-full w-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark-surface via-dark-surface/90 to-dark-surface/60" />
         </div>
         <div className="container relative z-10 py-20 md:py-28 lg:py-36">
           <div className="mx-auto max-w-3xl text-center">
