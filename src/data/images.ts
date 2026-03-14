@@ -101,4 +101,36 @@ export const images = {
       gallery01: `${BASE}/mindray/mobileye/mobileye-700-gallery-01.webp`,
     },
   },
+  /** Raw source assets uploaded from original site — organized by origin */
+  raw: {
+    esaote: {
+      gScanBrio: `${BASE}/esaote/esaote-wp-content-csm-esaote-g-scan-brio-7563a8df6a-043.webp`,
+      sScanHero: `${BASE}/esaote/esaote-wp-content-csm-esaote-s-scan-hero-46ed91e4e2-044.jpg`,
+      oScanHero: `${BASE}/esaote/esaote-wp-content-csm-old-esaote-o-scan-hero-feb99a79af-024.png`,
+      gScanBrioHero: `${BASE}/esaote/esaote-wp-content-csm-old-esaote-g-scan-brio-hero-47b1844ff1-023.png`,
+      magnificoOpen: `${BASE}/esaote/esaote-wp-content-magnifico-open-050.png`,
+      magnifico2: `${BASE}/esaote/esaote-wp-content-magnifico2-052.png`,
+      oScan: `${BASE}/esaote/esaote-wp-content-esaote-o-scan-047.webp`,
+      sScan: `${BASE}/esaote/esaote-wp-content-esaote-s-scan-048.png`,
+      magnificoVet: `${BASE}/esaote/esaote-wp-content-magnifico-vet-051.webp`,
+      vetMrGrande: `${BASE}/esaote/esaote-wp-content-esaote-grande-vet-mr-015.png`,
+      vetMrGrandeHero: `${BASE}/esaote/esaote-wp-content-csm-esaote-vet-mr-grande-hero-d211219025-1024x802-045.webp`,
+    },
+    servicos: {
+      manutencao: `${BASE}/servicos/servico-wp-content-imagem-manutencao-059.webp`,
+      contratos: `${BASE}/servicos/servico-wp-content-contrato-de-manutencoes-foto-055.webp`,
+      instalacao: `${BASE}/servicos/servico-wp-content-desinstalacao-e-instalacao-057.webp`,
+      reparo: `${BASE}/servicos/servico-wp-content-reparo-de-pecas-e-eletronicas-foto-061.webp`,
+      estrutura: `${BASE}/servicos/servico-wp-content-estrutura-1-049.webp`,
+    },
+    gerais: {
+      ceoVideo1: `${BASE}/gerais-site/geral-wp-content-capa-video-fabio-2-096.jpg`,
+      ceoVideo2: `${BASE}/gerais-site/geral-wp-content-capa-video-fabio-4-097.webp`,
+      hexaiVarredura: `${BASE}/gerais-site/geral-wp-content-varredura-hexai-1024x576-086.png`,
+      blogCapa1: `${BASE}/gerais-site/geral-wp-content-hexamedical-templates-capa-de-blog-069.webp`,
+      blogCapa2: `${BASE}/gerais-site/geral-wp-content-hexamedical-templates-capa-de-blog-1-768x432-063.webp`,
+      blogCapa3: `${BASE}/gerais-site/geral-wp-content-hexamedical-templates-capa-de-blog-2-768x432-065.webp`,
+      blogCapa4: `${BASE}/gerais-site/geral-wp-content-hexamedical-templates-capa-de-blog-3-768x432-067.webp`,
+    },
+  },
 } as const;
