@@ -6,6 +6,7 @@ import CTABanner from "@/components/sections/CTABanner";
 import FAQSection from "@/components/sections/FAQSection";
 import { Button } from "@/components/ui/button";
 import { Brain, ArrowRight, Sparkles, BarChart3, Zap, CheckCircle2, Monitor, Server } from "lucide-react";
+import { images } from "@/data/images";
 
 const features = [
   { icon: Sparkles, title: "Análise Inteligente", description: "IA que auxilia na interpretação de exames com precisão e agilidade, reduzindo o tempo de laudo." },
