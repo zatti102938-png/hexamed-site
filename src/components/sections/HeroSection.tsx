@@ -21,6 +21,7 @@ const HeroSection = ({
   ctaSecondaryLabel,
   ctaSecondaryHref,
   variant = "dark",
+  backgroundImage,
 }: HeroSectionProps) => {
   const isDark = variant === "dark";
 
