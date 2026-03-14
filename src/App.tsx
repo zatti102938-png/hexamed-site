@@ -9,9 +9,10 @@ import SolucoesHub from "./pages/SolucoesHub";
 import ServicosHub from "./pages/ServicosHub";
 import SolutionPage from "./pages/SolutionPage";
 import ServicePage from "./pages/ServicePage";
-import Contato from "./pages/Contato";
 import MindrayHub from "./pages/MindrayHub";
 import MindrayProductPage from "./pages/MindrayProductPage";
+import Estrutura from "./pages/Estrutura";
+import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/servicos/:slug" element={<ServicePage />} />
             <Route path="/produtos-mindray" element={<MindrayHub />} />
             <Route path="/produtos-mindray/:slug" element={<MindrayProductPage />} />
+            <Route path="/estrutura" element={<Estrutura />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
