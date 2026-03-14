@@ -9,6 +9,7 @@ export interface MindrayProduct {
   description: string;
   icon: LucideIcon;
   image: { hero: string; thumb: string; gallery01: string };
+  galleryImages: { src: string; alt: string }[];
   heroHeadline: string;
   heroSubtitle: string;
   benefits: string[];
@@ -28,6 +29,12 @@ export const mindrayProducts: MindrayProduct[] = [
     description: "Detector digital sem fio de alta performance com tecnologia CsI+TFT, classificação IP54 e alto DQE. Projetado para digitalizar sua operação radiológica com máxima qualidade de imagem.",
     icon: Scan,
     image: images.mindray.detectorFlat,
+    galleryImages: [
+      { src: images.mindray.detectorFlat.hero, alt: "Detector Flat Panel — vista principal" },
+      { src: images.mindray.detectorFlat.cleanroom, alt: "Fabricação em sala limpa Mindray" },
+      { src: images.mindray.detectorFlat.ip54, alt: "Teste de resistência IP54 a água" },
+      { src: images.mindray.detectorFlat.factory, alt: "Linha de produção de detectores Mindray" },
+    ],
     heroHeadline: "Detector Flat Panel: Projetado para a sua Digitalização",
     heroSubtitle: "Tecnologias patenteadas de alto nível reunidas em um detector leve, sem fio, que proporciona a melhor experiência possível ao usuário. Design diferenciado, produção artesanal e alto controle de qualidade Mindray.",
     benefits: [
@@ -88,6 +95,12 @@ export const mindrayProducts: MindrayProduct[] = [
     description: "Sistema de Radiografia Digital otimizado para eficiência elevada. Design dinâmico com coluna rotativa, mesa com tampo flutuante e conectividade remota MiCo+.",
     icon: MonitorSpeaker,
     image: images.mindray.digieye330,
+    galleryImages: [
+      { src: images.mindray.digieye330.product, alt: "DigiEye 330 — sistema completo" },
+      { src: images.mindray.digieye330.detail, alt: "DigiEye 330 — detalhe da coluna e mesa" },
+      { src: images.mindray.digieye330.mico, alt: "DigiEye 330 — conectividade MiCo+" },
+      { src: images.mindray.digieye330.hero, alt: "DigiEye 330 — vista geral" },
+    ],
     heroHeadline: "DigiEye 330: Otimizado para Eficiência Elevada",
     heroSubtitle: "Sistema de Radiografia Digital Mindray com design dinâmico, operação intuitiva e conectividade remota MiCo+. Adequado para diversos ambientes clínicos com eficiência e ergonomia.",
     benefits: [
@@ -149,6 +162,12 @@ export const mindrayProducts: MindrayProduct[] = [
     description: "Sistema de Radiografia Digital dinâmico e avançado com sincronização bidirecional do tubo e detector, display touch no colimador, controle remoto RF e conectividade MiCo+.",
     icon: MonitorSpeaker,
     image: images.mindray.digieye350,
+    galleryImages: [
+      { src: images.mindray.digieye350.annotated, alt: "DigiEye 350 — vista anotada com recursos" },
+      { src: images.mindray.digieye350.product, alt: "DigiEye 350 — sistema completo" },
+      { src: images.mindray.digieye350.mico, alt: "DigiEye 350 — conectividade MiCo+" },
+      { src: images.mindray.digieye350.hero, alt: "DigiEye 350 — vista geral" },
+    ],
     heroHeadline: "DigiEye 350: Dinâmico para mais Eficiência",
     heroSubtitle: "Sistema de Radiografia Digital avançado, projetado para facilidade no uso, com sincronização bidirecional do tubo e detector, display touch no colimador e controle remoto RF para operação fora da sala do console.",
     benefits: [
@@ -212,6 +231,12 @@ export const mindrayProducts: MindrayProduct[] = [
     description: "Sistema móvel de radiodiagnóstico com 9 graus de liberdade, potência dual-mode, detector MPX sem fio e mobilidade superior. Visão com potência para diagnóstico à beira do leito.",
     icon: Smartphone,
     image: images.mindray.mobileye700,
+    galleryImages: [
+      { src: images.mindray.mobileye700.hero, alt: "MobiEye 700 — sistema móvel completo" },
+      { src: images.mindray.mobileye700.console, alt: "MobiEye 700 — console e painel de controle" },
+      { src: images.mindray.mobileye700.detail, alt: "MobiEye 700 — detalhe frontal" },
+      { src: images.mindray.mobileye700.gallery01, alt: "MobiEye 700 — em contexto clínico" },
+    ],
     heroHeadline: "MobiEye 700: Visão com Potência e Mobilidade",
     heroSubtitle: "Sistema Móvel de Radiodiagnóstico Mindray com 9 graus de liberdade, escalada em 12° de inclinação e detector MPX ultracompacto. Evolução que vai além das imagens — dados quantitativos comprovam superioridade e qualidade.",
     benefits: [
