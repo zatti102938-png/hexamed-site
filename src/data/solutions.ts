@@ -468,6 +468,7 @@ export const solutions: Record<string, Solution> = {
     shortTitle: "HexAI",
     description: "Plataforma de inteligência artificial aplicada ao diagnóstico por imagem que aumenta a precisão, produtividade e assertividade clínica.",
     icon: Brain,
+    image: images.produtos.hexai.hero,
     heroHeadline: "HexAI: Inteligência Artificial para Diagnóstico por Imagem",
     heroSubtitle: "Potencialize a precisão diagnóstica da sua equipe com IA aplicada à análise de imagens médicas. Mais velocidade, mais assertividade, menos risco.",
     audience: [
