@@ -241,6 +241,7 @@ export const mindrayProducts: MindrayProduct[] = [
       { src: images.mindray.mobileye700.detail, alt: "MobiEye 700 — detalhe frontal" },
       { src: images.mindray.mobileye700.gallery01, alt: "MobiEye 700 — em contexto clínico" },
     ],
+    brochurePdf: "/downloads/Folheto_Mindray_MobiEye_700.pdf",
     heroHeadline: "MobiEye 700: Visão com Potência e Mobilidade",
     heroSubtitle: "Sistema Móvel de Radiodiagnóstico Mindray com 9 graus de liberdade, escalada em 12° de inclinação e detector MPX ultracompacto. Evolução que vai além das imagens — dados quantitativos comprovam superioridade e qualidade.",
     benefits: [
