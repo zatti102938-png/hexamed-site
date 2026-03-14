@@ -5,6 +5,7 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
 import { Calendar, ArrowRight } from "lucide-react";
+import { images } from "@/data/images";
 
 const posts = [
   {
