@@ -41,7 +41,7 @@ const App = () => (
             <Route path="/blog" element={<BlogHub />} />
             <Route path="/apoio" element={<Apoio />} />
             <Route path="/hexai" element={<HexAIPage />} />
-            <Route path="/area-veterinaria" element={<AreaVeterinaria />} />
+            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

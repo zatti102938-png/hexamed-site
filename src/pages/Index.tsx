@@ -165,25 +165,6 @@ const Index = () => {
               </div>
             </Link>
 
-            {/* Veterinário / Soluções */}
-            <Link
-              to="/area-veterinaria"
-              className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
-            >
-              <div className="h-48 overflow-hidden">
-                <img src={images.home.cardVeterinario} alt="Área Veterinária" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
-              <div className="p-6">
-                <h3 className="mb-3 text-xl font-bold text-foreground">Soluções para seus pacientes</h3>
-                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                  Oferecemos ressonância magnética com os mais altos padrões de qualidade do mercado. Diagnóstico preciso e otimização energética.
-                </p>
-                <span className="inline-flex items-center text-sm font-semibold text-primary">
-                  Área Veterinária
-                  <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
-              </div>
-            </Link>
           </div>
         </div>
       </section>

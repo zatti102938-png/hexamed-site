@@ -32,10 +32,4 @@ export const segments: Segment[] = [
     description: "Equipamentos para ensino e pesquisa com suporte técnico especializado e condições acadêmicas.",
     icon: GraduationCap,
   },
-  {
-    slug: "veterinario",
-    title: "Veterinário",
-    description: "Ressonância magnética dedicada ao diagnóstico veterinário com equipamentos compactos e de alta qualidade.",
-    icon: PawPrint,
-  },
 ];
