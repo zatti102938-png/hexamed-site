@@ -54,6 +54,7 @@ export const images = {
   servicos: {
     hubHero: `${BASE}/servicos/servicos-hub-hero.webp`,
     manutencao: `${BASE}/servicos/manutencao-hero.webp`,
+    equipeCertificada: `${BASE}/servicos/equipe-certificada.webp`,
     contratos: `${BASE}/servicos/contratos-hero.webp`,
     instalacao: `${BASE}/servicos/instalacao-hero.webp`,
     reparo: `${BASE}/servicos/reparo-hero.webp`,

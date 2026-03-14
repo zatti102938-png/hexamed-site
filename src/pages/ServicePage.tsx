@@ -7,6 +7,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import CTABanner from "@/components/sections/CTABanner";
 import TrustBlock from "@/components/sections/TrustBlock";
 import { services } from "@/data/services";
+import { images } from "@/data/images";
 import { CheckCircle2, MapPin, Users } from "lucide-react";
 
 const ServicePage = () => {
@@ -60,17 +61,25 @@ const ServicePage = () => {
         <div className="container">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
+              <div className="overflow-hidden rounded-2xl border border-border">
+                <img
+                  src={images.servicos.equipeCertificada}
+                  alt="Equipe certificada Hexamedical — manutenção de equipamentos médicos"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div>
               <div className="mb-4 flex items-center gap-2">
                 <MapPin className="h-6 w-6 text-accent" />
                 <h2 className="text-3xl font-bold text-foreground md:text-4xl">
                   Cobertura Nacional
                 </h2>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="mb-8 text-lg text-muted-foreground leading-relaxed">
                 {service.coverage}
               </p>
-            </div>
-            <div>
               <div className="mb-4 flex items-center gap-2">
                 <Users className="h-6 w-6 text-accent" />
                 <h3 className="text-xl font-bold text-foreground">
