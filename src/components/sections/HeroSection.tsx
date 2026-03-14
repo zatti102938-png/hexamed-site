@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 
@@ -16,7 +17,7 @@ interface HeroSectionProps {
 const HeroSection = ({
   headline,
   subtitle,
-  ctaPrimaryLabel = "Falar com Especialista",
+  ctaPrimaryLabel,
   ctaPrimaryHref = "/contato",
   ctaSecondaryLabel,
   ctaSecondaryHref,
@@ -24,6 +25,7 @@ const HeroSection = ({
   backgroundImage,
 }: HeroSectionProps) => {
   const isDark = variant === "dark";
+  const { t } = useTranslation();
 
   return (
     <section
@@ -31,7 +33,6 @@ const HeroSection = ({
         isDark ? "bg-dark-surface text-white" : "bg-background text-foreground"
       }`}
     >
-      {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         {backgroundImage ? (
           <>
@@ -58,7 +59,7 @@ const HeroSection = ({
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
               <Link to={ctaPrimaryHref}>
                 <Phone className="mr-2 h-4 w-4" />
-                {ctaPrimaryLabel}
+                {ctaPrimaryLabel || t("common.talkToSpecialist")}
               </Link>
             </Button>
             {ctaSecondaryLabel && ctaSecondaryHref && (
