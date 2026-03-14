@@ -140,35 +140,65 @@ const Index = () => {
               Um centro equipado para atender todas as demandas em manutenção, testes e reparos de equipamentos médicos, com equipe certificada internacionalmente e cobertura nacional.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-3">
             {/* Manutenção */}
             <Link
               to="/servicos/manutencao"
-              className="group rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
+              className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
             >
-              <h3 className="mb-3 text-xl font-bold text-foreground">Serviços de Manutenção</h3>
-              <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                Atuamos com nossos serviços em todo território nacional realizando manutenções preventivas e corretivas que podem ser realizadas avulsas ou em contratos de prestação de serviço de mão de obra com e sem peças.
-              </p>
-              <span className="inline-flex items-center text-sm font-semibold text-primary">
-                Peça um orçamento
-                <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
+              <div className="h-48 overflow-hidden">
+                <img src={images.home.manutencaoThumb} alt="Manutenção de RM" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-bold text-foreground">Serviços de Manutenção</h3>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                  Atuamos com nossos serviços em todo território nacional realizando manutenções preventivas e corretivas que podem ser realizadas avulsas ou em contratos de prestação de serviço de mão de obra com e sem peças.
+                </p>
+                <span className="inline-flex items-center text-sm font-semibold text-primary">
+                  Peça um orçamento
+                  <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
             </Link>
 
             {/* Laboratório */}
             <Link
               to="/servicos/reparo"
-              className="group rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
+              className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
             >
-              <h3 className="mb-3 text-xl font-bold text-foreground">Laboratório de Eletrônica</h3>
-              <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                Contamos com um laboratório próprio especializado no reparo de bobinas, fontes, placas e periféricos. Processo rigoroso de análise, recuperação e testes.
-              </p>
-              <span className="inline-flex items-center text-sm font-semibold text-primary">
-                Saiba mais
-                <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
+              <div className="h-48 overflow-hidden">
+                <img src={images.home.laboratorioThumb} alt="Laboratório de Eletrônica" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-bold text-foreground">Laboratório de Eletrônica</h3>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                  Contamos com um laboratório próprio especializado no reparo de bobinas, fontes, placas e periféricos. Processo rigoroso de análise, recuperação e testes.
+                </p>
+                <span className="inline-flex items-center text-sm font-semibold text-primary">
+                  Saiba mais
+                  <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
+            </Link>
+
+            {/* Veterinário / Soluções */}
+            <Link
+              to="/area-veterinaria"
+              className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
+            >
+              <div className="h-48 overflow-hidden">
+                <img src={images.home.cardVeterinario} alt="Área Veterinária" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-bold text-foreground">Soluções para seus pacientes</h3>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                  Oferecemos ressonância magnética com os mais altos padrões de qualidade do mercado. Diagnóstico preciso e otimização energética.
+                </p>
+                <span className="inline-flex items-center text-sm font-semibold text-primary">
+                  Área Veterinária
+                  <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
             </Link>
           </div>
         </div>
