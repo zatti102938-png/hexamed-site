@@ -7,6 +7,7 @@ import CTABanner from "@/components/sections/CTABanner";
 import { solutionCategories } from "@/data/solutions";
 import { Link } from "react-router-dom";
 import { ArrowRight, Magnet } from "lucide-react";
+import { images } from "@/data/images";
 
 const rmProducts = [
   { slug: "rm-magnifico-open", title: "Magnifico Open", description: "Sistema aberto de alto campo para exames de corpo inteiro." },
