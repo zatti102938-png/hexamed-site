@@ -114,7 +114,7 @@ export const images = {
       folhetoP2: `${BASE}/mindray/digieye-350/digieye-350-folheto-p2.jpg`,
     },
     mobileye700: {
-      hero: `${BASE}/mindray/mobileye/mobileye-700-hero.webp`,
+      hero: `${BASE}/mindray/mobileye/mobileye-700-hero-official.jpg`,
       thumb: `${BASE}/mindray/mobileye/mobileye-700-thumb.webp`,
       gallery01: `${BASE}/mindray/mobileye/mobileye-700-gallery-01.webp`,
       console: `${BASE}/mindray/mobileye/mobileye-700-console.jpg`,
