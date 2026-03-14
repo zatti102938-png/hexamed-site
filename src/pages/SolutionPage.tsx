@@ -200,7 +200,7 @@ const SolutionPage = () => {
           <div className="container">
             <div className="mx-auto max-w-3xl text-center">
               <Quote className="mx-auto mb-6 h-10 w-10 text-primary" />
-              <blockquote className="mb-6 text-lg italic leading-relaxed text-dark-surface-foreground/90 md:text-xl">
+              <blockquote className="mb-6 text-lg italic leading-relaxed text-white/90 md:text-xl">
                 "{solution.testimonial.quote}"
               </blockquote>
               <cite className="text-sm font-medium text-primary not-italic">

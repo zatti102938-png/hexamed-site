@@ -21,16 +21,15 @@ const Contato = () => {
 
       <PageBreadcrumb items={[{ label: "Contato" }]} />
 
-      {/* Hero section matching original */}
-      <section className="relative overflow-hidden bg-dark-surface py-16 text-dark-surface-foreground md:py-24">
+      <section className="relative overflow-hidden bg-dark-surface py-16 text-white md:py-24">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
         </div>
         <div className="container relative z-10 text-center">
-          <h1 className="mb-4 text-3xl font-bold md:text-4xl lg:text-5xl">
+          <h1 className="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             Fale com a Hexamedical
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-dark-surface-foreground/80">
+          <p className="mx-auto max-w-2xl text-lg text-white/80">
             Entre em contato para tirar dúvidas, solicitar serviços ou saber mais sobre nossas soluções em equipamentos médicos.
           </p>
         </div>

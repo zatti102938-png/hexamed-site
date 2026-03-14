@@ -23,7 +23,7 @@ const Header = () => {
         </div>
       </div>
 
-      <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-dark-surface backdrop-blur-md">
+      <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-dark-surface backdrop-blur-md">
         <div className="container flex h-16 items-center justify-between md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
@@ -45,7 +45,7 @@ const Header = () => {
                     "flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors hover:text-primary",
                     location.pathname.startsWith(item.href) && item.href !== "#"
                       ? "text-primary"
-                      : "text-dark-surface-foreground/80"
+                      : "text-white/80"
                   )}
                 >
                   {item.label}
@@ -78,7 +78,7 @@ const Header = () => {
               </Link>
             </Button>
             <button
-              className="inline-flex items-center justify-center rounded-md p-2 text-dark-surface-foreground lg:hidden"
+              className="inline-flex items-center justify-center rounded-md p-2 text-white lg:hidden"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Menu"
             >

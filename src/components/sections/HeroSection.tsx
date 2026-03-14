@@ -26,7 +26,7 @@ const HeroSection = ({
   return (
     <section
       className={`relative overflow-hidden ${
-        isDark ? "bg-dark-surface text-dark-surface-foreground" : "bg-background text-foreground"
+        isDark ? "bg-dark-surface text-white" : "bg-background text-foreground"
       }`}
     >
       {/* Decorative elements */}
@@ -37,10 +37,10 @@ const HeroSection = ({
 
       <div className="container relative z-10 py-16 md:py-24 lg:py-32">
         <div className="max-w-3xl">
-          <h1 className="mb-6 text-3xl font-extrabold leading-tight tracking-tight text-balance md:text-4xl lg:text-5xl xl:text-6xl">
+          <h1 className={`mb-6 text-3xl font-extrabold leading-tight tracking-tight text-balance md:text-4xl lg:text-5xl xl:text-6xl ${isDark ? "text-white" : "text-foreground"}`}>
             {headline}
           </h1>
-          <p className={`mb-8 max-w-2xl text-lg leading-relaxed ${isDark ? "text-dark-surface-foreground/80" : "text-muted-foreground"} md:text-xl`}>
+          <p className={`mb-8 max-w-2xl text-lg leading-relaxed md:text-xl ${isDark ? "text-white/80" : "text-muted-foreground"}`}>
             {subtitle}
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">

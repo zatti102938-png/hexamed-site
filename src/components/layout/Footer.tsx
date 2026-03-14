@@ -46,7 +46,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border bg-dark-surface text-dark-surface-foreground">
+    <footer className="border-t border-white/10 bg-dark-surface text-white">
       <div className="container py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
@@ -54,14 +54,14 @@ const Footer = () => {
             <div className="mb-4 flex items-center gap-2">
               <img src={logoIcon} alt="Hexamedical" className="h-10 w-10" />
               <div className="flex flex-col leading-none">
-                <span className="text-base font-bold tracking-tight">HEXA<span className="text-dark-surface-foreground/60">MEDICAL</span></span>
-                <span className="text-[9px] font-medium uppercase tracking-widest text-dark-surface-foreground/50">Taking Care Your Equipment</span>
+                <span className="text-base font-bold tracking-tight text-white">HEXA<span className="text-white/60">MEDICAL</span></span>
+                <span className="text-[9px] font-medium uppercase tracking-widest text-white/50">Taking Care Your Equipment</span>
               </div>
             </div>
-            <p className="mb-6 max-w-sm text-sm text-dark-surface-foreground/70">
+            <p className="mb-6 max-w-sm text-sm text-white/70">
               Especialistas em soluções de diagnóstico por imagem, serviços técnicos e suporte de alta performance para instituições de saúde em todo o Brasil.
             </p>
-            <div className="space-y-2 text-sm text-dark-surface-foreground/70">
+            <div className="space-y-2 text-sm text-white/70">
               <a href="tel:+553192368432" className="flex items-center gap-2 hover:text-primary">
                 <Phone className="h-4 w-4" /> +55 31 9236-8432
               </a>
@@ -86,7 +86,7 @@ const Footer = () => {
                   <li key={link.href}>
                     <Link
                       to={link.href}
-                      className="text-sm text-dark-surface-foreground/70 transition-colors hover:text-primary"
+                      className="text-sm text-white/70 transition-colors hover:text-primary"
                     >
                       {link.label}
                     </Link>
@@ -99,8 +99,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-dark-surface-foreground/10">
-        <div className="container flex flex-col items-center justify-between gap-4 py-6 text-xs text-dark-surface-foreground/50 sm:flex-row">
+      <div className="border-t border-white/10">
+        <div className="container flex flex-col items-center justify-between gap-4 py-6 text-xs text-white/50 sm:flex-row">
           <p>© {new Date().getFullYear()} Hexamedical. Todos os direitos reservados.</p>
           <div className="flex gap-4">
             <Link to="/politica-de-privacidade" className="hover:text-primary">Política de Privacidade</Link>
