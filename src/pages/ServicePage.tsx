@@ -7,6 +7,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import CTABanner from "@/components/sections/CTABanner";
 import TrustBlock from "@/components/sections/TrustBlock";
 import { services } from "@/data/services";
+import { images } from "@/data/images";
 import { CheckCircle2, MapPin, Users } from "lucide-react";
 
 const ServicePage = () => {
