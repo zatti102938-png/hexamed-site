@@ -28,7 +28,7 @@ const HexAIHighlight = () => {
               Potencialize a precisão diagnóstica e a produtividade da sua equipe com inteligência artificial aplicada à análise de exames de ressonância magnética.
             </p>
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link to="/solucoes/hexai">
+              <Link to="/hexai">
                 Conhecer o HexAI
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
