@@ -1,25 +1,22 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Layout from "@/components/layout/Layout";
-import HeroSection from "@/components/sections/HeroSection";
-import SolutionCard from "@/components/sections/SolutionCard";
-import ServiceCard from "@/components/sections/ServiceCard";
-import DifferentialsGrid from "@/components/sections/DifferentialsGrid";
-import TrustBlock from "@/components/sections/TrustBlock";
-import HexAIHighlight from "@/components/sections/HexAIHighlight";
-import BlogHighlight from "@/components/sections/BlogHighlight";
 import MindrayHighlight from "@/components/sections/MindrayHighlight";
 import TestimonialsBlock from "@/components/sections/TestimonialsBlock";
 import CeoVideoBlock from "@/components/sections/CeoVideoBlock";
+import HexAIHighlight from "@/components/sections/HexAIHighlight";
+import BlogHighlight from "@/components/sections/BlogHighlight";
+import DifferentialsGrid from "@/components/sections/DifferentialsGrid";
 import CTABanner from "@/components/sections/CTABanner";
 import ContactForm from "@/components/sections/ContactForm";
-import { solutionCategories } from "@/data/solutions";
-import { services } from "@/data/services";
-import { ArrowRight, Wrench, Microscope, PawPrint } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { images } from "@/data/images";
 
 const Index = () => {
+  const { t } = useTranslation();
+
   return (
     <Layout>
       <Helmet>
@@ -27,7 +24,7 @@ const Index = () => {
         <meta name="description" content="Soluções completas em Ressonância Magnética Esaote, Radiologia Digital Mindray, serviços técnicos especializados e suporte com 16+ anos de experiência. Cobertura nacional." />
       </Helmet>
 
-      {/* 1. Hero — matching original site */}
+      {/* 1. Hero */}
       <section className="relative overflow-hidden bg-dark-surface text-white">
         <div className="absolute inset-0">
           <img src={images.home.heroBanner} alt="" className="h-full w-full object-cover opacity-20" />
@@ -37,10 +34,10 @@ const Index = () => {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <h1 className="mb-6 text-3xl font-extrabold leading-tight tracking-tight text-balance text-white md:text-4xl lg:text-5xl">
-                Seu negócio merece as soluções certas.
+                {t("hero.headline")}
               </h1>
               <p className="mb-8 max-w-xl text-lg leading-relaxed text-white/80">
-                Ofereça aos seus pacientes o melhor em prevenção, diagnóstico, terapia e acompanhamento, elevando o padrão do seu atendimento enquanto reduz riscos operacionais e custos com manutenções graças à robustez e alta durabilidade dos nossos equipamentos.
+                {t("hero.subtitle")}
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -49,12 +46,12 @@ const Index = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Falar com equipe de vendas
+                    {t("hero.ctaPrimary")}
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-primary/60 bg-primary/10 text-white hover:bg-primary/20">
                   <Link to="/solucoes">
-                    Conheça nossas soluções
+                    {t("hero.ctaSecondary")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -62,52 +59,46 @@ const Index = () => {
             </div>
             <div className="hidden lg:block">
               <p className="text-lg leading-relaxed text-white/70">
-                Entregamos mais que produtos, soluções personalizadas para atender as necessidades para serviços exigentes com soluções efetivas para cada realidade e expectativa sendo clínicas, universidades e hospitais.
+                {t("hero.sideText")}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 2. Produtos + Serviços Cards — matching original */}
+      {/* 2. Produtos + Serviços Cards */}
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="grid gap-6 sm:grid-cols-2">
-            {/* Produtos */}
             <Link
               to="/solucoes"
               className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="aspect-[16/10] overflow-hidden">
-                <img src={images.home.cardProdutos} alt="Produtos Hexamedical" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={images.home.cardProdutos} alt={t("cards.productsTitle")} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
-                <h3 className="mb-3 text-xl font-bold text-foreground">Produtos</h3>
-                <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
-                  Tecnologia Italiana para as mais diversas áreas da saúde. Tenha eficiência energética e alta qualidade e confiabilidade, da Esaote.
-                </p>
+                <h3 className="mb-3 text-xl font-bold text-foreground">{t("cards.productsTitle")}</h3>
+                <p className="mb-6 text-sm leading-relaxed text-muted-foreground">{t("cards.productsDesc")}</p>
                 <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-primary/80">
-                  Ver linha completa
+                  {t("common.viewFullLine")}
                   <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
             </Link>
 
-            {/* Serviços */}
             <Link
               to="/servicos"
               className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="aspect-[16/10] overflow-hidden">
-                <img src={images.home.cardServicos} alt="Serviços Hexamedical" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={images.home.cardServicos} alt={t("cards.servicesTitle")} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
-                <h3 className="mb-3 text-xl font-bold text-foreground">Serviços</h3>
-                <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
-                  Seja uma visita técnica, manutenção ou uma consultoria completa. Estamos aqui para te atender com excelência.
-                </p>
+                <h3 className="mb-3 text-xl font-bold text-foreground">{t("cards.servicesTitle")}</h3>
+                <p className="mb-6 text-sm leading-relaxed text-muted-foreground">{t("cards.servicesDesc")}</p>
                 <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-primary/80">
-                  Ver serviços
+                  {t("common.viewServices")}
                   <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
@@ -116,53 +107,47 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 3. Serviços detalhados — Manutenção + Lab */}
+      {/* 3. Serviços detalhados */}
       <section className="border-t border-border bg-muted/30 py-16 md:py-24">
         <div className="container">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-              Tecnologia e expertise reunidas em um só lugar
+              {t("techSection.title")}
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              Um centro equipado para atender todas as demandas em manutenção, testes e reparos de equipamentos médicos, com equipe certificada internacionalmente e cobertura nacional.
+              {t("techSection.subtitle")}
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2">
-            {/* Manutenção */}
             <Link
               to="/servicos/manutencao"
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
             >
               <div className="aspect-[16/10] overflow-hidden">
-                <img src={images.home.manutencaoThumb} alt="Manutenção de RM" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={images.home.manutencaoThumb} alt={t("techSection.maintenanceTitle")} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
-                <h3 className="mb-3 text-xl font-bold text-foreground">Serviços de Manutenção</h3>
-                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                  Atuamos com nossos serviços em todo território nacional realizando manutenções preventivas e corretivas que podem ser realizadas avulsas ou em contratos de prestação de serviço de mão de obra com e sem peças.
-                </p>
+                <h3 className="mb-3 text-xl font-bold text-foreground">{t("techSection.maintenanceTitle")}</h3>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{t("techSection.maintenanceDesc")}</p>
                 <span className="inline-flex items-center text-sm font-semibold text-primary">
-                  Peça um orçamento
+                  {t("common.requestBudget")}
                   <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
             </Link>
 
-            {/* Laboratório */}
             <Link
               to="/servicos/reparo"
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
             >
               <div className="aspect-[16/10] overflow-hidden">
-                <img src={images.home.laboratorioThumb} alt="Laboratório de Eletrônica" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={images.home.laboratorioThumb} alt={t("techSection.labTitle")} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
-                <h3 className="mb-3 text-xl font-bold text-foreground">Laboratório de Eletrônica</h3>
-                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-                  Contamos com um laboratório próprio especializado no reparo de bobinas, fontes, placas e periféricos. Processo rigoroso de análise, recuperação e testes.
-                </p>
+                <h3 className="mb-3 text-xl font-bold text-foreground">{t("techSection.labTitle")}</h3>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{t("techSection.labDesc")}</p>
                 <span className="inline-flex items-center text-sm font-semibold text-primary">
-                  Saiba mais
+                  {t("common.learnMore")}
                   <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
@@ -171,16 +156,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 4. Produtos Mindray */}
       <MindrayHighlight />
-
-      {/* 5. Clientes e Depoimentos */}
       <TestimonialsBlock />
-
-      {/* 5b. Palavra do CEO */}
       <CeoVideoBlock />
 
-      {/* 6. Time Hexa / Diferenciais */}
+      {/* Team Hexa */}
       <section className="relative overflow-hidden bg-dark-surface py-16 text-white md:py-24">
         <div className="absolute inset-0">
           <img src={images.home.timeHexa} alt="" className="h-full w-full object-cover opacity-15" />
@@ -189,12 +169,12 @@ const Index = () => {
         <div className="container relative z-10">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <h2 className="mb-2 text-lg font-bold text-primary">Time Hexa</h2>
+              <h2 className="mb-2 text-lg font-bold text-primary">{t("team.label")}</h2>
               <h3 className="mb-6 text-3xl font-bold text-white md:text-4xl">
-                Comprometidos com o sucesso de nossos clientes
+                {t("team.title")}
               </h3>
               <p className="mb-8 text-lg text-white/80">
-                Nosso time tem como premissa a busca pela melhoria contínua, entendendo a necessidade do cliente e oferecendo desde o atendimento eficiente até o suporte técnico rápido e assertivo.
+                {t("team.description")}
               </p>
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <a
@@ -202,16 +182,16 @@ const Index = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Falar com equipe de vendas
+                  {t("common.talkToSales")}
                 </a>
               </Button>
             </div>
             <div className="space-y-4">
               {[
-                { value: "16+", label: "Anos de experiência em equipamentos médicos" },
-                { value: "5", label: "Unidades estratégicas pelo Brasil" },
-                { value: "3", label: "Salas de testes para equipamentos" },
-                { value: "24h", label: "SLA de atendimento presencial" },
+                { value: "16+", label: t("team.stats.experience") },
+                { value: "5", label: t("team.stats.units") },
+                { value: "3", label: t("team.stats.testRooms") },
+                { value: "24h", label: t("team.stats.sla") },
               ].map((stat) => (
                 <div key={stat.value} className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-5">
                   <div className="text-3xl font-extrabold text-primary">{stat.value}</div>
@@ -223,32 +203,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 7. HexAI */}
       <HexAIHighlight />
-
-      {/* 8. Blog */}
       <BlogHighlight />
-
-      {/* 9. Diferenciais */}
       <DifferentialsGrid />
 
-      {/* 10. CTA Final + Contato rápido */}
+      {/* Contact Section */}
       <section className="bg-muted/50 py-16 md:py-24">
         <div className="container">
           <div className="grid items-start gap-12 lg:grid-cols-2">
             <div>
               <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-                Vamos conversar sobre sua operação?
+                {t("contactSection.title")}
               </h2>
               <p className="mb-6 text-lg text-muted-foreground">
-                Preencha o formulário e receba uma avaliação personalizada de um especialista Hexamedical. Sem compromisso.
+                {t("contactSection.subtitle")}
               </p>
               <div className="space-y-4 text-sm text-muted-foreground">
                 {[
-                  "Resposta em até 24 horas úteis",
-                  "Avaliação técnica gratuita",
-                  "16+ anos de experiência em equipamentos médicos",
-                  "Cobertura em todo o território nacional",
+                  t("contactSection.bullets.response"),
+                  t("contactSection.bullets.evaluation"),
+                  t("contactSection.bullets.experience"),
+                  t("contactSection.bullets.coverage"),
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2">
                     <div className="h-2 w-2 rounded-full bg-primary" />
