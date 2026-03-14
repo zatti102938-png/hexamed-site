@@ -9,8 +9,13 @@ const TestimonialsBlock = () => {
 
   const handlePlay = () => {
     if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => setIsPlaying(true)).catch(() => {
+          videoRef.current!.controls = true;
+          setIsPlaying(true);
+        });
+      }
     }
   };
 
