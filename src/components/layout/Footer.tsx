@@ -39,7 +39,7 @@ const footerLinks = [
       { label: "Estrutura", href: "/estrutura" },
       { label: "Blog", href: "/blog" },
       { label: "Apoio", href: "/apoio" },
-      { label: "Área Veterinária", href: "/area-veterinaria" },
+      
       { label: "Contato", href: "/contato" },
     ],
   },

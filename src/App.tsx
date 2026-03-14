@@ -16,7 +16,7 @@ import Contato from "./pages/Contato";
 import BlogHub from "./pages/BlogHub";
 import Apoio from "./pages/Apoio";
 import HexAIPage from "./pages/HexAIPage";
-import AreaVeterinaria from "./pages/AreaVeterinaria";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,7 +41,7 @@ const App = () => (
             <Route path="/blog" element={<BlogHub />} />
             <Route path="/apoio" element={<Apoio />} />
             <Route path="/hexai" element={<HexAIPage />} />
-            <Route path="/area-veterinaria" element={<AreaVeterinaria />} />
+            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
