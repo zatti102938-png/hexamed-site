@@ -5,6 +5,7 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
 import { CheckCircle2, Microscope, Snowflake, GraduationCap, MonitorSpeaker, FlaskConical } from "lucide-react";
+import { images } from "@/data/images";
 
 const facilities = [
   { icon: MonitorSpeaker, title: "3 Salas de Testes", description: "Para equipamentos de tomografia, raio-x e mamografia." },
@@ -38,6 +39,7 @@ const Estrutura = () => {
         subtitle="Contamos com uma estrutura completa planejada para a entrega de serviços precisos aos nossos clientes. Infraestrutura de ponta para manutenção, testes e reparos de equipamentos médicos."
         ctaPrimaryLabel="Falar com Especialista"
         ctaPrimaryHref="/contato"
+        backgroundImage={images.estrutura.hero}
       />
 
       {/* Facilities Grid */}
@@ -85,10 +87,8 @@ const Estrutura = () => {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 p-12 text-center">
-              <Microscope className="mx-auto h-32 w-32 text-primary/20" />
-              <p className="mt-4 text-sm font-bold uppercase tracking-wider text-foreground">Laboratório Próprio</p>
-              <p className="mt-2 text-xs text-muted-foreground">16+ anos de experiência em equipamentos médicos</p>
+            <div className="overflow-hidden rounded-2xl">
+              <img src={images.estrutura.hero} alt="Estrutura Hexamedical" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>

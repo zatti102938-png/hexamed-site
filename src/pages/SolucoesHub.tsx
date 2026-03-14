@@ -7,12 +7,13 @@ import CTABanner from "@/components/sections/CTABanner";
 import { solutionCategories } from "@/data/solutions";
 import { Link } from "react-router-dom";
 import { ArrowRight, Magnet } from "lucide-react";
+import { images } from "@/data/images";
 
 const rmProducts = [
-  { slug: "rm-magnifico-open", title: "Magnifico Open", description: "Sistema aberto de alto campo para exames de corpo inteiro." },
-  { slug: "rm-s-scan", title: "S-Scan", description: "Sistema compacto dedicado a exames de extremidades." },
-  { slug: "rm-o-scan", title: "O-Scan", description: "RM dedicada para ortopedia em posição de carga." },
-  { slug: "rm-g-scan", title: "G-Scan", description: "Sistema versátil com posicionamento variável do paciente." },
+  { slug: "rm-magnifico-open", title: "Magnifico Open", description: "Sistema aberto de alto campo para exames de corpo inteiro.", image: images.produtos.magnificoOpen.thumb },
+  { slug: "rm-s-scan", title: "S-Scan", description: "Sistema compacto dedicado a exames de extremidades.", image: images.produtos.sScan.thumb },
+  { slug: "rm-o-scan", title: "O-Scan", description: "RM dedicada para ortopedia em posição de carga.", image: images.produtos.oScan.thumb },
+  { slug: "rm-g-scan", title: "G-Scan", description: "Sistema versátil com posicionamento variável do paciente.", image: images.produtos.gScan.thumb },
 ];
 
 const SolucoesHub = () => {
@@ -71,16 +72,18 @@ const SolucoesHub = () => {
               <Link
                 key={product.slug}
                 to={`/solucoes/${product.slug}`}
-                className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg"
+                className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-lg"
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Magnet className="h-6 w-6" />
+                <div className="h-40 overflow-hidden">
+                  <img src={product.image} alt={`RM Esaote ${product.title}`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
+                <div className="p-6">
                 <h3 className="mb-2 text-lg font-bold text-foreground">RM Esaote {product.title}</h3>
                 <p className="mb-4 flex-1 text-sm text-muted-foreground">{product.description}</p>
                 <span className="inline-flex items-center text-sm font-semibold text-accent group-hover:text-accent/80">
                   Ver detalhes <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
+                </div>
               </Link>
             ))}
           </div>

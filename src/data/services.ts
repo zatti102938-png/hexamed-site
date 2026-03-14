@@ -1,10 +1,12 @@
 import { Wrench, FileText, Truck, Cog, ClipboardCheck } from "lucide-react";
+import { images } from "@/data/images";
 
 export interface Service {
   slug: string;
   title: string;
   description: string;
   icon: typeof Wrench;
+  image?: string;
   heroHeadline: string;
   heroSubtitle: string;
   scope: string[];
@@ -19,6 +21,7 @@ export const services: Service[] = [
     title: "Manutenção de Equipamentos",
     description: "Manutenção preventiva e corretiva para Ressonância Magnética, Tomografia Computadorizada e Hemodinâmica de diversos fabricantes.",
     icon: Wrench,
+    image: images.servicos.manutencao,
     heroHeadline: "Manutenção Técnica Especializada em Diagnóstico por Imagem",
     heroSubtitle: "Oferecemos serviços de manutenção preventiva e corretiva para equipamentos de diagnóstico por imagem de diversos fabricantes — RM, TC e Hemodinâmica — com equipe certificada internacionalmente.",
     scope: [
@@ -48,6 +51,7 @@ export const services: Service[] = [
     title: "Contratos de Manutenção",
     description: "Contratos personalizados com planos flexíveis, com ou sem peças, contemplando manutenção preventiva e corretiva.",
     icon: FileText,
+    image: images.servicos.contratos,
     heroHeadline: "Contratos de Manutenção Sob Medida",
     heroSubtitle: "Contratos personalizados para garantir máxima performance e disponibilidade dos seus equipamentos. Planos flexíveis com ou sem peças, preventiva e corretiva.",
     scope: [
@@ -75,6 +79,7 @@ export const services: Service[] = [
     title: "Instalação e Desinstalação",
     description: "Serviço completo de instalação, desinstalação e manutenções avulsas com equipe especializada e cobertura nacional.",
     icon: Truck,
+    image: images.servicos.instalacao,
     heroHeadline: "Instalação e Desinstalação Profissional de Equipamentos",
     heroSubtitle: "Atuamos com serviços de instalação, desinstalação e manutenções avulsas como visita técnica, preventivas e corretivas. Contratos com e sem peças para todo o Brasil.",
     scope: [
@@ -103,6 +108,7 @@ export const services: Service[] = [
     title: "Reparo de Peças e Periféricos",
     description: "Reparo especializado em bobinas de RM, placas eletrônicas, módulos, fontes de alimentação e periféricos em laboratório próprio.",
     icon: Cog,
+    image: images.servicos.reparo,
     heroHeadline: "Reparo Especializado: Laboratório Próprio de Componentes",
     heroSubtitle: "Tecnologia avançada e expertise técnica para restaurar bobinas de ressonância magnética, placas eletrônicas, módulos, fontes de alimentação e periféricos com qualidade e confiabilidade.",
     scope: [
@@ -131,6 +137,7 @@ export const services: Service[] = [
     title: "Visita Técnica",
     description: "Avaliação técnica presencial para diagnóstico de problemas, consultoria e planejamento de manutenção em todo o Brasil.",
     icon: ClipboardCheck,
+    image: images.servicos.visitaTecnica,
     heroHeadline: "Visita Técnica Especializada",
     heroSubtitle: "Diagnóstico presencial preciso para identificar problemas e oportunidades de melhoria no seu parque de equipamentos de diagnóstico por imagem.",
     scope: [
