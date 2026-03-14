@@ -162,6 +162,7 @@ export const solutions: Record<string, Solution> = {
     shortTitle: "S-Scan",
     description: "Sistema de RM musculoesquelética compacto com Tecnologia eXP, ideal para clínicas de ortopedia e medicina esportiva. Instalação em apenas 16m².",
     icon: Magnet,
+    image: images.produtos.sScan.thumb,
     heroHeadline: "S-Scan: RM Musculoesquelética para Profissionais de MSK",
     heroSubtitle: "Projetado com Tecnologia eXP, o S-Scan é otimizado para qualquer prática com volume musculoesquelético substancial. Abrange todas as estruturas anatômicas MSK, desde os pés até a cabeça, incluindo coluna lombar e cervical.",
     highlights: [
