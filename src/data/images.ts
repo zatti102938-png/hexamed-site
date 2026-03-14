@@ -91,7 +91,8 @@ export const images = {
       folhetoP2: `${BASE}/mindray/detector-flat/detector-flat-folheto-p2.jpg`,
     },
     digieye330: {
-      hero: `${BASE}/mindray/digieye-330/digieye-330-hero.webp`,
+      hero: `${BASE}/mindray/digieye-330/digieye-330-hero-official.jpg`,
+      heroFallback: `${BASE}/mindray/digieye-330/digieye-330-hero.webp`,
       thumb: `${BASE}/mindray/digieye-330/digieye-330-thumb.webp`,
       gallery01: `${BASE}/mindray/digieye-330/digieye-330-gallery-01.webp`,
       product: `${BASE}/mindray/digieye-330/digieye-330-product.jpg`,
