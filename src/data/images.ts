@@ -27,19 +27,19 @@ export const images = {
   },
   produtos: {
     magnificoOpen: {
-      hero: `${BASE}/produtos/esaote/magnifico-open-hero.webp`,
+      hero: `${BASE}/esaote/magnifico-open-hero-official.jpg`,
       thumb: `${BASE}/produtos/esaote/magnifico-open-thumb.webp`,
     },
     sScan: {
-      hero: `${BASE}/produtos/esaote/s-scan-hero.webp`,
+      hero: `${BASE}/esaote/s-scan-hero-official.webp`,
       thumb: `${BASE}/produtos/esaote/s-scan-thumb.webp`,
     },
     oScan: {
-      hero: `${BASE}/produtos/esaote/o-scan-hero.webp`,
+      hero: `${BASE}/esaote/o-scan-hero-official.webp`,
       thumb: `${BASE}/produtos/esaote/o-scan-thumb.webp`,
     },
     gScan: {
-      hero: `${BASE}/produtos/esaote/g-scan-hero.webp`,
+      hero: `${BASE}/esaote/g-scan-brio-hero-official.webp`,
       thumb: `${BASE}/produtos/esaote/g-scan-thumb.webp`,
     },
     bombasInjetoras: {
