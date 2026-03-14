@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
+import { images } from "@/data/images";
 
 const posts = [
   {
