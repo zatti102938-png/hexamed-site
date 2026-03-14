@@ -520,6 +520,7 @@ export const solutions: Record<string, Solution> = {
     shortTitle: "Área Veterinária",
     description: "Soluções de RM veterinária Esaote: Magnífico Vet, Vet-MR Grande e O-Scan Equine para diagnósticos precisos em pequenos e grandes animais.",
     icon: PawPrint,
+    image: images.veterinaria.hero,
     heroHeadline: "RM Veterinária: Diagnóstico por Imagem de Alta Precisão",
     heroSubtitle: "Oferecemos ressonância magnética com os mais altos padrões de qualidade do mercado para diagnóstico veterinário. Precisão, otimização energética e soluções para pequenos e grandes animais.",
     audience: [
