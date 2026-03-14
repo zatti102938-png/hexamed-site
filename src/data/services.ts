@@ -21,6 +21,7 @@ export const services: Service[] = [
     title: "Manutenção de Equipamentos",
     description: "Manutenção preventiva e corretiva para Ressonância Magnética, Tomografia Computadorizada e Hemodinâmica de diversos fabricantes.",
     icon: Wrench,
+    image: images.servicos.manutencao,
     heroHeadline: "Manutenção Técnica Especializada em Diagnóstico por Imagem",
     heroSubtitle: "Oferecemos serviços de manutenção preventiva e corretiva para equipamentos de diagnóstico por imagem de diversos fabricantes — RM, TC e Hemodinâmica — com equipe certificada internacionalmente.",
     scope: [
