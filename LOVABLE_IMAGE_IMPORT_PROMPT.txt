@@ -1,0 +1,65 @@
+Implementar importação e vinculação das imagens por seções no projeto Hexamedical.
+
+OBJETIVO
+- Aplicar corretamente os assets já enviados ao repositório em `public/images/hexamedical/`.
+- Garantir consistência visual entre clone e original.
+- Corrigir faltas de imagem e manter padrão de performance.
+
+ESTRUTURA JÁ DISPONÍVEL
+- public/images/hexamedical/esaote
+- public/images/hexamedical/servicos
+- public/images/hexamedical/gerais-site
+- public/images/hexamedical/mindray/detector-flat
+- public/images/hexamedical/mindray/digieye-330
+- public/images/hexamedical/mindray/digieye-350
+- public/images/hexamedical/mindray/mobileye
+- public/images/hexamedical/_INDEX.md
+
+REGRAS DE APLICAÇÃO
+1) Usar `src/data/images.ts` como fonte central de paths.
+2) Se algum path apontar para arquivo inexistente, substituir por arquivo existente da mesma seção.
+3) Não usar links externos diretos para imagens; usar somente arquivos locais em `public/images/hexamedical/*`.
+4) Preservar proporção e qualidade (preferência por webp quando possível).
+5) Aplicar lazy-loading em imagens não críticas.
+
+MINDRAY (OBRIGATÓRIO)
+- Garantir que os 4 modelos estejam completos com hero + thumb + gallery:
+  - detector-flat
+  - digieye-330
+  - digieye-350
+  - mobileye
+- Se faltar gallery específica, gerar fallback com imagem existente da mesma pasta e nome canônico:
+  - detector-flat-gallery-01.webp
+  - digieye-330-gallery-01.webp
+  - digieye-350-gallery-01.webp
+  - mobileye-700-gallery-01.webp
+
+PÁGINAS QUE DEVEM SER VALIDADAS
+- /
+- /produtos
+- /servicos
+- /estrutura
+- /blog
+- /apoio
+- /hexai
+- /area-veterinaria
+- /contato
+- /rm-esaote-magnifico-open
+- /rm-esaote-g-scan
+- /rm-esaote-o-scan
+- /rm-esaote-s-scan
+
+CHECKLIST DE SAÍDA
+- [ ] 0 imagens quebradas
+- [ ] 0 paths inexistentes no `images.ts`
+- [ ] Mindray completo (hero/thumb/gallery em cada produto)
+- [ ] Build sem erro
+- [ ] Lista final de imagens não usadas
+
+ENTREGA ESPERADA
+1) Atualização do `src/data/images.ts` (se necessário)
+2) Ajuste de componentes/páginas para usar paths válidos
+3) Relatório final com:
+   - imagens corrigidas
+   - faltantes resolvidas
+   - itens ainda pendentes (se houver)
