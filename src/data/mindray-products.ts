@@ -36,6 +36,7 @@ export const mindrayProducts: MindrayProduct[] = [
       { src: images.mindray.detectorFlat.ip54, alt: "Teste de resistência IP54 a água" },
       { src: images.mindray.detectorFlat.factory, alt: "Linha de produção de detectores Mindray" },
     ],
+    brochurePdf: "/downloads/Folheto_Mindray_Detector_Flat.pdf",
     heroHeadline: "Detector Flat Panel: Projetado para a sua Digitalização",
     heroSubtitle: "Tecnologias patenteadas de alto nível reunidas em um detector leve, sem fio, que proporciona a melhor experiência possível ao usuário. Design diferenciado, produção artesanal e alto controle de qualidade Mindray.",
     benefits: [
