@@ -1,0 +1,278 @@
+{
+  "nav": {
+    "products": "Products",
+    "services": "Services",
+    "structure": "Structure",
+    "blog": "Blog",
+    "support": "Support",
+    "contact": "Contact",
+    "viewAllProducts": "View all products",
+    "esaoteGroup": "Esaote — Magnetic Resonance",
+    "mindrayGroup": "Mindray — Digital Radiology"
+  },
+  "announcement": {
+    "text": "CLICK HERE AND DISCOVER HEXAI — REVOLUTIONIZE YOUR IMAGING CENTER",
+    "cta": "Learn more"
+  },
+  "hero": {
+    "headline": "Your business deserves the right solutions.",
+    "subtitle": "Offer your patients the best in prevention, diagnosis, therapy and follow-up, elevating your standard of care while reducing operational risks and maintenance costs thanks to the robustness and high durability of our equipment.",
+    "ctaPrimary": "Talk to our sales team",
+    "ctaSecondary": "Discover our solutions",
+    "sideText": "We deliver more than products — customized solutions to meet the needs of demanding services with effective solutions for every reality and expectation, including clinics, universities and hospitals."
+  },
+  "common": {
+    "talkToSpecialist": "Talk to a Specialist",
+    "talkToSales": "Talk to our sales team",
+    "requestQuote": "Request a Quote",
+    "viewDetails": "View details",
+    "viewAll": "View all",
+    "viewAllArticles": "View all articles",
+    "learnMore": "Learn more",
+    "viewFullLine": "View full product line",
+    "viewServices": "View services",
+    "requestDemo": "Request a Demo",
+    "send": "Send",
+    "scheduleVisit": "Schedule a Visit",
+    "chatWhatsApp": "💬 Chat on WhatsApp",
+    "viewAllMindray": "View all Mindray products",
+    "knowHexAI": "Discover HexAI",
+    "downloadBrochure": "Download PDF Brochure",
+    "requestBudget": "Request a quote"
+  },
+  "cards": {
+    "productsTitle": "Products",
+    "productsDesc": "Italian technology for the most diverse areas of healthcare. Enjoy energy efficiency, high quality and reliability from Esaote.",
+    "servicesTitle": "Services",
+    "servicesDesc": "Whether it's a technical visit, maintenance or a full consultancy. We're here to serve you with excellence."
+  },
+  "techSection": {
+    "title": "Technology and expertise combined in one place",
+    "subtitle": "A center equipped to meet all demands in maintenance, testing and repair of medical equipment, with an internationally certified team and national coverage.",
+    "maintenanceTitle": "Maintenance Services",
+    "maintenanceDesc": "We operate with our services throughout the national territory performing preventive and corrective maintenance that can be carried out individually or under service contracts with and without parts.",
+    "labTitle": "Electronics Laboratory",
+    "labDesc": "We have our own laboratory specialized in repairing coils, power supplies, boards and peripherals. Rigorous process of analysis, recovery and testing."
+  },
+  "testimonials": {
+    "title": "Clients who recommend. Results that prove.",
+    "subtitle": "Hexamedical goes beyond delivery: offering continuous support, agility and a real commitment to our partners' success."
+  },
+  "ceo": {
+    "label": "CEO's Word",
+    "name": "Fabio Zatti",
+    "description": "Learn about the vision of Hexamedical's founder on innovation, commitment to quality and the future of diagnostic imaging technology in Brazil.",
+    "stat": "Years leading Hexamedical, driving innovation in medical equipment"
+  },
+  "team": {
+    "label": "Team Hexa",
+    "title": "Committed to our clients' success",
+    "description": "Our team's premise is the pursuit of continuous improvement, understanding the client's needs and offering everything from efficient service to fast and accurate technical support.",
+    "stats": {
+      "experience": "Years of experience in medical equipment",
+      "units": "Strategic units across Brazil",
+      "testRooms": "Equipment testing rooms",
+      "sla": "On-site service SLA"
+    }
+  },
+  "hexai": {
+    "badge": "New",
+    "title": "HexAI: Artificial Intelligence for Diagnostic Imaging",
+    "description": "Enhance your team's diagnostic accuracy and productivity with artificial intelligence applied to MRI exam analysis.",
+    "feat1Title": "Smart Analysis",
+    "feat1Desc": "AI that assists in exam interpretation with precision and agility.",
+    "feat2Title": "Productivity",
+    "feat2Desc": "Reduce report time and increase patient throughput.",
+    "feat3Title": "Integration",
+    "feat3Desc": "Compatible with the main PACS and RIS systems on the market."
+  },
+  "blog": {
+    "title": "Featured Content",
+    "subtitle": "Insights, technical guides and news from the diagnostic imaging market."
+  },
+  "differentials": {
+    "title": "Why choose Hexamedical?",
+    "subtitle": "We are a reference in MRI solutions with differentials that ensure security, performance and predictability for your operation.",
+    "nationalCoverage": "National Coverage",
+    "nationalCoverageDesc": "Units in SP, RJ, BH, Goiânia and Florianópolis. In-person and remote service throughout Brazil.",
+    "ownLab": "In-House Laboratory",
+    "ownLabDesc": "Coil, electronic board, power supply and peripheral repair with 3 dedicated testing rooms.",
+    "certifiedTeam": "Internationally Certified Team",
+    "certifiedTeamDesc": "Field and laboratory technicians with extensive experience in multi-manufacturer equipment.",
+    "originalParts": "Original Parts",
+    "originalPartsDesc": "We work with original and certified parts, with express logistics for fast delivery.",
+    "flexibleContracts": "Flexible Contracts",
+    "flexibleContractsDesc": "Customized plans with or without parts, preventive and corrective, adapted to your reality.",
+    "experience": "16+ Years of Experience",
+    "experienceDesc": "Over 16 years dedicated to the diagnostic imaging market with a focus on Magnetic Resonance."
+  },
+  "contactSection": {
+    "title": "Shall we talk about your operation?",
+    "subtitle": "Fill out the form and receive a personalized evaluation from a Hexamedical specialist. No commitment.",
+    "bullets": {
+      "response": "Response within 24 business hours",
+      "evaluation": "Free technical evaluation",
+      "experience": "16+ years of experience in medical equipment",
+      "coverage": "Coverage throughout the national territory"
+    }
+  },
+  "ctaBanner": {
+    "headline": "Ready to optimize your diagnostic imaging operation?",
+    "subtitle": "Talk to a Hexamedical specialist and discover the ideal solution for your institution."
+  },
+  "trust": {
+    "title": "Proven Trust",
+    "subtitle": "Numbers that reflect our dedication to the diagnostic imaging market.",
+    "equipments": "Equipment serviced",
+    "units": "SP, RJ, BH, GO & SC",
+    "years": "Years of market experience",
+    "testRooms": "Equipment testing rooms"
+  },
+  "mindray": {
+    "badge": "Digital Radiology",
+    "title": "Mindray Line: High Performance Digital Radiology",
+    "description": "Authorized Mindray distributor in Brazil. Digital detectors, fixed and mobile systems with full technical support and national coverage."
+  },
+  "footer": {
+    "description": "Specialists in diagnostic imaging solutions, technical services and high-performance support for healthcare institutions throughout Brazil.",
+    "products": "Products",
+    "services": "Services",
+    "mindrayProducts": "Mindray Products",
+    "company": "Company",
+    "location": "São Paulo, SP — National Coverage",
+    "rights": "© {{year}} Hexamedical. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "office": "Business Hours",
+    "officeHours": "Monday to Thursday – 8am to 6pm\nFriday – 8am to 5pm"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "address": "Address",
+    "interest": "Interest",
+    "message": "Message",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "your@email.com",
+    "phonePlaceholder": "(11) 99999-9999",
+    "companyPlaceholder": "Company name",
+    "addressPlaceholder": "City/State",
+    "interestPlaceholder": "Select an option",
+    "messagePlaceholder": "Describe your needs...",
+    "successTitle": "Message sent!",
+    "successDesc": "Our team will contact you shortly.",
+    "nameError": "Name is required",
+    "companyError": "Company is required",
+    "phoneError": "Phone is required",
+    "emailError": "Invalid email",
+    "interestError": "Select an interest",
+    "interests": {
+      "rm": "Magnetic Resonance",
+      "tomografia": "CT Scan",
+      "raioX": "X-Ray",
+      "mindray": "Mindray Products",
+      "bombas": "Contrast Injectors",
+      "hexai": "HexAI",
+      "veterinario": "Veterinary",
+      "manutencao": "Maintenance",
+      "contrato": "Maintenance Contract",
+      "instalacao": "Installation / Uninstallation",
+      "reparo": "Parts Repair",
+      "visita": "Technical Visit",
+      "outro": "Other"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions"
+  },
+  "servicesHub": {
+    "pageTitle": "Specialized Technical Services — Hexamedical",
+    "heroHeadline": "Technical services that ensure your operation",
+    "heroSubtitle": "Preventive and corrective maintenance, flexible contracts, professional installation and specialized support with national coverage.",
+    "sectionTitle": "Our services",
+    "sectionSubtitle": "Complete support solutions to keep your equipment at peak performance."
+  },
+  "solucoesHub": {
+    "pageTitle": "Equipment Solutions — Hexamedical",
+    "heroHeadline": "Medical Equipment Solutions",
+    "heroSubtitle": "Esaote MRI equipment with full technical support.",
+    "rmTitle": "Esaote Magnetic Resonance"
+  },
+  "structure": {
+    "pageTitle": "Our Structure — Hexamedical",
+    "heroHeadline": "Our Structure",
+    "heroSubtitle": "We have a complete structure designed for delivering precise services to our clients. State-of-the-art infrastructure for maintenance, testing and repair of medical equipment.",
+    "includesTitle": "Our <1>robust</1> structure includes:",
+    "labTitle": "Specialized Laboratory",
+    "labDesc": "Fully equipped for specialized repairs of medical equipment parts, with a rigorous process of analysis, recovery and testing.",
+    "coverageTitle": "National Coverage",
+    "coverageSubtitle": "Strategically located units for agile service throughout Brazil.",
+    "ctaHeadline": "Want to see our structure up close?",
+    "ctaSubtitle": "Schedule a visit and see our laboratories, testing rooms and showroom.",
+    "facilities": {
+      "testRooms": "3 Testing Rooms",
+      "testRoomsDesc": "For CT, X-ray and mammography equipment.",
+      "lab": "Electronics Laboratory",
+      "labDesc": "Equipped for specialized repairs of modules, power supplies, coils and boards.",
+      "cryogenics": "Cryogenics Laboratory",
+      "cryogenicsDesc": "Infrastructure for high-precision cryogenic services.",
+      "training": "Training Rooms",
+      "trainingDesc": "For continuous education of internal staff and third-party training.",
+      "showroom": "Showroom with MRI Cage",
+      "showroomDesc": "Demonstration environment with MRI cage."
+    },
+    "capabilities": {
+      "coils": "MRI coil repair",
+      "boards": "Electronic board and module repair",
+      "powerSupply": "Power supply repair",
+      "peripherals": "Reconditioning of diagnostic imaging peripherals",
+      "qualityTests": "Rigorous post-repair quality and reliability testing",
+      "fullProcess": "Complete analysis, recovery and validation process"
+    }
+  },
+  "contactPage": {
+    "pageTitle": "Contact Hexamedical",
+    "heroHeadline": "Contact Hexamedical",
+    "heroSubtitle": "Get in touch to ask questions, request services or learn more about our medical equipment solutions.",
+    "officeTitle": "The Office",
+    "formTitle": "Contact us",
+    "whyTitle": "Why talk to Hexamedical?",
+    "whyItems": {
+      "consultative": "Consultative, non-commercial service",
+      "freeEval": "Free technical evaluation",
+      "experience": "16+ years of market experience",
+      "nationalCoverage": "National coverage with local support"
+    },
+    "contactLabels": {
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "hours": "Business Hours"
+    }
+  },
+  "apoio": {
+    "pageTitle": "Support Materials — Hexamedical | Tutorials and Videos",
+    "heroHeadline": "Support Materials",
+    "heroSubtitle": "Video tutorials, positioning guides and technical content for Esaote equipment operators.",
+    "videosTitle": "Tutorial Videos",
+    "videosSubtitle": "Exclusive content to help operators in their daily work with Esaote MRI equipment.",
+    "comingSoon": "Videos will be available soon. Contact us for early access."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "back": "Return to Home"
+  },
+  "servicePage": {
+    "whatIncludes": "What's included",
+    "nationalCoverage": "National Coverage",
+    "certifiedTeam": "Internationally Certified Team"
+  },
+  "lang": {
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  }
+}
