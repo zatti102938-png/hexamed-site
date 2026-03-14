@@ -188,12 +188,15 @@ const MindrayProductPage = () => {
             </div>
             <div className="flex flex-col items-center rounded-xl border border-border bg-card p-8 text-center">
               <Download className="mb-4 h-10 w-10 text-accent" />
-              <h3 className="mb-2 text-lg font-bold text-foreground">Ficha Técnica</h3>
+              <h3 className="mb-2 text-lg font-bold text-foreground">Folheto Técnico</h3>
               <p className="mb-4 text-sm text-muted-foreground">
                 Baixe o folheto completo com todas as especificações.
               </p>
               <Button asChild variant="outline">
-                <Link to="/contato">Solicitar Ficha Técnica</Link>
+                <a href={product.brochurePdf} download target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" />
+                  Baixar PDF
+                </a>
               </Button>
             </div>
           </div>
