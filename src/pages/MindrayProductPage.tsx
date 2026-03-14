@@ -46,31 +46,17 @@ const MindrayProductPage = () => {
       {/* Product Image Gallery */}
       <section className="border-b border-border bg-card py-12 md:py-16">
         <div className="container">
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="overflow-hidden rounded-xl border border-border">
-              <img
-                src={product.image.hero}
-                alt={`${product.shortTitle} — vista principal`}
-                className="h-full w-full object-contain bg-white p-4"
-                loading="lazy"
-              />
-            </div>
-            <div className="overflow-hidden rounded-xl border border-border">
-              <img
-                src={product.image.thumb}
-                alt={`${product.shortTitle} — detalhe do equipamento`}
-                className="h-full w-full object-contain bg-white p-4"
-                loading="lazy"
-              />
-            </div>
-            <div className="overflow-hidden rounded-xl border border-border">
-              <img
-                src={product.image.gallery01}
-                alt={`${product.shortTitle} — vista em contexto clínico`}
-                className="h-full w-full object-contain bg-white p-4"
-                loading="lazy"
-              />
-            </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {product.galleryImages.map((img, i) => (
+              <div key={i} className="overflow-hidden rounded-xl border border-border">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="h-64 w-full object-contain bg-white p-4"
+                  loading={i === 0 ? "eager" : "lazy"}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
