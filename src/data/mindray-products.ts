@@ -1,4 +1,5 @@
 import { MonitorSpeaker, Scan, Smartphone, Radio, LucideIcon } from "lucide-react";
+import { images } from "@/data/images";
 
 export interface MindrayProduct {
   slug: string;
@@ -7,6 +8,7 @@ export interface MindrayProduct {
   category: string;
   description: string;
   icon: LucideIcon;
+  image: { hero: string; thumb: string; gallery01: string };
   heroHeadline: string;
   heroSubtitle: string;
   benefits: string[];
