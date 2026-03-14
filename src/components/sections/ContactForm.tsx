@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,18 +10,16 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
 
-const contactSchema = z.object({
-  nome: z.string().trim().min(2, "Nome é obrigatório").max(100),
-  empresa: z.string().trim().min(2, "Empresa é obrigatória").max(100),
-  cargo: z.string().trim().max(80).optional(),
-  telefone: z.string().trim().min(8, "Telefone é obrigatório").max(20),
-  email: z.string().trim().email("E-mail inválido").max(255),
-  endereco: z.string().trim().max(200).optional(),
-  interesse: z.string().min(1, "Selecione um interesse"),
-  mensagem: z.string().trim().max(1000).optional(),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+type ContactFormData = {
+  nome: string;
+  empresa: string;
+  cargo?: string;
+  telefone: string;
+  email: string;
+  endereco?: string;
+  interesse: string;
+  mensagem?: string;
+};
 
 interface ContactFormProps {
   variant?: "full" | "compact";
@@ -28,6 +27,19 @@ interface ContactFormProps {
 
 const ContactForm = ({ variant = "full" }: ContactFormProps) => {
   const { toast } = useToast();
+  const { t } = useTranslation();
+
+  const contactSchema = z.object({
+    nome: z.string().trim().min(2, t("form.nameError")).max(100),
+    empresa: z.string().trim().min(2, t("form.companyError")).max(100),
+    cargo: z.string().trim().max(80).optional(),
+    telefone: z.string().trim().min(8, t("form.phoneError")).max(20),
+    email: z.string().trim().email(t("form.emailError")).max(255),
+    endereco: z.string().trim().max(200).optional(),
+    interesse: z.string().min(1, t("form.interestError")),
+    mensagem: z.string().trim().max(1000).optional(),
+  });
+
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -42,15 +54,31 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
     },
   });
 
-  const onSubmit = (data: ContactFormData) => {
+  const onSubmit = (_data: ContactFormData) => {
     toast({
-      title: "Mensagem enviada!",
-      description: "Nosso time entrará em contato em breve.",
+      title: t("form.successTitle"),
+      description: t("form.successDesc"),
     });
     form.reset();
   };
 
   const isCompact = variant === "compact";
+
+  const interestOptions = [
+    { value: "rm", label: t("form.interests.rm") },
+    { value: "tomografia", label: t("form.interests.tomografia") },
+    { value: "raio-x", label: t("form.interests.raioX") },
+    { value: "mindray", label: t("form.interests.mindray") },
+    { value: "bombas", label: t("form.interests.bombas") },
+    { value: "hexai", label: t("form.interests.hexai") },
+    { value: "veterinario", label: t("form.interests.veterinario") },
+    { value: "manutencao", label: t("form.interests.manutencao") },
+    { value: "contrato", label: t("form.interests.contrato") },
+    { value: "instalacao", label: t("form.interests.instalacao") },
+    { value: "reparo", label: t("form.interests.reparo") },
+    { value: "visita", label: t("form.interests.visita") },
+    { value: "outro", label: t("form.interests.outro") },
+  ];
 
   return (
     <Form {...form}>
@@ -60,8 +88,8 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
           name="nome"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nome *</FormLabel>
-              <FormControl><Input placeholder="Seu nome completo" {...field} /></FormControl>
+              <FormLabel>{t("form.name")} *</FormLabel>
+              <FormControl><Input placeholder={t("form.namePlaceholder")} {...field} /></FormControl>
               <FormMessage />
             </FormItem>
           )}
@@ -72,8 +100,8 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>E-mail *</FormLabel>
-              <FormControl><Input type="email" placeholder="seu@email.com" {...field} /></FormControl>
+              <FormLabel>{t("form.email")} *</FormLabel>
+              <FormControl><Input type="email" placeholder={t("form.emailPlaceholder")} {...field} /></FormControl>
               <FormMessage />
             </FormItem>
           )}
@@ -85,8 +113,8 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
             name="telefone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Telefone *</FormLabel>
-                <FormControl><Input placeholder="(11) 99999-9999" {...field} /></FormControl>
+                <FormLabel>{t("form.phone")} *</FormLabel>
+                <FormControl><Input placeholder={t("form.phonePlaceholder")} {...field} /></FormControl>
                 <FormMessage />
               </FormItem>
             )}
@@ -96,8 +124,8 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
             name="empresa"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Empresa *</FormLabel>
-                <FormControl><Input placeholder="Nome da empresa" {...field} /></FormControl>
+                <FormLabel>{t("form.company")} *</FormLabel>
+                <FormControl><Input placeholder={t("form.companyPlaceholder")} {...field} /></FormControl>
                 <FormMessage />
               </FormItem>
             )}
@@ -110,8 +138,8 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
             name="endereco"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Endereço</FormLabel>
-                <FormControl><Input placeholder="Cidade/UF" {...field} /></FormControl>
+                <FormLabel>{t("form.address")}</FormLabel>
+                <FormControl><Input placeholder={t("form.addressPlaceholder")} {...field} /></FormControl>
                 <FormMessage />
               </FormItem>
             )}
@@ -123,27 +151,17 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
           name="interesse"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Interesse *</FormLabel>
+              <FormLabel>{t("form.interest")} *</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Selecione uma opção" />
+                    <SelectValue placeholder={t("form.interestPlaceholder")} />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="rm">Ressonância Magnética</SelectItem>
-                  <SelectItem value="tomografia">Tomografia</SelectItem>
-                  <SelectItem value="raio-x">Raio-X</SelectItem>
-                  <SelectItem value="mindray">Produtos Mindray</SelectItem>
-                  <SelectItem value="bombas">Bombas Injetoras</SelectItem>
-                  <SelectItem value="hexai">HexAI</SelectItem>
-                  <SelectItem value="veterinario">Área Veterinária</SelectItem>
-                  <SelectItem value="manutencao">Manutenção</SelectItem>
-                  <SelectItem value="contrato">Contrato de Manutenção</SelectItem>
-                  <SelectItem value="instalacao">Instalação / Desinstalação</SelectItem>
-                  <SelectItem value="reparo">Reparo de Peças</SelectItem>
-                  <SelectItem value="visita">Visita Técnica</SelectItem>
-                  <SelectItem value="outro">Outro</SelectItem>
+                  {interestOptions.map((opt) => (
+                    <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
               <FormMessage />
@@ -157,8 +175,8 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
             name="mensagem"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Mensagem</FormLabel>
-                <FormControl><Textarea placeholder="Descreva sua necessidade..." rows={4} {...field} /></FormControl>
+                <FormLabel>{t("form.message")}</FormLabel>
+                <FormControl><Textarea placeholder={t("form.messagePlaceholder")} rows={4} {...field} /></FormControl>
                 <FormMessage />
               </FormItem>
             )}
@@ -167,7 +185,7 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
 
         <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
           <Send className="mr-2 h-4 w-4" />
-          Enviar
+          {t("common.send")}
         </Button>
       </form>
     </Form>
