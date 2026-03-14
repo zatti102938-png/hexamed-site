@@ -252,6 +252,7 @@ export const solutions: Record<string, Solution> = {
     shortTitle: "O-Scan",
     description: "Sistema de RM de extremidades compacto (9m²) e econômico (1 kW). Solução ideal para clínicas independentes e departamentos de radiologia.",
     icon: Magnet,
+    image: images.produtos.oScan.thumb,
     heroHeadline: "O-Scan: RM de Extremidades Compacta e Econômica",
     heroSubtitle: "A eficiência e economia únicas do sistema O-Scan tornam-no ideal para clínicas especializadas independentes ou como unidade adicional no departamento de radiologia, sem comprometer qualidade e eficiência.",
     highlights: [
