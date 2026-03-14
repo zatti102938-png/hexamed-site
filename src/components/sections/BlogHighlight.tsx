@@ -54,7 +54,7 @@ const BlogHighlight = () => {
               to={`/blog/${post.slug}`}
               className="group flex flex-col rounded-xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-[16/10] overflow-hidden">
                 <img src={post.image} alt={post.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="flex flex-1 flex-col p-5">

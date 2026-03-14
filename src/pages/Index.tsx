@@ -72,43 +72,46 @@ const Index = () => {
       {/* 2. Produtos + Serviços Cards — matching original */}
       <section className="py-16 md:py-24">
         <div className="container">
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2">
             {/* Produtos */}
             <Link
               to="/solucoes"
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-4 h-40 -mx-8 -mt-8 overflow-hidden rounded-t-2xl">
+              <div className="aspect-[16/10] overflow-hidden">
                 <img src={images.home.cardProdutos} alt="Produtos Hexamedical" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
-              <h3 className="mb-3 text-xl font-bold text-foreground">Produtos</h3>
-              <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
-                Tecnologia Italiana para as mais diversas áreas da saúde. Tenha eficiência energética e alta qualidade e confiabilidade, da Esaote.
-              </p>
-              <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-primary/80">
-                Ver linha completa
-                <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-bold text-foreground">Produtos</h3>
+                <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+                  Tecnologia Italiana para as mais diversas áreas da saúde. Tenha eficiência energética e alta qualidade e confiabilidade, da Esaote.
+                </p>
+                <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-primary/80">
+                  Ver linha completa
+                  <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
             </Link>
 
             {/* Serviços */}
             <Link
               to="/servicos"
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-4 h-40 -mx-8 -mt-8 overflow-hidden rounded-t-2xl">
+              <div className="aspect-[16/10] overflow-hidden">
                 <img src={images.home.cardServicos} alt="Serviços Hexamedical" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
-              <h3 className="mb-3 text-xl font-bold text-foreground">Serviços</h3>
-              <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
-                Seja uma visita técnica, manutenção ou uma consultoria completa. Estamos aqui para te atender com excelência.
-              </p>
-              <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-primary/80">
-                Ver serviços
-                <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-bold text-foreground">Serviços</h3>
+                <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+                  Seja uma visita técnica, manutenção ou uma consultoria completa. Estamos aqui para te atender com excelência.
+                </p>
+                <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-primary/80">
+                  Ver serviços
+                  <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
             </Link>
-
           </div>
         </div>
       </section>
@@ -124,13 +127,13 @@ const Index = () => {
               Um centro equipado para atender todas as demandas em manutenção, testes e reparos de equipamentos médicos, com equipe certificada internacionalmente e cobertura nacional.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2">
             {/* Manutenção */}
             <Link
               to="/servicos/manutencao"
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-[16/10] overflow-hidden">
                 <img src={images.home.manutencaoThumb} alt="Manutenção de RM" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
@@ -150,7 +153,7 @@ const Index = () => {
               to="/servicos/reparo"
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-[16/10] overflow-hidden">
                 <img src={images.home.laboratorioThumb} alt="Laboratório de Eletrônica" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
@@ -164,7 +167,6 @@ const Index = () => {
                 </span>
               </div>
             </Link>
-
           </div>
         </div>
       </section>
