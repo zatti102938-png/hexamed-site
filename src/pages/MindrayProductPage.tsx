@@ -32,7 +32,7 @@ const MindrayProductPage = () => {
         ]}
       />
 
-      {/* Hero */}
+      {/* Hero with product image */}
       <HeroSection
         headline={product.heroHeadline}
         subtitle={product.heroSubtitle}
@@ -40,10 +40,43 @@ const MindrayProductPage = () => {
         ctaPrimaryHref="/contato"
         ctaSecondaryLabel="Falar com Especialista"
         ctaSecondaryHref="/contato"
+        backgroundImage={product.image.hero}
       />
 
-      {/* Benefits */}
+      {/* Product Image Gallery */}
       <section className="border-b border-border bg-card py-12 md:py-16">
+        <div className="container">
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="overflow-hidden rounded-xl border border-border">
+              <img
+                src={product.image.hero}
+                alt={`${product.shortTitle} — vista principal`}
+                className="h-full w-full object-contain bg-white p-4"
+                loading="lazy"
+              />
+            </div>
+            <div className="overflow-hidden rounded-xl border border-border">
+              <img
+                src={product.image.thumb}
+                alt={`${product.shortTitle} — detalhe do equipamento`}
+                className="h-full w-full object-contain bg-white p-4"
+                loading="lazy"
+              />
+            </div>
+            <div className="overflow-hidden rounded-xl border border-border">
+              <img
+                src={product.image.gallery01}
+                alt={`${product.shortTitle} — vista em contexto clínico`}
+                className="h-full w-full object-contain bg-white p-4"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-12 md:py-16">
         <div className="container">
           <h2 className="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">
             Principais Benefícios
@@ -60,7 +93,7 @@ const MindrayProductPage = () => {
       </section>
 
       {/* Specs */}
-      <section className="py-16 md:py-24">
+      <section className="border-t border-border bg-muted/30 py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
             Especificações Técnicas
@@ -83,7 +116,7 @@ const MindrayProductPage = () => {
       </section>
 
       {/* Differentials */}
-      <section className="border-t border-border bg-muted/30 py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
             Diferenciais
@@ -99,8 +132,8 @@ const MindrayProductPage = () => {
         </div>
       </section>
 
-      {/* Applications */}
-      <section className="py-16 md:py-24">
+      {/* Applications with product image */}
+      <section className="border-t border-border bg-muted/30 py-16 md:py-24">
         <div className="container">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
@@ -119,15 +152,20 @@ const MindrayProductPage = () => {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 p-12 text-center">
-              <product.icon className="mx-auto h-32 w-32 text-primary/20" />
+            <div className="overflow-hidden rounded-2xl border border-border bg-white p-6">
+              <img
+                src={product.image.thumb}
+                alt={`${product.shortTitle} em contexto clínico`}
+                className="h-full w-full object-contain"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Support Flow */}
-      <section className="border-t border-border bg-muted/30 py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
             Fluxo de Aquisição e Suporte
@@ -149,7 +187,7 @@ const MindrayProductPage = () => {
       </section>
 
       {/* CTAs */}
-      <section className="py-16 md:py-24">
+      <section className="border-t border-border bg-muted/30 py-16 md:py-24">
         <div className="container">
           <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
             <div className="flex flex-col items-center rounded-xl border border-border bg-card p-8 text-center">
@@ -193,14 +231,24 @@ const MindrayProductPage = () => {
               <Link
                 key={p.slug}
                 to={`/produtos-mindray/${p.slug}`}
-                className="group rounded-xl border border-border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
+                className="group overflow-hidden rounded-xl border border-border bg-card transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
               >
-                <div className="mb-1 text-xs font-bold uppercase tracking-widest text-accent">{p.category}</div>
-                <h3 className="mb-2 font-bold text-foreground">{p.shortTitle}</h3>
-                <span className="inline-flex items-center text-xs font-semibold text-accent">
-                  Ver detalhes
-                  <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-                </span>
+                <div className="h-40 overflow-hidden bg-white p-4">
+                  <img
+                    src={p.image.thumb}
+                    alt={p.shortTitle}
+                    className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-5">
+                  <div className="mb-1 text-xs font-bold uppercase tracking-widest text-accent">{p.category}</div>
+                  <h3 className="mb-2 font-bold text-foreground">{p.shortTitle}</h3>
+                  <span className="inline-flex items-center text-xs font-semibold text-accent">
+                    Ver detalhes
+                    <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
