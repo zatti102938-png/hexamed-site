@@ -51,6 +51,7 @@ export const services: Service[] = [
     title: "Contratos de Manutenção",
     description: "Contratos personalizados com planos flexíveis, com ou sem peças, contemplando manutenção preventiva e corretiva.",
     icon: FileText,
+    image: images.servicos.contratos,
     heroHeadline: "Contratos de Manutenção Sob Medida",
     heroSubtitle: "Contratos personalizados para garantir máxima performance e disponibilidade dos seus equipamentos. Planos flexíveis com ou sem peças, preventiva e corretiva.",
     scope: [
