@@ -83,18 +83,22 @@ export const images = {
     detectorFlat: {
       hero: `${BASE}/mindray/detector-flat/detector-flat-hero.webp`,
       thumb: `${BASE}/mindray/detector-flat/detector-flat-thumb.webp`,
+      gallery01: `${BASE}/mindray/detector-flat/detector-flat-gallery-01.webp`,
     },
     digieye330: {
       hero: `${BASE}/mindray/digieye-330/digieye-330-hero.webp`,
       thumb: `${BASE}/mindray/digieye-330/digieye-330-thumb.webp`,
+      gallery01: `${BASE}/mindray/digieye-330/digieye-330-gallery-01.webp`,
     },
     digieye350: {
       hero: `${BASE}/mindray/digieye-350/digieye-350-hero.webp`,
       thumb: `${BASE}/mindray/digieye-350/digieye-350-thumb.webp`,
+      gallery01: `${BASE}/mindray/digieye-350/digieye-350-gallery-01.webp`,
     },
     mobileye700: {
       hero: `${BASE}/mindray/mobileye/mobileye-700-hero.webp`,
       thumb: `${BASE}/mindray/mobileye/mobileye-700-thumb.webp`,
+      gallery01: `${BASE}/mindray/mobileye/mobileye-700-gallery-01.webp`,
     },
   },
 } as const;
