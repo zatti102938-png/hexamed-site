@@ -231,6 +231,12 @@ export const mindrayProducts: MindrayProduct[] = [
     description: "Sistema móvel de radiodiagnóstico com 9 graus de liberdade, potência dual-mode, detector MPX sem fio e mobilidade superior. Visão com potência para diagnóstico à beira do leito.",
     icon: Smartphone,
     image: images.mindray.mobileye700,
+    galleryImages: [
+      { src: images.mindray.mobileye700.hero, alt: "MobiEye 700 — sistema móvel completo" },
+      { src: images.mindray.mobileye700.console, alt: "MobiEye 700 — console e painel de controle" },
+      { src: images.mindray.mobileye700.detail, alt: "MobiEye 700 — detalhe frontal" },
+      { src: images.mindray.mobileye700.gallery01, alt: "MobiEye 700 — em contexto clínico" },
+    ],
     heroHeadline: "MobiEye 700: Visão com Potência e Mobilidade",
     heroSubtitle: "Sistema Móvel de Radiodiagnóstico Mindray com 9 graus de liberdade, escalada em 12° de inclinação e detector MPX ultracompacto. Evolução que vai além das imagens — dados quantitativos comprovam superioridade e qualidade.",
     benefits: [
