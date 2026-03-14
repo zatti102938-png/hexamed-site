@@ -171,6 +171,7 @@ export const mindrayProducts: MindrayProduct[] = [
       { src: images.mindray.digieye350.mico, alt: "DigiEye 350 — conectividade MiCo+" },
       { src: images.mindray.digieye350.hero, alt: "DigiEye 350 — vista geral" },
     ],
+    brochurePdf: "/downloads/Folheto_Mindray_DigiEye_350.pdf",
     heroHeadline: "DigiEye 350: Dinâmico para mais Eficiência",
     heroSubtitle: "Sistema de Radiografia Digital avançado, projetado para facilidade no uso, com sincronização bidirecional do tubo e detector, display touch no colimador e controle remoto RF para operação fora da sala do console.",
     benefits: [
