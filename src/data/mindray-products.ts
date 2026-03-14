@@ -87,6 +87,7 @@ export const mindrayProducts: MindrayProduct[] = [
     category: "Radiografia Digital Fixa",
     description: "Sistema de Radiografia Digital otimizado para eficiência elevada. Design dinâmico com coluna rotativa, mesa com tampo flutuante e conectividade remota MiCo+.",
     icon: MonitorSpeaker,
+    image: images.mindray.digieye330,
     heroHeadline: "DigiEye 330: Otimizado para Eficiência Elevada",
     heroSubtitle: "Sistema de Radiografia Digital Mindray com design dinâmico, operação intuitiva e conectividade remota MiCo+. Adequado para diversos ambientes clínicos com eficiência e ergonomia.",
     benefits: [
