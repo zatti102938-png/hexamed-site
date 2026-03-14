@@ -100,8 +100,14 @@ const SolutionPage = () => {
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 p-12">
-              <solution.icon className="mx-auto h-32 w-32 text-primary/20" />
+            <div className="overflow-hidden rounded-2xl">
+              {solution.image ? (
+                <img src={solution.image} alt={solution.title} className="h-full w-full object-contain" />
+              ) : (
+                <div className="bg-gradient-to-br from-primary/5 to-accent/5 p-12">
+                  <solution.icon className="mx-auto h-32 w-32 text-primary/20" />
+                </div>
+              )}
             </div>
           </div>
         </div>
