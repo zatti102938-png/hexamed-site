@@ -26,7 +26,7 @@ const Index = () => {
       </Helmet>
 
       {/* 1. Hero — matching original site */}
-      <section className="relative overflow-hidden bg-dark-surface text-dark-surface-foreground">
+      <section className="relative overflow-hidden bg-dark-surface text-white">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
@@ -34,10 +34,10 @@ const Index = () => {
         <div className="container relative z-10 py-20 md:py-28 lg:py-36">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <h1 className="mb-6 text-3xl font-extrabold leading-tight tracking-tight text-balance md:text-4xl lg:text-5xl">
+              <h1 className="mb-6 text-3xl font-extrabold leading-tight tracking-tight text-balance text-white md:text-4xl lg:text-5xl">
                 Seu negócio merece as soluções certas.
               </h1>
-              <p className="mb-8 max-w-xl text-lg leading-relaxed text-dark-surface-foreground/80">
+              <p className="mb-8 max-w-xl text-lg leading-relaxed text-white/80">
                 Ofereça aos seus pacientes o melhor em prevenção, diagnóstico, terapia e acompanhamento, elevando o padrão do seu atendimento enquanto reduz riscos operacionais e custos com manutenções graças à robustez e alta durabilidade dos nossos equipamentos.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -50,7 +50,7 @@ const Index = () => {
                     Falar com equipe de vendas
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-primary/60 bg-primary/10 text-primary-foreground hover:bg-primary/20">
+                <Button asChild size="lg" variant="outline" className="border-primary/60 bg-primary/10 text-white hover:bg-primary/20">
                   <Link to="/solucoes">
                     Conheça nossas soluções
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -59,7 +59,7 @@ const Index = () => {
               </div>
             </div>
             <div className="hidden lg:block">
-              <p className="text-lg leading-relaxed text-dark-surface-foreground/70">
+              <p className="text-lg leading-relaxed text-white/70">
                 Entregamos mais que produtos, soluções personalizadas para atender as necessidades para serviços exigentes com soluções efetivas para cada realidade e expectativa sendo clínicas, universidades e hospitais.
               </p>
             </div>
@@ -180,7 +180,7 @@ const Index = () => {
       <TestimonialsBlock />
 
       {/* 6. Time Hexa / Diferenciais */}
-      <section className="relative overflow-hidden bg-dark-surface py-16 text-dark-surface-foreground md:py-24">
+      <section className="relative overflow-hidden bg-dark-surface py-16 text-white md:py-24">
         <div className="absolute inset-0">
           <div className="absolute left-1/2 top-0 h-full w-full -translate-x-1/2 bg-gradient-to-b from-primary/5 to-transparent" />
         </div>
@@ -188,10 +188,10 @@ const Index = () => {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <h2 className="mb-2 text-lg font-bold text-primary">Time Hexa</h2>
-              <h3 className="mb-6 text-3xl font-bold md:text-4xl">
+              <h3 className="mb-6 text-3xl font-bold text-white md:text-4xl">
                 Comprometidos com o sucesso de nossos clientes
               </h3>
-              <p className="mb-8 text-lg text-dark-surface-foreground/80">
+              <p className="mb-8 text-lg text-white/80">
                 Nosso time tem como premissa a busca pela melhoria contínua, entendendo a necessidade do cliente e oferecendo desde o atendimento eficiente até o suporte técnico rápido e assertivo.
               </p>
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -211,9 +211,9 @@ const Index = () => {
                 { value: "3", label: "Salas de testes para equipamentos" },
                 { value: "24h", label: "SLA de atendimento presencial" },
               ].map((stat) => (
-                <div key={stat.value} className="flex items-center gap-4 rounded-xl border border-dark-surface-foreground/10 bg-dark-surface-foreground/5 p-5">
+                <div key={stat.value} className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-5">
                   <div className="text-3xl font-extrabold text-primary">{stat.value}</div>
-                  <p className="text-sm text-dark-surface-foreground/70">{stat.label}</p>
+                  <p className="text-sm text-white/70">{stat.label}</p>
                 </div>
               ))}
             </div>
