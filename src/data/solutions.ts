@@ -52,12 +52,6 @@ export const solutionCategories = [
     description: "Inteligência artificial aplicada ao diagnóstico por imagem para maior precisão, produtividade e assertividade clínica.",
     icon: Brain,
   },
-  {
-    slug: "veterinario",
-    title: "Área Veterinária",
-    description: "Equipamentos Esaote dedicados ao diagnóstico veterinário: Magnífico Vet, Vet-MR Grande e O-Scan Equine.",
-    icon: PawPrint,
-  },
 ];
 
 export const solutions: Record<string, Solution> = {
