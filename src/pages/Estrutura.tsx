@@ -5,6 +5,7 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
 import { CheckCircle2, Microscope, Snowflake, GraduationCap, MonitorSpeaker, FlaskConical } from "lucide-react";
+import { images } from "@/data/images";
 
 const facilities = [
   { icon: MonitorSpeaker, title: "3 Salas de Testes", description: "Para equipamentos de tomografia, raio-x e mamografia." },
