@@ -10,6 +10,8 @@ import ServicosHub from "./pages/ServicosHub";
 import SolutionPage from "./pages/SolutionPage";
 import ServicePage from "./pages/ServicePage";
 import Contato from "./pages/Contato";
+import MindrayHub from "./pages/MindrayHub";
+import MindrayProductPage from "./pages/MindrayProductPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
