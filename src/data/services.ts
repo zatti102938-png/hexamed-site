@@ -7,6 +7,7 @@ export interface Service {
   description: string;
   icon: typeof Wrench;
   image?: string;
+  contentImage?: string;
   heroHeadline: string;
   heroSubtitle: string;
   scope: string[];
