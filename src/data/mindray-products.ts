@@ -10,6 +10,7 @@ export interface MindrayProduct {
   icon: LucideIcon;
   image: { hero: string; thumb: string; gallery01: string };
   galleryImages: { src: string; alt: string }[];
+  brochurePdf: string;
   heroHeadline: string;
   heroSubtitle: string;
   benefits: string[];
