@@ -108,6 +108,7 @@ export const services: Service[] = [
     title: "Reparo de Peças e Periféricos",
     description: "Reparo especializado em bobinas de RM, placas eletrônicas, módulos, fontes de alimentação e periféricos em laboratório próprio.",
     icon: Cog,
+    image: images.servicos.reparo,
     heroHeadline: "Reparo Especializado: Laboratório Próprio de Componentes",
     heroSubtitle: "Tecnologia avançada e expertise técnica para restaurar bobinas de ressonância magnética, placas eletrônicas, módulos, fontes de alimentação e periféricos com qualidade e confiabilidade.",
     scope: [
