@@ -1,4 +1,4 @@
-import { Magnet, Syringe, Brain, PawPrint } from "lucide-react";
+import { Magnet, Syringe, Brain } from "lucide-react";
 import { images } from "@/data/images";
 
 export interface SolutionHighlight {
