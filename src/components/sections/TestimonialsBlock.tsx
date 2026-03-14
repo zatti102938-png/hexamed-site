@@ -1,27 +1,19 @@
-import { Quote } from "lucide-react";
+import { Play } from "lucide-react";
+import { useRef, useState } from "react";
 
-const testimonials = [
-  {
-    quote: "A Hexamedical transformou nossa operação. O suporte técnico é rápido, competente e confiável. Não temos mais paradas inesperadas.",
-    author: "Dr. Ricardo Mendes",
-    role: "Diretor Médico",
-    company: "Clínica Imagem SP",
-  },
-  {
-    quote: "Desde que contratamos o contrato de manutenção, nossa previsibilidade financeira melhorou significativamente. Recomendo sem hesitar.",
-    author: "Ana Paula Silva",
-    role: "Gestora Administrativa",
-    company: "Hospital Regional Norte",
-  },
-  {
-    quote: "A equipe técnica é extremamente qualificada e o tempo de resposta sempre dentro do SLA. Parceiros de verdade.",
-    author: "Eng. Carlos Oliveira",
-    role: "Coordenador de Engenharia Clínica",
-    company: "Centro de Diagnóstico Vida",
-  },
-];
+const VIDEO_URL = "https://hexamedical.com.br/wp-content/uploads/2025/05/Hexamedical-Video-site-2.mp4";
 
 const TestimonialsBlock = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
   return (
     <section className="bg-muted/30 py-16 md:py-24">
       <div className="container">
@@ -33,19 +25,30 @@ const TestimonialsBlock = () => {
             Hexamedical vai além da entrega: oferece suporte contínuo, agilidade e compromisso real com o sucesso dos seus parceiros.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
-          {testimonials.map((t) => (
-            <div key={t.author} className="flex flex-col rounded-xl border border-border bg-card p-6 shadow-sm">
-              <Quote className="mb-4 h-8 w-8 text-accent/30" />
-              <p className="mb-6 flex-1 text-sm leading-relaxed text-muted-foreground italic">
-                "{t.quote}"
-              </p>
-              <div>
-                <p className="font-bold text-foreground">{t.author}</p>
-                <p className="text-xs text-muted-foreground">{t.role} — {t.company}</p>
-              </div>
-            </div>
-          ))}
+        <div className="mx-auto max-w-4xl">
+          <div className="relative overflow-hidden rounded-2xl border border-border bg-black shadow-lg aspect-video">
+            <video
+              ref={videoRef}
+              src={VIDEO_URL}
+              controls={isPlaying}
+              playsInline
+              preload="metadata"
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+              className="h-full w-full object-cover"
+            />
+            {!isPlaying && (
+              <button
+                onClick={handlePlay}
+                className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors hover:bg-black/20"
+                aria-label="Reproduzir vídeo"
+              >
+                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-xl transition-transform hover:scale-110">
+                  <Play className="h-8 w-8 ml-1" />
+                </div>
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </section>
