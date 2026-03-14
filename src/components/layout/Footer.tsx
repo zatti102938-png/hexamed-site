@@ -4,20 +4,22 @@ import logoIcon from "@/assets/logo-icon.png";
 
 const footerLinks = [
   {
-    title: "Soluções",
+    title: "Produtos",
     links: [
-      { label: "Ressonância Magnética", href: "/solucoes/ressonancia-magnetica" },
+      { label: "Magnifico Open", href: "/solucoes/rm-magnifico-open" },
+      { label: "S-Scan", href: "/solucoes/rm-s-scan" },
+      { label: "O-Scan", href: "/solucoes/rm-o-scan" },
+      { label: "G-Scan", href: "/solucoes/rm-g-scan" },
       { label: "Bombas Injetoras", href: "/solucoes/bombas-injetoras" },
       { label: "HexAI", href: "/solucoes/hexai" },
-      { label: "Área Veterinária", href: "/solucoes/veterinario" },
     ],
   },
   {
     title: "Serviços",
     links: [
       { label: "Manutenção", href: "/servicos/manutencao" },
-      { label: "Contratos", href: "/servicos/contratos" },
       { label: "Instalação", href: "/servicos/instalacao" },
+      { label: "Contratos", href: "/servicos/contratos" },
       { label: "Reparo de Peças", href: "/servicos/reparo" },
       { label: "Visita Técnica", href: "/servicos/visita-tecnica" },
     ],
@@ -34,9 +36,9 @@ const footerLinks = [
   {
     title: "Empresa",
     links: [
-      { label: "Sobre", href: "/sobre" },
       { label: "Estrutura", href: "/estrutura" },
       { label: "Blog", href: "/blog" },
+      { label: "Área Veterinária", href: "/solucoes/veterinario" },
       { label: "Contato", href: "/contato" },
     ],
   },
@@ -52,16 +54,16 @@ const Footer = () => {
             <div className="mb-4 flex items-center gap-2">
               <img src={logoIcon} alt="Hexamedical" className="h-10 w-10" />
               <div className="flex flex-col leading-none">
-                <span className="text-base font-bold tracking-tight">HEXA<span className="text-primary-foreground/60">MEDICAL</span></span>
-                <span className="text-[9px] font-medium uppercase tracking-widest text-primary-foreground/50">Taking Care Your Equipment</span>
+                <span className="text-base font-bold tracking-tight">HEXA<span className="text-dark-surface-foreground/60">MEDICAL</span></span>
+                <span className="text-[9px] font-medium uppercase tracking-widest text-dark-surface-foreground/50">Taking Care Your Equipment</span>
               </div>
             </div>
             <p className="mb-6 max-w-sm text-sm text-dark-surface-foreground/70">
-              Especialistas em soluções de Ressonância Magnética, serviços técnicos e suporte de alta performance para instituições de saúde.
+              Especialistas em soluções de diagnóstico por imagem, serviços técnicos e suporte de alta performance para instituições de saúde em todo o Brasil.
             </p>
             <div className="space-y-2 text-sm text-dark-surface-foreground/70">
-              <a href="tel:+551140028922" className="flex items-center gap-2 hover:text-primary">
-                <Phone className="h-4 w-4" /> (11) 4002-8922
+              <a href="tel:+553192368432" className="flex items-center gap-2 hover:text-primary">
+                <Phone className="h-4 w-4" /> +55 31 9236-8432
               </a>
               <a href="mailto:contato@hexamedical.com.br" className="flex items-center gap-2 hover:text-primary">
                 <Mail className="h-4 w-4" /> contato@hexamedical.com.br
