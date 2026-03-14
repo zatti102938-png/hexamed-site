@@ -130,7 +130,7 @@ const Header = () => {
               ))}
               <div className="pt-3">
                 <Button asChild className="w-full border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground">
-                  <Link to="/solucoes/veterinario" onClick={() => setMobileOpen(false)}>
+                  <Link to="/area-veterinaria" onClick={() => setMobileOpen(false)}>
                     Área Veterinária
                     <ArrowRight className="ml-1.5 h-4 w-4" />
                   </Link>

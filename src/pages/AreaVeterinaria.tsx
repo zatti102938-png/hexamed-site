@@ -115,7 +115,7 @@ const AreaVeterinaria = () => {
       <FAQSection items={faq} />
 
       <CTABanner
-        title="Invista no diagnóstico veterinário de referência"
+        headline="Invista no diagnóstico veterinário de referência"
         subtitle="Fale com nossa equipe especializada e descubra a solução ideal para sua clínica veterinária."
       />
     </Layout>

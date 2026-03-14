@@ -15,7 +15,7 @@ export const navigation: NavItem[] = [
       { label: "O-Scan", href: "/solucoes/rm-o-scan" },
       { label: "G-Scan", href: "/solucoes/rm-g-scan" },
       { label: "Bombas Injetoras", href: "/solucoes/bombas-injetoras" },
-      { label: "HexAI", href: "/solucoes/hexai" },
+      { label: "HexAI", href: "/hexai" },
     ],
   },
   {
@@ -46,6 +46,10 @@ export const navigation: NavItem[] = [
   {
     label: "Blog",
     href: "/blog",
+  },
+  {
+    label: "Apoio",
+    href: "/apoio",
   },
   {
     label: "Contato",

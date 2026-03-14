@@ -156,7 +156,7 @@ const HexAIPage = () => {
       <FAQSection items={faq} />
 
       <CTABanner
-        title="Pronto para revolucionar seu centro de imagem?"
+        headline="Pronto para revolucionar seu centro de imagem?"
         subtitle="Solicite uma demonstração gratuita do HexAI e descubra como aumentar a produtividade da sua equipe."
       />
     </Layout>
