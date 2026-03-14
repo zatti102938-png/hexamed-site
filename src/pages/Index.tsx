@@ -10,6 +10,7 @@ import HexAIHighlight from "@/components/sections/HexAIHighlight";
 import BlogHighlight from "@/components/sections/BlogHighlight";
 import MindrayHighlight from "@/components/sections/MindrayHighlight";
 import TestimonialsBlock from "@/components/sections/TestimonialsBlock";
+import CeoVideoBlock from "@/components/sections/CeoVideoBlock";
 import CTABanner from "@/components/sections/CTABanner";
 import ContactForm from "@/components/sections/ContactForm";
 import { solutionCategories } from "@/data/solutions";
