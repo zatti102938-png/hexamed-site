@@ -5,6 +5,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import ServiceCard from "@/components/sections/ServiceCard";
 import CTABanner from "@/components/sections/CTABanner";
 import { services } from "@/data/services";
+import { images } from "@/data/images";
 
 const ServicosHub = () => {
   return (
@@ -21,7 +22,7 @@ const ServicosHub = () => {
         subtitle="Manutenção preventiva e corretiva, contratos flexíveis, instalação profissional e suporte especializado com cobertura nacional."
         ctaSecondaryLabel="Ver soluções"
         ctaSecondaryHref="/solucoes"
-        variant="light"
+        backgroundImage={images.servicos.hubHero}
       />
 
       <section className="py-16 md:py-24">
