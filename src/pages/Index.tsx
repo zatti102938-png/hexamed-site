@@ -16,6 +16,7 @@ import { solutionCategories } from "@/data/solutions";
 import { services } from "@/data/services";
 import { ArrowRight, Wrench, Microscope, PawPrint } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { images } from "@/data/images";
 
 const Index = () => {
   return (
