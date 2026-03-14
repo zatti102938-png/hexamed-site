@@ -140,6 +140,7 @@ export const services: Service[] = [
     description: "Avaliação técnica presencial para diagnóstico de problemas, consultoria e planejamento de manutenção em todo o Brasil.",
     icon: ClipboardCheck,
     image: images.servicos.visitaTecnica,
+    contentImage: images.servicos.visitaTecnicaContent,
     heroHeadline: "Visita Técnica Especializada",
     heroSubtitle: "Diagnóstico presencial preciso para identificar problemas e oportunidades de melhoria no seu parque de equipamentos de diagnóstico por imagem.",
     scope: [
