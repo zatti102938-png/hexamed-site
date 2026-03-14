@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Radio, Scan, MonitorSpeaker, Smartphone } from "lucide-react";
-
-const products = [
-  { icon: Scan, title: "Detector Flat Panel", description: "Detector wireless ultracompacto com 3,3 kg e IP54.", href: "/produtos-mindray/detector-flat-panel" },
-  { icon: MonitorSpeaker, title: "DigiEye 330", description: "Sistema fixo otimizado para eficiência elevada.", href: "/produtos-mindray/digieye-330" },
-  { icon: MonitorSpeaker, title: "DigiEye 350", description: "Sistema fixo avançado com sincronização bidirecional.", href: "/produtos-mindray/digieye-350" },
-  { icon: Smartphone, title: "MobiEye 700", description: "Sistema móvel com 9 graus de liberdade.", href: "/produtos-mindray/mobieye-700" },
-];
+import { ArrowRight, Radio } from "lucide-react";
+import { mindrayProducts } from "@/data/mindray-products";
 
 const MindrayHighlight = () => {
   return (
@@ -33,17 +27,24 @@ const MindrayHighlight = () => {
             </Button>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
-            {products.map((p) => (
+            {mindrayProducts.map((p) => (
               <Link
-                key={p.href}
-                to={p.href}
-                className="group rounded-xl border border-border bg-card p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
+                key={p.slug}
+                to={`/produtos-mindray/${p.slug}`}
+                className="group overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md"
               >
-                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
-                  <p.icon className="h-5 w-5" />
+                <div className="h-32 overflow-hidden bg-white p-3">
+                  <img
+                    src={p.image.thumb}
+                    alt={p.shortTitle}
+                    className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
                 </div>
-                <h3 className="mb-1 text-sm font-bold text-foreground">{p.title}</h3>
-                <p className="text-xs text-muted-foreground">{p.description}</p>
+                <div className="p-4">
+                  <h3 className="mb-1 text-sm font-bold text-foreground">{p.shortTitle}</h3>
+                  <p className="text-xs text-muted-foreground">{p.description.slice(0, 80)}…</p>
+                </div>
               </Link>
             ))}
           </div>
