@@ -15,7 +15,7 @@ const contactSchema = z.object({
   cargo: z.string().trim().max(80).optional(),
   telefone: z.string().trim().min(8, "Telefone é obrigatório").max(20),
   email: z.string().trim().email("E-mail inválido").max(255),
-  cidade: z.string().trim().max(100).optional(),
+  endereco: z.string().trim().max(200).optional(),
   interesse: z.string().min(1, "Selecione um interesse"),
   mensagem: z.string().trim().max(1000).optional(),
 });
@@ -36,14 +36,13 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
       cargo: "",
       telefone: "",
       email: "",
-      cidade: "",
+      endereco: "",
       interesse: "",
       mensagem: "",
     },
   });
 
   const onSubmit = (data: ContactFormData) => {
-    console.log("Form submitted:", data);
     toast({
       title: "Mensagem enviada!",
       description: "Nosso time entrará em contato em breve.",
@@ -56,14 +55,38 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-        <div className={`grid gap-4 ${isCompact ? "sm:grid-cols-2" : "sm:grid-cols-2"}`}>
+        <FormField
+          control={form.control}
+          name="nome"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Nome *</FormLabel>
+              <FormControl><Input placeholder="Seu nome completo" {...field} /></FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>E-mail *</FormLabel>
+              <FormControl><Input type="email" placeholder="seu@email.com" {...field} /></FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <div className="grid gap-4 sm:grid-cols-2">
           <FormField
             control={form.control}
-            name="nome"
+            name="telefone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nome *</FormLabel>
-                <FormControl><Input placeholder="Seu nome" {...field} /></FormControl>
+                <FormLabel>Telefone *</FormLabel>
+                <FormControl><Input placeholder="(11) 99999-9999" {...field} /></FormControl>
                 <FormMessage />
               </FormItem>
             )}
@@ -82,56 +105,18 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
         </div>
 
         {!isCompact && (
-          <div className="grid gap-4 sm:grid-cols-2">
-            <FormField
-              control={form.control}
-              name="cargo"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Cargo</FormLabel>
-                  <FormControl><Input placeholder="Seu cargo" {...field} /></FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="cidade"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Cidade/UF</FormLabel>
-                  <FormControl><Input placeholder="Ex: São Paulo/SP" {...field} /></FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
+          <FormField
+            control={form.control}
+            name="endereco"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Endereço</FormLabel>
+                <FormControl><Input placeholder="Cidade/UF" {...field} /></FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         )}
-
-        <div className="grid gap-4 sm:grid-cols-2">
-          <FormField
-            control={form.control}
-            name="telefone"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Telefone/WhatsApp *</FormLabel>
-                <FormControl><Input placeholder="(11) 99999-9999" {...field} /></FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>E-mail *</FormLabel>
-                <FormControl><Input type="email" placeholder="seu@email.com" {...field} /></FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
 
         <FormField
           control={form.control}
@@ -147,12 +132,15 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
                 </FormControl>
                 <SelectContent>
                   <SelectItem value="rm">Ressonância Magnética</SelectItem>
+                  <SelectItem value="tomografia">Tomografia</SelectItem>
+                  <SelectItem value="raio-x">Raio-X</SelectItem>
+                  <SelectItem value="mindray">Produtos Mindray</SelectItem>
                   <SelectItem value="bombas">Bombas Injetoras</SelectItem>
                   <SelectItem value="hexai">HexAI</SelectItem>
                   <SelectItem value="veterinario">Área Veterinária</SelectItem>
                   <SelectItem value="manutencao">Manutenção</SelectItem>
                   <SelectItem value="contrato">Contrato de Manutenção</SelectItem>
-                  <SelectItem value="instalacao">Instalação</SelectItem>
+                  <SelectItem value="instalacao">Instalação / Desinstalação</SelectItem>
                   <SelectItem value="reparo">Reparo de Peças</SelectItem>
                   <SelectItem value="visita">Visita Técnica</SelectItem>
                   <SelectItem value="outro">Outro</SelectItem>
@@ -177,9 +165,9 @@ const ContactForm = ({ variant = "full" }: ContactFormProps) => {
           />
         )}
 
-        <Button type="submit" size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+        <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
           <Send className="mr-2 h-4 w-4" />
-          Enviar Solicitação
+          Enviar
         </Button>
       </form>
     </Form>
