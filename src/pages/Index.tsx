@@ -113,8 +113,8 @@ const Index = () => {
               to="/area-veterinaria"
               className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <PawPrint className="h-7 w-7" />
+              <div className="mb-4 h-40 -mx-8 -mt-8 overflow-hidden rounded-t-2xl">
+                <img src={images.home.cardVeterinario} alt="Área Veterinária" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="mb-3 text-xl font-bold text-foreground">Soluções para seus pacientes</h3>
               <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
