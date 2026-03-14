@@ -95,6 +95,12 @@ export const mindrayProducts: MindrayProduct[] = [
     description: "Sistema de Radiografia Digital otimizado para eficiência elevada. Design dinâmico com coluna rotativa, mesa com tampo flutuante e conectividade remota MiCo+.",
     icon: MonitorSpeaker,
     image: images.mindray.digieye330,
+    galleryImages: [
+      { src: images.mindray.digieye330.product, alt: "DigiEye 330 — sistema completo" },
+      { src: images.mindray.digieye330.detail, alt: "DigiEye 330 — detalhe da coluna e mesa" },
+      { src: images.mindray.digieye330.mico, alt: "DigiEye 330 — conectividade MiCo+" },
+      { src: images.mindray.digieye330.hero, alt: "DigiEye 330 — vista geral" },
+    ],
     heroHeadline: "DigiEye 330: Otimizado para Eficiência Elevada",
     heroSubtitle: "Sistema de Radiografia Digital Mindray com design dinâmico, operação intuitiva e conectividade remota MiCo+. Adequado para diversos ambientes clínicos com eficiência e ergonomia.",
     benefits: [
