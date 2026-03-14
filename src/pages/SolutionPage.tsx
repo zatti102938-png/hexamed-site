@@ -37,6 +37,7 @@ const SolutionPage = () => {
         ctaPrimaryLabel="Solicitar Avaliação Técnica"
         ctaSecondaryLabel="Falar com Especialista"
         ctaSecondaryHref="/contato"
+        backgroundImage={solution.image}
       />
 
       {/* Highlights Grid (specs visuais) */}
