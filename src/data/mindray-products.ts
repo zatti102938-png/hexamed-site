@@ -148,6 +148,7 @@ export const mindrayProducts: MindrayProduct[] = [
     category: "Radiografia Digital Fixa Avançada",
     description: "Sistema de Radiografia Digital dinâmico e avançado com sincronização bidirecional do tubo e detector, display touch no colimador, controle remoto RF e conectividade MiCo+.",
     icon: MonitorSpeaker,
+    image: images.mindray.digieye350,
     heroHeadline: "DigiEye 350: Dinâmico para mais Eficiência",
     heroSubtitle: "Sistema de Radiografia Digital avançado, projetado para facilidade no uso, com sincronização bidirecional do tubo e detector, display touch no colimador e controle remoto RF para operação fora da sala do console.",
     benefits: [
