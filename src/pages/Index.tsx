@@ -127,13 +127,13 @@ const Index = () => {
               Um centro equipado para atender todas as demandas em manutenção, testes e reparos de equipamentos médicos, com equipe certificada internacionalmente e cobertura nacional.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2">
             {/* Manutenção */}
             <Link
               to="/servicos/manutencao"
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-[16/10] overflow-hidden">
                 <img src={images.home.manutencaoThumb} alt="Manutenção de RM" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
@@ -153,7 +153,7 @@ const Index = () => {
               to="/servicos/reparo"
               className="group overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="aspect-[16/10] overflow-hidden">
                 <img src={images.home.laboratorioThumb} alt="Laboratório de Eletrônica" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
@@ -167,7 +167,6 @@ const Index = () => {
                 </span>
               </div>
             </Link>
-
           </div>
         </div>
       </section>
