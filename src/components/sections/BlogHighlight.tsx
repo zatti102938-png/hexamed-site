@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
+import { images } from "@/data/images";
 
 const posts = [
   {
@@ -8,6 +9,7 @@ const posts = [
     excerpt: "Descubra como as novas tecnologias de RM estão revolucionando o diagnóstico de patologias da coluna vertebral com maior precisão e conforto.",
     date: "2025-05-10",
     category: "Tecnologia",
+    image: images.blog.avancosRessonancia,
   },
   {
     slug: "mitos-e-verdades-ressonancia-magnetica",
@@ -15,6 +17,7 @@ const posts = [
     excerpt: "O exame de RM oferece imagens de alta resolução que auxiliam no diagnóstico e tratamento de lesões. Saiba o que é verdade e o que é mito.",
     date: "2024-10-15",
     category: "Educação",
+    image: images.blog.mitosEVerdades,
   },
   {
     slug: "ressonancia-magnetica-baixo-campo",
@@ -22,6 +25,7 @@ const posts = [
     excerpt: "Conheça o sistema de RM de baixo campo e como essa ferramenta atua com campos magnéticos de menor intensidade para diagnósticos eficazes.",
     date: "2024-10-08",
     category: "Guia",
+    image: images.blog.rmBaixoCampo,
   },
 ];
 
@@ -50,7 +54,9 @@ const BlogHighlight = () => {
               to={`/blog/${post.slug}`}
               className="group flex flex-col rounded-xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10" />
+              <div className="h-48 overflow-hidden">
+                <img src={post.image} alt={post.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              </div>
               <div className="flex flex-1 flex-col p-5">
                 <span className="mb-2 inline-block w-fit rounded-full bg-accent/10 px-3 py-0.5 text-xs font-semibold text-accent">
                   {post.category}

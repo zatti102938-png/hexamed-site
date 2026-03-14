@@ -16,6 +16,7 @@ import { solutionCategories } from "@/data/solutions";
 import { services } from "@/data/services";
 import { ArrowRight, Wrench, Microscope, PawPrint } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { images } from "@/data/images";
 
 const Index = () => {
   return (
@@ -27,9 +28,9 @@ const Index = () => {
 
       {/* 1. Hero — matching original site */}
       <section className="relative overflow-hidden bg-dark-surface text-white">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+        <div className="absolute inset-0">
+          <img src={images.home.heroBanner} alt="" className="h-full w-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark-surface via-dark-surface/90 to-dark-surface/60" />
         </div>
         <div className="container relative z-10 py-20 md:py-28 lg:py-36">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -76,8 +77,8 @@ const Index = () => {
               to="/solucoes"
               className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <Microscope className="h-7 w-7" />
+              <div className="mb-4 h-40 -mx-8 -mt-8 overflow-hidden rounded-t-2xl">
+                <img src={images.home.cardProdutos} alt="Produtos Hexamedical" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="mb-3 text-xl font-bold text-foreground">Produtos</h3>
               <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
@@ -94,8 +95,8 @@ const Index = () => {
               to="/servicos"
               className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <Wrench className="h-7 w-7" />
+              <div className="mb-4 h-40 -mx-8 -mt-8 overflow-hidden rounded-t-2xl">
+                <img src={images.home.cardServicos} alt="Serviços Hexamedical" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="mb-3 text-xl font-bold text-foreground">Serviços</h3>
               <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
@@ -112,8 +113,8 @@ const Index = () => {
               to="/area-veterinaria"
               className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <PawPrint className="h-7 w-7" />
+              <div className="mb-4 h-40 -mx-8 -mt-8 overflow-hidden rounded-t-2xl">
+                <img src={images.home.cardVeterinario} alt="Área Veterinária" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="mb-3 text-xl font-bold text-foreground">Soluções para seus pacientes</h3>
               <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
@@ -182,7 +183,8 @@ const Index = () => {
       {/* 6. Time Hexa / Diferenciais */}
       <section className="relative overflow-hidden bg-dark-surface py-16 text-white md:py-24">
         <div className="absolute inset-0">
-          <div className="absolute left-1/2 top-0 h-full w-full -translate-x-1/2 bg-gradient-to-b from-primary/5 to-transparent" />
+          <img src={images.home.timeHexa} alt="" className="h-full w-full object-cover opacity-15" />
+          <div className="absolute inset-0 bg-dark-surface/80" />
         </div>
         <div className="container relative z-10">
           <div className="grid items-center gap-12 lg:grid-cols-2">

@@ -5,7 +5,8 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import CTABanner from "@/components/sections/CTABanner";
 import FAQSection from "@/components/sections/FAQSection";
 import { Button } from "@/components/ui/button";
-import { PawPrint, ArrowRight, Magnet } from "lucide-react";
+import { PawPrint, ArrowRight } from "lucide-react";
+import { images } from "@/data/images";
 
 const vetProducts = [
   {
@@ -13,18 +14,21 @@ const vetProducts = [
     title: "Magnifico Vet",
     description: "Sistema de RM de alto campo dedicado à medicina veterinária. Abertura ampla para animais de grande porte com qualidade de imagem superior.",
     features: ["Alto campo magnético", "Abertura ampla", "Qualidade clínica superior"],
+    image: images.veterinaria.magnificoVet,
   },
   {
     slug: "vet-mr-grande",
     title: "Vet-MR Grande",
     description: "Projetado para equinos e animais de grande porte. Permite exames in vivo com o animal em estação, sem necessidade de anestesia geral.",
     features: ["Animais de grande porte", "Exame em estação", "Sem anestesia geral"],
+    image: images.veterinaria.vetMrGrande,
   },
   {
     slug: "o-scan-equine",
     title: "O-Scan Equine",
     description: "Sistema dedicado para extremidades de equinos. Design compacto e aberto, ideal para clínicas veterinárias especializadas.",
     features: ["Extremidades equinas", "Design compacto", "Fácil operação"],
+    image: images.veterinaria.oScanEquine,
   },
 ];
 
@@ -47,8 +51,8 @@ const AreaVeterinaria = () => {
       {/* Hero */}
       <section className="relative overflow-hidden bg-dark-surface text-white">
         <div className="absolute inset-0">
-          <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+          <img src={images.veterinaria.hero} alt="" className="h-full w-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark-surface via-dark-surface/90 to-dark-surface/60" />
         </div>
         <div className="container relative z-10 py-20 md:py-28 lg:py-36">
           <div className="mx-auto max-w-3xl text-center">
@@ -89,8 +93,8 @@ const AreaVeterinaria = () => {
                 key={product.slug}
                 className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="flex h-52 items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
-                  <Magnet className="h-16 w-16 text-primary/30" />
+                <div className="h-52 overflow-hidden">
+                  <img src={product.image} alt={product.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="mb-2 text-xl font-bold text-foreground">{product.title}</h3>

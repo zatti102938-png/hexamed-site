@@ -6,6 +6,7 @@ import CTABanner from "@/components/sections/CTABanner";
 import FAQSection from "@/components/sections/FAQSection";
 import { Button } from "@/components/ui/button";
 import { Brain, ArrowRight, Sparkles, BarChart3, Zap, CheckCircle2, Monitor, Server } from "lucide-react";
+import { images } from "@/data/images";
 
 const features = [
   { icon: Sparkles, title: "Análise Inteligente", description: "IA que auxilia na interpretação de exames com precisão e agilidade, reduzindo o tempo de laudo." },
@@ -50,8 +51,8 @@ const HexAIPage = () => {
       {/* Hero */}
       <section className="relative overflow-hidden bg-dark-surface text-white">
         <div className="absolute inset-0">
-          <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+          <img src={images.produtos.hexai.hero} alt="" className="h-full w-full object-cover opacity-15" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark-surface via-dark-surface/90 to-dark-surface/60" />
         </div>
         <div className="container relative z-10 py-20 md:py-28 lg:py-36">
           <div className="mx-auto max-w-3xl text-center">
@@ -123,8 +124,8 @@ const HexAIPage = () => {
                 ))}
               </div>
             </div>
-            <div className="flex items-center justify-center rounded-2xl border border-border bg-card p-12">
-              <Server className="h-24 w-24 text-primary/30" />
+            <div className="overflow-hidden rounded-2xl border border-border">
+              <img src={images.produtos.hexai.thumb} alt="HexAI compatibilidade" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
