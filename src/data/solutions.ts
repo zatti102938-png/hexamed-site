@@ -67,6 +67,7 @@ export const solutions: Record<string, Solution> = {
     shortTitle: "Magnifico Open",
     description: "Sistema de ressonância magnética aberta 0.4T com tecnologia True-Motion, diagnóstico com implantes metálicos e interface intuitiva.",
     icon: Magnet,
+    image: images.produtos.magnificoOpen.hero,
     heroHeadline: "Magnifico Open: Ressonância Magnética Aberta de Alto Desempenho",
     heroSubtitle: "O Magnifico™ Open é uma solução intuitiva e de fácil utilização, com protocolos desenvolvidos para garantir imagens de alta qualidade. Ideal para clínicas, hospitais e centros de imagem que buscam conforto ao paciente e precisão diagnóstica.",
     highlights: [
