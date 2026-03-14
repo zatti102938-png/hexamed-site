@@ -23,7 +23,7 @@ const Header = () => {
         </div>
       </div>
 
-      <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-dark-surface/98 backdrop-blur-md">
+      <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-dark-surface backdrop-blur-md">
         <div className="container flex h-16 items-center justify-between md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={() => setMobileOpen(false)}>

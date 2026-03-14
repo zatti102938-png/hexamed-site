@@ -55,7 +55,7 @@ const HeroSection = ({
                 asChild
                 size="lg"
                 variant={isDark ? "outline" : "secondary"}
-                className={isDark ? "border-dark-surface-foreground/30 text-dark-surface-foreground hover:bg-dark-surface-foreground/10" : ""}
+                className={isDark ? "border-primary/60 bg-primary/10 text-white hover:bg-primary/20" : ""}
               >
                 <Link to={ctaSecondaryHref}>
                   {ctaSecondaryLabel}
