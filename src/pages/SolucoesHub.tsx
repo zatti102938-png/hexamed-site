@@ -10,10 +10,10 @@ import { ArrowRight, Magnet } from "lucide-react";
 import { images } from "@/data/images";
 
 const rmProducts = [
-  { slug: "rm-magnifico-open", title: "Magnifico Open", description: "Sistema aberto de alto campo para exames de corpo inteiro." },
-  { slug: "rm-s-scan", title: "S-Scan", description: "Sistema compacto dedicado a exames de extremidades." },
-  { slug: "rm-o-scan", title: "O-Scan", description: "RM dedicada para ortopedia em posição de carga." },
-  { slug: "rm-g-scan", title: "G-Scan", description: "Sistema versátil com posicionamento variável do paciente." },
+  { slug: "rm-magnifico-open", title: "Magnifico Open", description: "Sistema aberto de alto campo para exames de corpo inteiro.", image: images.produtos.magnificoOpen.thumb },
+  { slug: "rm-s-scan", title: "S-Scan", description: "Sistema compacto dedicado a exames de extremidades.", image: images.produtos.sScan.thumb },
+  { slug: "rm-o-scan", title: "O-Scan", description: "RM dedicada para ortopedia em posição de carga.", image: images.produtos.oScan.thumb },
+  { slug: "rm-g-scan", title: "G-Scan", description: "Sistema versátil com posicionamento variável do paciente.", image: images.produtos.gScan.thumb },
 ];
 
 const SolucoesHub = () => {
