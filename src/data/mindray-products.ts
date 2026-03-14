@@ -29,6 +29,12 @@ export const mindrayProducts: MindrayProduct[] = [
     description: "Detector digital sem fio de alta performance com tecnologia CsI+TFT, classificação IP54 e alto DQE. Projetado para digitalizar sua operação radiológica com máxima qualidade de imagem.",
     icon: Scan,
     image: images.mindray.detectorFlat,
+    galleryImages: [
+      { src: images.mindray.detectorFlat.hero, alt: "Detector Flat Panel — vista principal" },
+      { src: images.mindray.detectorFlat.cleanroom, alt: "Fabricação em sala limpa Mindray" },
+      { src: images.mindray.detectorFlat.ip54, alt: "Teste de resistência IP54 a água" },
+      { src: images.mindray.detectorFlat.factory, alt: "Linha de produção de detectores Mindray" },
+    ],
     heroHeadline: "Detector Flat Panel: Projetado para a sua Digitalização",
     heroSubtitle: "Tecnologias patenteadas de alto nível reunidas em um detector leve, sem fio, que proporciona a melhor experiência possível ao usuário. Design diferenciado, produção artesanal e alto controle de qualidade Mindray.",
     benefits: [
