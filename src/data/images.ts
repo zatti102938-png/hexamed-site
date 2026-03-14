@@ -81,7 +81,8 @@ export const images = {
   },
   mindray: {
     detectorFlat: {
-      hero: `${BASE}/mindray/detector-flat/detector-flat-hero.webp`,
+      hero: `${BASE}/mindray/detector-flat/digiEye-280-angle.png`,
+      heroFallback: `${BASE}/mindray/detector-flat/detector-flat-hero.webp`,
       thumb: `${BASE}/mindray/detector-flat/detector-flat-thumb.webp`,
       gallery01: `${BASE}/mindray/detector-flat/detector-flat-gallery-01.webp`,
       cleanroom: `${BASE}/mindray/detector-flat/detector-flat-cleanroom.jpg`,
