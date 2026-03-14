@@ -45,13 +45,25 @@ const ServicePage = () => {
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
             O que inclui
           </h2>
-          <div className="mx-auto max-w-2xl space-y-4">
-            {service.scope.map((item) => (
-              <div key={item} className="flex items-center gap-3 rounded-xl border border-border bg-card p-5">
-                <CheckCircle2 className="h-5 w-5 shrink-0 text-accent" />
-                <span className="text-foreground">{item}</span>
+          <div className={`mx-auto grid gap-8 ${service.contentImage ? "max-w-5xl lg:grid-cols-2 items-center" : "max-w-2xl"}`}>
+            {service.contentImage && (
+              <div className="overflow-hidden rounded-2xl border border-border">
+                <img
+                  src={service.contentImage}
+                  alt={`${service.title} — serviço Hexamedical`}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
               </div>
-            ))}
+            )}
+            <div className="space-y-4">
+              {service.scope.map((item) => (
+                <div key={item} className="flex items-center gap-3 rounded-xl border border-border bg-card p-5">
+                  <CheckCircle2 className="h-5 w-5 shrink-0 text-accent" />
+                  <span className="text-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
