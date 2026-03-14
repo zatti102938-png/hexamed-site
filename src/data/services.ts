@@ -81,6 +81,7 @@ export const services: Service[] = [
     description: "Serviço completo de instalação, desinstalação e manutenções avulsas com equipe especializada e cobertura nacional.",
     icon: Truck,
     image: images.servicos.instalacao,
+    contentImage: images.servicos.instalacaoContent,
     heroHeadline: "Instalação e Desinstalação Profissional de Equipamentos",
     heroSubtitle: "Atuamos com serviços de instalação, desinstalação e manutenções avulsas como visita técnica, preventivas e corretivas. Contratos com e sem peças para todo o Brasil.",
     scope: [
