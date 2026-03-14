@@ -39,6 +39,7 @@ const Estrutura = () => {
         subtitle="Contamos com uma estrutura completa planejada para a entrega de serviços precisos aos nossos clientes. Infraestrutura de ponta para manutenção, testes e reparos de equipamentos médicos."
         ctaPrimaryLabel="Falar com Especialista"
         ctaPrimaryHref="/contato"
+        backgroundImage={images.estrutura.hero}
       />
 
       {/* Facilities Grid */}

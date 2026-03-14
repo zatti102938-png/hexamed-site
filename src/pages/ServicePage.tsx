@@ -35,6 +35,7 @@ const ServicePage = () => {
         ctaPrimaryLabel="Solicitar Orçamento"
         ctaSecondaryLabel="Falar com Especialista"
         ctaSecondaryHref="/contato"
+        backgroundImage={service.image}
       />
 
       {/* Escopo do serviço */}
