@@ -29,6 +29,8 @@ const App = () => (
             <Route path="/servicos" element={<ServicosHub />} />
             <Route path="/solucoes/:slug" element={<SolutionPage />} />
             <Route path="/servicos/:slug" element={<ServicePage />} />
+            <Route path="/produtos-mindray" element={<MindrayHub />} />
+            <Route path="/produtos-mindray/:slug" element={<MindrayProductPage />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
