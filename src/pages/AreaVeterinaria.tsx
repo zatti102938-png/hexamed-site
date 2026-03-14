@@ -14,18 +14,21 @@ const vetProducts = [
     title: "Magnifico Vet",
     description: "Sistema de RM de alto campo dedicado à medicina veterinária. Abertura ampla para animais de grande porte com qualidade de imagem superior.",
     features: ["Alto campo magnético", "Abertura ampla", "Qualidade clínica superior"],
+    image: images.veterinaria.magnificoVet,
   },
   {
     slug: "vet-mr-grande",
     title: "Vet-MR Grande",
     description: "Projetado para equinos e animais de grande porte. Permite exames in vivo com o animal em estação, sem necessidade de anestesia geral.",
     features: ["Animais de grande porte", "Exame em estação", "Sem anestesia geral"],
+    image: images.veterinaria.vetMrGrande,
   },
   {
     slug: "o-scan-equine",
     title: "O-Scan Equine",
     description: "Sistema dedicado para extremidades de equinos. Design compacto e aberto, ideal para clínicas veterinárias especializadas.",
     features: ["Extremidades equinas", "Design compacto", "Fácil operação"],
+    image: images.veterinaria.oScanEquine,
   },
 ];
 
