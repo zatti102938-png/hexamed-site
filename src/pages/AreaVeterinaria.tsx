@@ -5,7 +5,8 @@ import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import CTABanner from "@/components/sections/CTABanner";
 import FAQSection from "@/components/sections/FAQSection";
 import { Button } from "@/components/ui/button";
-import { PawPrint, ArrowRight, Magnet } from "lucide-react";
+import { PawPrint, ArrowRight } from "lucide-react";
+import { images } from "@/data/images";
 
 const vetProducts = [
   {
