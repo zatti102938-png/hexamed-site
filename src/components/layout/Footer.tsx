@@ -23,6 +23,15 @@ const footerLinks = [
     ],
   },
   {
+    title: "Produtos Mindray",
+    links: [
+      { label: "Detector Flat Panel", href: "/produtos-mindray/detector-flat-panel" },
+      { label: "DigiEye 330", href: "/produtos-mindray/digieye-330" },
+      { label: "DigiEye 350", href: "/produtos-mindray/digieye-350" },
+      { label: "MobiEye 700", href: "/produtos-mindray/mobieye-700" },
+    ],
+  },
+  {
     title: "Empresa",
     links: [
       { label: "Sobre", href: "/sobre" },
@@ -37,7 +46,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border bg-dark-surface text-dark-surface-foreground">
       <div className="container py-12 md:py-16">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="mb-4 flex items-center gap-2">

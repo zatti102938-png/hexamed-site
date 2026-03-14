@@ -27,6 +27,16 @@ export const navigation: NavItem[] = [
     ],
   },
   {
+    label: "Produtos Mindray",
+    href: "/produtos-mindray",
+    children: [
+      { label: "Detector Flat Panel", href: "/produtos-mindray/detector-flat-panel" },
+      { label: "DigiEye 330", href: "/produtos-mindray/digieye-330" },
+      { label: "DigiEye 350", href: "/produtos-mindray/digieye-350" },
+      { label: "MobiEye 700", href: "/produtos-mindray/mobieye-700" },
+    ],
+  },
+  {
     label: "Segmentos",
     href: "#",
     children: [
