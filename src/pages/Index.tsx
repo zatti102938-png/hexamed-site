@@ -8,6 +8,7 @@ import SegmentsGrid from "@/components/sections/SegmentsGrid";
 import TrustBlock from "@/components/sections/TrustBlock";
 import HexAIHighlight from "@/components/sections/HexAIHighlight";
 import BlogHighlight from "@/components/sections/BlogHighlight";
+import MindrayHighlight from "@/components/sections/MindrayHighlight";
 import TestimonialsBlock from "@/components/sections/TestimonialsBlock";
 import CTABanner from "@/components/sections/CTABanner";
 import ContactForm from "@/components/sections/ContactForm";
