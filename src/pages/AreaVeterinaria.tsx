@@ -93,8 +93,8 @@ const AreaVeterinaria = () => {
                 key={product.slug}
                 className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="flex h-52 items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
-                  <Magnet className="h-16 w-16 text-primary/30" />
+                <div className="h-52 overflow-hidden">
+                  <img src={product.image} alt={product.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="mb-2 text-xl font-bold text-foreground">{product.title}</h3>

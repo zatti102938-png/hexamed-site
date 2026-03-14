@@ -124,8 +124,8 @@ const HexAIPage = () => {
                 ))}
               </div>
             </div>
-            <div className="flex items-center justify-center rounded-2xl border border-border bg-card p-12">
-              <Server className="h-24 w-24 text-primary/30" />
+            <div className="overflow-hidden rounded-2xl border border-border">
+              <img src={images.produtos.hexai.thumb} alt="HexAI compatibilidade" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>

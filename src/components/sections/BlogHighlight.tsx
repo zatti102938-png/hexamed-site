@@ -54,7 +54,9 @@ const BlogHighlight = () => {
               to={`/blog/${post.slug}`}
               className="group flex flex-col rounded-xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10" />
+              <div className="h-48 overflow-hidden">
+                <img src={post.image} alt={post.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              </div>
               <div className="flex flex-1 flex-col p-5">
                 <span className="mb-2 inline-block w-fit rounded-full bg-accent/10 px-3 py-0.5 text-xs font-semibold text-accent">
                   {post.category}

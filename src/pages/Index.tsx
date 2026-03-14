@@ -183,7 +183,8 @@ const Index = () => {
       {/* 6. Time Hexa / Diferenciais */}
       <section className="relative overflow-hidden bg-dark-surface py-16 text-white md:py-24">
         <div className="absolute inset-0">
-          <div className="absolute left-1/2 top-0 h-full w-full -translate-x-1/2 bg-gradient-to-b from-primary/5 to-transparent" />
+          <img src={images.home.timeHexa} alt="" className="h-full w-full object-cover opacity-15" />
+          <div className="absolute inset-0 bg-dark-surface/80" />
         </div>
         <div className="container relative z-10">
           <div className="grid items-center gap-12 lg:grid-cols-2">
