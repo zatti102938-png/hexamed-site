@@ -333,6 +333,7 @@ export const solutions: Record<string, Solution> = {
     shortTitle: "G-Scan Brio",
     description: "Sistema revolucionário de RM com suporte de peso para aplicações MSK. Design aberto e inclinável para diagnósticos na posição com carga.",
     icon: Magnet,
+    image: images.produtos.gScan.thumb,
     heroHeadline: "G-Scan Brio: RM com Suporte de Peso para MSK",
     heroSubtitle: "Abordagem revolucionária de RM para todas as aplicações musculoesqueléticas. O design aberto e inclinável possibilita exames na posição com carga, aumentando a precisão diagnóstica e a confiança clínica.",
     highlights: [
