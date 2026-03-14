@@ -17,6 +17,7 @@ export interface Solution {
   shortTitle: string;
   description: string;
   icon: typeof Magnet;
+  image?: string;
   heroHeadline: string;
   heroSubtitle: string;
   audience: string[];
