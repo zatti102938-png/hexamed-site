@@ -1,4 +1,5 @@
 import { Wrench, FileText, Truck, Cog, ClipboardCheck } from "lucide-react";
+import { images } from "@/data/images";
 
 export interface Service {
   slug: string;
