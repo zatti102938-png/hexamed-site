@@ -211,6 +211,7 @@ export const mindrayProducts: MindrayProduct[] = [
     category: "Radiografia Digital Móvel",
     description: "Sistema móvel de radiodiagnóstico com 9 graus de liberdade, potência dual-mode, detector MPX sem fio e mobilidade superior. Visão com potência para diagnóstico à beira do leito.",
     icon: Smartphone,
+    image: images.mindray.mobileye700,
     heroHeadline: "MobiEye 700: Visão com Potência e Mobilidade",
     heroSubtitle: "Sistema Móvel de Radiodiagnóstico Mindray com 9 graus de liberdade, escalada em 12° de inclinação e detector MPX ultracompacto. Evolução que vai além das imagens — dados quantitativos comprovam superioridade e qualidade.",
     benefits: [
