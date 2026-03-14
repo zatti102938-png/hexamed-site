@@ -211,6 +211,9 @@ const Index = () => {
       {/* 5. Clientes e Depoimentos */}
       <TestimonialsBlock />
 
+      {/* 5b. Palavra do CEO */}
+      <CeoVideoBlock />
+
       {/* 6. Time Hexa / Diferenciais */}
       <section className="relative overflow-hidden bg-dark-surface py-16 text-white md:py-24">
         <div className="absolute inset-0">
