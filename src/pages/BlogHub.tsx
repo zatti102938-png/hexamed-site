@@ -14,6 +14,7 @@ const posts = [
     excerpt: "Descubra como as novas tecnologias de RM estão revolucionando o diagnóstico de patologias da coluna vertebral com maior precisão e conforto.",
     date: "2025-05-10",
     category: "Tecnologia",
+    image: images.blog.avancosRessonancia,
   },
   {
     slug: "mitos-e-verdades-ressonancia-magnetica",
@@ -21,6 +22,7 @@ const posts = [
     excerpt: "O exame de RM oferece imagens de alta resolução que auxiliam no diagnóstico e tratamento de lesões. Saiba o que é verdade e o que é mito.",
     date: "2024-10-15",
     category: "Educação",
+    image: images.blog.mitosEVerdades,
   },
   {
     slug: "ressonancia-magnetica-baixo-campo",
@@ -28,6 +30,7 @@ const posts = [
     excerpt: "Conheça o sistema de RM de baixo campo e como essa ferramenta atua com campos magnéticos de menor intensidade para diagnósticos eficazes.",
     date: "2024-10-08",
     category: "Guia",
+    image: images.blog.rmBaixoCampo,
   },
   {
     slug: "importancia-manutencao-preventiva",
@@ -35,6 +38,7 @@ const posts = [
     excerpt: "Entenda por que a manutenção preventiva é essencial para garantir a longevidade, segurança e desempenho dos seus equipamentos de RM.",
     date: "2024-09-20",
     category: "Manutenção",
+    image: images.blog.defaultThumb,
   },
 ];
 
