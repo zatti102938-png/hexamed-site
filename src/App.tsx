@@ -16,7 +16,7 @@ import Contato from "./pages/Contato";
 import BlogHub from "./pages/BlogHub";
 import Apoio from "./pages/Apoio";
 import HexAIPage from "./pages/HexAIPage";
-import AreaVeterinaria from "./pages/AreaVeterinaria";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
