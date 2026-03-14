@@ -10,6 +10,7 @@ import HexAIHighlight from "@/components/sections/HexAIHighlight";
 import BlogHighlight from "@/components/sections/BlogHighlight";
 import MindrayHighlight from "@/components/sections/MindrayHighlight";
 import TestimonialsBlock from "@/components/sections/TestimonialsBlock";
+import CeoVideoBlock from "@/components/sections/CeoVideoBlock";
 import CTABanner from "@/components/sections/CTABanner";
 import ContactForm from "@/components/sections/ContactForm";
 import { solutionCategories } from "@/data/solutions";
@@ -209,6 +210,9 @@ const Index = () => {
 
       {/* 5. Clientes e Depoimentos */}
       <TestimonialsBlock />
+
+      {/* 5b. Palavra do CEO */}
+      <CeoVideoBlock />
 
       {/* 6. Time Hexa / Diferenciais */}
       <section className="relative overflow-hidden bg-dark-surface py-16 text-white md:py-24">
