@@ -103,6 +103,7 @@ export const mindrayProducts: MindrayProduct[] = [
       { src: images.mindray.digieye330.mico, alt: "DigiEye 330 — conectividade MiCo+" },
       { src: images.mindray.digieye330.hero, alt: "DigiEye 330 — vista geral" },
     ],
+    brochurePdf: "/downloads/Folheto_Mindray_DigiEye_330.pdf",
     heroHeadline: "DigiEye 330: Otimizado para Eficiência Elevada",
     heroSubtitle: "Sistema de Radiografia Digital Mindray com design dinâmico, operação intuitiva e conectividade remota MiCo+. Adequado para diversos ambientes clínicos com eficiência e ergonomia.",
     benefits: [
