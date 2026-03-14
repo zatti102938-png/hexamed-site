@@ -50,7 +50,7 @@ const Index = () => {
                     Falar com equipe de vendas
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-dark-surface-foreground/30 text-dark-surface-foreground hover:bg-dark-surface-foreground/10">
+                <Button asChild size="lg" variant="outline" className="border-primary/60 bg-primary/10 text-primary-foreground hover:bg-primary/20">
                   <Link to="/solucoes">
                     Conheça nossas soluções
                     <ArrowRight className="ml-2 h-4 w-4" />
