@@ -26,7 +26,7 @@ const Index = () => {
       </Helmet>
 
       {/* 1. Hero — matching original site */}
-      <section className="relative overflow-hidden bg-dark-surface text-dark-surface-foreground">
+      <section className="relative overflow-hidden bg-dark-surface text-white">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
@@ -34,10 +34,10 @@ const Index = () => {
         <div className="container relative z-10 py-20 md:py-28 lg:py-36">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <h1 className="mb-6 text-3xl font-extrabold leading-tight tracking-tight text-balance md:text-4xl lg:text-5xl">
+              <h1 className="mb-6 text-3xl font-extrabold leading-tight tracking-tight text-balance text-white md:text-4xl lg:text-5xl">
                 Seu negócio merece as soluções certas.
               </h1>
-              <p className="mb-8 max-w-xl text-lg leading-relaxed text-dark-surface-foreground/80">
+              <p className="mb-8 max-w-xl text-lg leading-relaxed text-white/80">
                 Ofereça aos seus pacientes o melhor em prevenção, diagnóstico, terapia e acompanhamento, elevando o padrão do seu atendimento enquanto reduz riscos operacionais e custos com manutenções graças à robustez e alta durabilidade dos nossos equipamentos.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -50,7 +50,7 @@ const Index = () => {
                     Falar com equipe de vendas
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-primary/60 bg-primary/10 text-primary-foreground hover:bg-primary/20">
+                <Button asChild size="lg" variant="outline" className="border-primary/60 bg-primary/10 text-white hover:bg-primary/20">
                   <Link to="/solucoes">
                     Conheça nossas soluções
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -59,7 +59,7 @@ const Index = () => {
               </div>
             </div>
             <div className="hidden lg:block">
-              <p className="text-lg leading-relaxed text-dark-surface-foreground/70">
+              <p className="text-lg leading-relaxed text-white/70">
                 Entregamos mais que produtos, soluções personalizadas para atender as necessidades para serviços exigentes com soluções efetivas para cada realidade e expectativa sendo clínicas, universidades e hospitais.
               </p>
             </div>
