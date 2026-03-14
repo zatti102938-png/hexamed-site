@@ -83,6 +83,7 @@ const SolucoesHub = () => {
                 <span className="inline-flex items-center text-sm font-semibold text-accent group-hover:text-accent/80">
                   Ver detalhes <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
+                </div>
               </Link>
             ))}
           </div>
