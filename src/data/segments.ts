@@ -1,4 +1,4 @@
-import { Building2, Hospital, ScanLine, GraduationCap, PawPrint } from "lucide-react";
+import { Building2, Hospital, ScanLine, GraduationCap } from "lucide-react";
 
 export interface Segment {
   slug: string;
