@@ -1,5 +1,6 @@
 import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import Layout from "@/components/layout/Layout";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroSection from "@/components/sections/HeroSection";
@@ -12,6 +13,7 @@ import { Button } from "@/components/ui/button";
 
 const MindrayProductPage = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { t } = useTranslation();
   const product = slug ? mindrayProductsMap[slug] : null;
 
   if (!product) return <Navigate to="/produtos-mindray" replace />;
@@ -27,18 +29,17 @@ const MindrayProductPage = () => {
 
       <PageBreadcrumb
         items={[
-          { label: "Produtos Mindray", href: "/produtos-mindray" },
+          { label: t("mindray.badge"), href: "/produtos-mindray" },
           { label: product.shortTitle },
         ]}
       />
 
-      {/* Hero with product image */}
       <HeroSection
         headline={product.heroHeadline}
         subtitle={product.heroSubtitle}
-        ctaPrimaryLabel="Solicitar Proposta"
+        ctaPrimaryLabel={t("common.requestProposal")}
         ctaPrimaryHref="/contato"
-        ctaSecondaryLabel="Falar com Especialista"
+        ctaSecondaryLabel={t("common.talkToSpecialist")}
         ctaSecondaryHref="/contato"
         backgroundImage={product.image.hero}
       />
@@ -65,7 +66,7 @@ const MindrayProductPage = () => {
       <section className="py-12 md:py-16">
         <div className="container">
           <h2 className="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">
-            Principais Benefícios
+            {t("mindrayProduct.mainBenefits")}
           </h2>
           <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2">
             {product.benefits.map((b) => (
@@ -82,7 +83,7 @@ const MindrayProductPage = () => {
       <section className="border-t border-border bg-muted/30 py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-            Especificações Técnicas
+            {t("mindrayProduct.technicalSpecs")}
           </h2>
           <div className="mx-auto max-w-2xl overflow-hidden rounded-xl border border-border">
             {product.specs.map((spec, i) => (
@@ -96,7 +97,7 @@ const MindrayProductPage = () => {
             ))}
           </div>
           <p className="mt-4 text-center text-xs text-muted-foreground">
-            Especificações extraídas do folheto oficial Mindray. Sujeitas a confirmação técnica.
+            {t("mindrayProduct.specsDisclaimer")}
           </p>
         </div>
       </section>
@@ -105,7 +106,7 @@ const MindrayProductPage = () => {
       <section className="py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-            Diferenciais
+            {t("mindrayProduct.differentials")}
           </h2>
           <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2">
             {product.differentials.map((d) => (
@@ -124,10 +125,10 @@ const MindrayProductPage = () => {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <h2 className="mb-6 text-3xl font-bold text-foreground md:text-4xl">
-                Aplicações Clínicas
+                {t("mindrayProduct.clinicalApps")}
               </h2>
               <p className="mb-6 text-muted-foreground">
-                Ideal para instituições que buscam qualidade de imagem, eficiência operacional e ergonomia no fluxo de trabalho radiológico.
+                {t("mindrayProduct.clinicalAppsDesc")}
               </p>
               <ul className="space-y-3">
                 {product.applications.map((item) => (
@@ -141,7 +142,7 @@ const MindrayProductPage = () => {
             <div className="overflow-hidden rounded-2xl border border-border bg-white p-6">
               <img
                 src={product.image.thumb}
-                alt={`${product.shortTitle} em contexto clínico`}
+                alt={product.shortTitle}
                 className="h-full w-full object-contain"
                 loading="lazy"
               />
@@ -154,7 +155,7 @@ const MindrayProductPage = () => {
       <section className="py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-            Fluxo de Aquisição e Suporte
+            {t("mindrayProduct.supportFlow")}
           </h2>
           <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 lg:grid-cols-5">
             {product.supportFlow.map((step, i) => (
@@ -178,24 +179,24 @@ const MindrayProductPage = () => {
           <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
             <div className="flex flex-col items-center rounded-xl border border-border bg-card p-8 text-center">
               <Wrench className="mb-4 h-10 w-10 text-primary" />
-              <h3 className="mb-2 text-lg font-bold text-foreground">Solicitar Proposta</h3>
+              <h3 className="mb-2 text-lg font-bold text-foreground">{t("mindrayProduct.proposalTitle")}</h3>
               <p className="mb-4 text-sm text-muted-foreground">
-                Receba uma proposta técnica e comercial personalizada.
+                {t("mindrayProduct.proposalDesc")}
               </p>
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link to="/contato">Solicitar Proposta</Link>
+                <Link to="/contato">{t("common.requestProposal")}</Link>
               </Button>
             </div>
             <div className="flex flex-col items-center rounded-xl border border-border bg-card p-8 text-center">
               <Download className="mb-4 h-10 w-10 text-accent" />
-              <h3 className="mb-2 text-lg font-bold text-foreground">Folheto Técnico</h3>
+              <h3 className="mb-2 text-lg font-bold text-foreground">{t("common.technicalBrochure")}</h3>
               <p className="mb-4 text-sm text-muted-foreground">
-                Baixe o folheto completo com todas as especificações.
+                {t("mindrayProduct.brochureDesc")}
               </p>
               <Button asChild variant="outline">
                 <a href={product.brochurePdf} download target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-4 w-4" />
-                  Baixar PDF
+                  {t("common.downloadPdf")}
                 </a>
               </Button>
             </div>
@@ -203,17 +204,14 @@ const MindrayProductPage = () => {
         </div>
       </section>
 
-      {/* Trust */}
       <TrustBlock />
-
-      {/* FAQ */}
       <FAQSection items={product.faq} />
 
       {/* Other Products */}
       <section className="border-t border-border bg-muted/30 py-16 md:py-24">
         <div className="container">
           <h2 className="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">
-            Outros Produtos Mindray
+            {t("mindrayProduct.otherProducts")}
           </h2>
           <div className="grid gap-4 sm:grid-cols-3">
             {otherProducts.map((p) => (
@@ -234,7 +232,7 @@ const MindrayProductPage = () => {
                   <div className="mb-1 text-xs font-bold uppercase tracking-widest text-accent">{p.category}</div>
                   <h3 className="mb-2 font-bold text-foreground">{p.shortTitle}</h3>
                   <span className="inline-flex items-center text-xs font-semibold text-accent">
-                    Ver detalhes
+                    {t("common.viewDetails")}
                     <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>
@@ -245,9 +243,9 @@ const MindrayProductPage = () => {
       </section>
 
       <CTABanner
-        headline={`Interessado no ${product.shortTitle}?`}
-        subtitle="Solicite uma proposta técnica e comercial personalizada para sua instituição."
-        ctaLabel="Solicitar Proposta"
+        headline={t("mindrayProduct.interestedIn", { product: product.shortTitle })}
+        subtitle={t("mindrayProduct.interestedSubtitle")}
+        ctaLabel={t("common.requestProposal")}
       />
     </Layout>
   );

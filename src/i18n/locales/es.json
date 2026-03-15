@@ -38,7 +38,13 @@
     "viewAllMindray": "Ver todos los productos Mindray",
     "knowHexAI": "Conocer HexAI",
     "downloadBrochure": "Descargar Folleto PDF",
-    "requestBudget": "Solicitar presupuesto"
+    "requestBudget": "Solicitar presupuesto",
+    "requestProposal": "Solicitar Propuesta",
+    "requestTechnicalEval": "Solicitar Evaluación Técnica",
+    "downloadPdf": "Descargar PDF",
+    "readArticle": "Leer artículo",
+    "viewCompleteDetails": "Ver detalles completos",
+    "technicalBrochure": "Folleto Técnico"
   },
   "cards": {
     "productsTitle": "Productos",
@@ -195,10 +201,31 @@
     "sectionSubtitle": "Soluciones completas de soporte para mantener tus equipos en máximo rendimiento."
   },
   "solucoesHub": {
-    "pageTitle": "Soluciones en Equipos — Hexamedical",
-    "heroHeadline": "Soluciones en Equipos Médicos",
-    "heroSubtitle": "Equipos Esaote de resonancia magnética con soporte técnico completo.",
-    "rmTitle": "Resonancia Magnética Esaote"
+    "pageTitle": "Soluciones en Diagnóstico por Imagen — Hexamedical",
+    "pageDesc": "Conoce las soluciones Hexamedical en Resonancia Magnética, Bombas Inyectoras, HexAI y Área Veterinaria.",
+    "heroHeadline": "Soluciones que elevan la calidad del diagnóstico",
+    "heroSubtitle": "Equipos de alto rendimiento, tecnología de punta y soporte completo para su operación de diagnóstico por imagen.",
+    "categoriesTitle": "Nuestras líneas de soluciones",
+    "rmLineTitle": "Línea de Resonancia Magnética Esaote",
+    "rmLineSubtitle": "Sistemas abiertos y dedicados con la mejor relación costo-beneficio del mercado.",
+    "rmProducts": {
+      "magnificoOpen": {
+        "title": "Magnifico Open",
+        "description": "Sistema abierto de alto campo para exámenes de cuerpo entero."
+      },
+      "sScan": {
+        "title": "S-Scan",
+        "description": "Sistema compacto dedicado a exámenes de extremidades."
+      },
+      "oScan": {
+        "title": "O-Scan",
+        "description": "RM dedicada para ortopedia en posición de carga."
+      },
+      "gScan": {
+        "title": "G-Scan",
+        "description": "Sistema versátil con posicionamiento variable del paciente."
+      }
+    }
   },
   "structure": {
     "pageTitle": "Nuestra Estructura — Hexamedical",
@@ -274,5 +301,125 @@
     "pt": "Português",
     "en": "English",
     "es": "Español"
+  },
+  "blogHub": {
+    "pageTitle": "Blog — Hexamedical | Contenido sobre Diagnóstico por Imagen",
+    "pageDesc": "Insights, guías técnicas y novedades del mercado de diagnóstico por imagen. Artículos sobre resonancia magnética, mantenimiento y tecnología médica.",
+    "heroHeadline": "Blog Hexamedical",
+    "heroSubtitle": "Insights, guías técnicas y novedades del mercado de diagnóstico por imagen.",
+    "posts": {
+      "avancosRessonancia": {
+        "title": "Avances en la Resonancia Magnética de la Columna Vertebral: Innovación y Diagnósticos Más Precisos",
+        "excerpt": "Descubre cómo las nuevas tecnologías de RM están revolucionando el diagnóstico de patologías de la columna vertebral con mayor precisión y confort.",
+        "category": "Tecnología"
+      },
+      "mitosEVerdades": {
+        "title": "Mitos y verdades que necesitas saber sobre la resonancia magnética",
+        "excerpt": "El examen de RM ofrece imágenes de alta resolución que ayudan en el diagnóstico y tratamiento de lesiones. Descubre qué es verdad y qué es mito.",
+        "category": "Educación"
+      },
+      "rmBaixoCampo": {
+        "title": "Todo lo que necesitas saber sobre la resonancia magnética de bajo campo",
+        "excerpt": "Conoce el sistema de RM de bajo campo y cómo esta herramienta actúa con campos magnéticos de menor intensidad para diagnósticos eficaces.",
+        "category": "Guía"
+      },
+      "manutencaoPreventiva": {
+        "title": "La importancia del mantenimiento preventivo en equipos de resonancia magnética",
+        "excerpt": "Entiende por qué el mantenimiento preventivo es esencial para garantizar la longevidad, seguridad y rendimiento de tus equipos de RM.",
+        "category": "Mantenimiento"
+      }
+    }
+  },
+  "hexaiPage": {
+    "pageTitle": "HexAI — Inteligencia Artificial para Diagnóstico por Imagen | Hexamedical",
+    "pageDesc": "Potencia la precisión diagnóstica y la productividad con inteligencia artificial aplicada al análisis de exámenes de resonancia magnética. Aumenta tu producción hasta un 40%.",
+    "aiBadge": "Inteligencia Artificial",
+    "heroHeadline": "Aumenta tu producción hasta un <1>40%</1>",
+    "heroSubtitle": "Potencia la precisión diagnóstica y la productividad de tu equipo con inteligencia artificial aplicada al análisis de exámenes de resonancia magnética.",
+    "featuresTitle": "¿Por qué elegir HexAI?",
+    "featuresSubtitle": "Tecnología de punta que transforma el flujo de trabajo de tu centro de imagen.",
+    "features": {
+      "smartAnalysis": { "title": "Análisis Inteligente", "description": "IA que asiste en la interpretación de exámenes con precisión y agilidad, reduciendo el tiempo de informe." },
+      "productivity": { "title": "Aumenta tu Producción hasta un 40%", "description": "Reduce el tiempo de análisis y aumenta el volumen de atenciones sin comprometer la calidad diagnóstica." },
+      "integration": { "title": "Integración Total", "description": "Compatible con los principales sistemas PACS y RIS del mercado. Instalación simple y rápida." },
+      "interface": { "title": "Interfaz Intuitiva", "description": "Dashboard amigable para radiólogos, con visualización optimizada y herramientas de anotación." }
+    },
+    "compatibilityTitle": "Compatibilidad",
+    "compatibilityDesc": "HexAI se integra nativamente con los sistemas más utilizados en el mercado brasileño de diagnóstico por imagen.",
+    "implantationTitle": "Cómo funciona la implantación",
+    "implantationSubtitle": "Proceso simplificado para que comiences a usar HexAI rápidamente.",
+    "steps": {
+      "analysis": { "title": "Análisis del Entorno", "description": "Evaluamos tu infraestructura de TI y flujo de trabajo actual." },
+      "config": { "title": "Configuración", "description": "Instalación e integración con tus sistemas PACS/RIS existentes." },
+      "training": { "title": "Capacitación", "description": "Capacitación del equipo médico y técnico para el uso de la plataforma." },
+      "goLive": { "title": "Go-Live y Soporte", "description": "Acompañamiento post-implantación con soporte dedicado." }
+    },
+    "faq": {
+      "q1": { "question": "¿HexAI reemplaza al radiólogo?", "answer": "No. HexAI es una herramienta de apoyo a la decisión que asiste al radiólogo, aumentando productividad y precisión, pero la interpretación final siempre es del médico." },
+      "q2": { "question": "¿Cuánto tiempo lleva la implantación?", "answer": "En promedio, la implantación completa lleva de 2 a 4 semanas, incluyendo integración, pruebas y capacitación." },
+      "q3": { "question": "¿Es compatible con mi PACS?", "answer": "HexAI es compatible con los principales sistemas PACS y RIS del mercado que soportan el estándar DICOM." },
+      "q4": { "question": "¿Necesito hardware adicional?", "answer": "En la mayoría de los casos, no. HexAI opera en la nube con requisitos mínimos de infraestructura local." }
+    },
+    "ctaHeadline": "¿Listo para revolucionar tu centro de imagen?",
+    "ctaSubtitle": "Solicita una demostración gratuita de HexAI y descubre cómo aumentar la productividad de tu equipo."
+  },
+  "mindrayHub": {
+    "pageTitle": "Productos Mindray — Radiología Digital | Hexamedical",
+    "pageDesc": "Línea completa de productos Mindray para radiología digital: Detector Flat Panel, DigiEye 330, DigiEye 350 y MobiEye 700. Soporte técnico Hexamedical en todo Brasil.",
+    "heroHeadline": "Radiología Digital Mindray: Tecnología y Rendimiento",
+    "heroSubtitle": "Hexamedical es distribuidora autorizada de los sistemas de radiología digital Mindray en Brasil. Equipos de alto rendimiento con soporte técnico especializado y cobertura nacional.",
+    "fullLineTitle": "Conoce la Línea Completa",
+    "fullLineSubtitle": "Soluciones de radiología digital para cada necesidad clínica — de detectores wireless a sistemas fijos y móviles de alto rendimiento.",
+    "whyTitle": "¿Por qué adquirir Mindray con Hexamedical?",
+    "whySubtitle": "Además de equipos de alto estándar, cuentas con la experiencia de más de 16 años en equipos médicos, soporte técnico especializado y cobertura en todo Brasil.",
+    "advantages": [
+      "Tecnología de punta con fabricación Mindray de alto estándar",
+      "Soporte técnico completo por Hexamedical en todo Brasil",
+      "Contratos de mantenimiento flexibles con SLA garantizado",
+      "Capacitación operacional para tu equipo",
+      "Compatibilidad e integración entre los equipos de la línea"
+    ],
+    "yearsExperience": "Años de Experiencia",
+    "yearsExperienceDesc": "en equipos médicos y diagnóstico por imagen",
+    "comparisonTitle": "Comparativa de Modelos",
+    "comparisonHeaders": { "feature": "Característica", "type": "Tipo", "generator": "Generador (kW)", "detectorWeight": "Peso detector", "tableLoad": "Carga mesa", "rfRemote": "Control remoto RF", "touchDisplay": "Display táctil", "micoShare": "MiCo+ / M-Share", "mobility": "Movilidad" },
+    "comparisonValues": {
+      "wireless": "Detector Wireless", "fixed": "Fijo", "fixedAdvanced": "Fijo Avanzado", "mobile": "Móvil",
+      "portable": "Portátil", "motorized": "Motorizado"
+    },
+    "ctaHeadline": "¿Listo para modernizar tu radiología?",
+    "ctaSubtitle": "Solicita una propuesta técnica y comercial personalizada para los productos Mindray.",
+    "ctaSecondary": "Descargar fichas técnicas"
+  },
+  "mindrayProduct": {
+    "mainBenefits": "Principales Beneficios",
+    "technicalSpecs": "Especificaciones Técnicas",
+    "specsDisclaimer": "Especificaciones extraídas del folleto oficial Mindray. Sujetas a confirmación técnica.",
+    "differentials": "Diferenciales",
+    "clinicalApps": "Aplicaciones Clínicas",
+    "clinicalAppsDesc": "Ideal para instituciones que buscan calidad de imagen, eficiencia operacional y ergonomía en el flujo de trabajo radiológico.",
+    "supportFlow": "Flujo de Adquisición y Soporte",
+    "proposalTitle": "Solicitar Propuesta",
+    "proposalDesc": "Recibe una propuesta técnica y comercial personalizada.",
+    "brochureDesc": "Descarga el folleto completo con todas las especificaciones.",
+    "otherProducts": "Otros Productos Mindray",
+    "interestedIn": "¿Interesado en {{product}}?",
+    "interestedSubtitle": "Solicita una propuesta técnica y comercial personalizada para tu institución."
+  },
+  "solutionPage": {
+    "forWhom": "¿Para quién es?",
+    "forWhomDesc": "Ideal para instituciones que buscan calidad diagnóstica, confort al paciente y eficiencia operacional.",
+    "problemsSolved": "Problemas que resuelve",
+    "howItWorks": "Cómo funciona",
+    "differentials": "Diferenciales",
+    "productCoils": "Bobinas del Producto",
+    "technicalSpecs": "Especificaciones Técnicas",
+    "interestedIn": "¿Interesado en {{product}}?",
+    "interestedSubtitle": "Solicita una evaluación técnica personalizada para tu institución."
+  },
+  "solutionCategories": {
+    "ressonanciaMagnetica": { "title": "Resonancia Magnética", "description": "Equipos Esaote de alto rendimiento: Magnifico Open, S-Scan, O-Scan y G-Scan Brio con soporte técnico completo." },
+    "bombasInjetoras": { "title": "Bombas Inyectoras", "description": "Soluciones en bombas inyectoras de contraste con mantenimiento y soporte especializados para centros de imagen." },
+    "hexaiCat": { "title": "HexAI", "description": "Inteligencia artificial aplicada al diagnóstico por imagen para mayor precisión, productividad y asertividad clínica." }
   }
 }
