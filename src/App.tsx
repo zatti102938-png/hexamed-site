@@ -17,6 +17,7 @@ import BlogHub from "./pages/BlogHub";
 import Apoio from "./pages/Apoio";
 import HexAIPage from "./pages/HexAIPage";
 
+import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
