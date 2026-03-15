@@ -1,5 +1,6 @@
 import { useParams, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import Layout from "@/components/layout/Layout";
 import PageBreadcrumb from "@/components/layout/PageBreadcrumb";
 import HeroSection from "@/components/sections/HeroSection";
@@ -12,6 +13,7 @@ import { CheckCircle2, Target, AlertTriangle, ArrowRight, Quote, Circle } from "
 
 const SolutionPage = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { t } = useTranslation();
   const solution = slug ? solutions[slug] : null;
 
   if (!solution) return <Navigate to="/solucoes" replace />;
@@ -25,7 +27,7 @@ const SolutionPage = () => {
 
       <PageBreadcrumb
         items={[
-          { label: "Soluções", href: "/solucoes" },
+          { label: t("nav.products"), href: "/solucoes" },
           { label: solution.shortTitle || solution.title },
         ]}
       />
@@ -34,13 +36,13 @@ const SolutionPage = () => {
       <HeroSection
         headline={solution.heroHeadline}
         subtitle={solution.heroSubtitle}
-        ctaPrimaryLabel="Solicitar Avaliação Técnica"
-        ctaSecondaryLabel="Falar com Especialista"
+        ctaPrimaryLabel={t("common.requestTechnicalEval")}
+        ctaSecondaryLabel={t("common.talkToSpecialist")}
         ctaSecondaryHref="/contato"
         backgroundImage={solution.image}
       />
 
-      {/* Highlights Grid (specs visuais) */}
+      {/* Highlights Grid */}
       {solution.highlights && solution.highlights.length > 0 && (
         <section className="border-b border-border bg-card py-12 md:py-16">
           <div className="container">
@@ -88,9 +90,9 @@ const SolutionPage = () => {
         <div className="container">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-3xl font-bold text-foreground md:text-4xl">Para quem é</h2>
+              <h2 className="mb-6 text-3xl font-bold text-foreground md:text-4xl">{t("solutionPage.forWhom")}</h2>
               <p className="mb-6 text-muted-foreground">
-                Ideal para instituições que buscam qualidade diagnóstica, conforto ao paciente e eficiência operacional.
+                {t("solutionPage.forWhomDesc")}
               </p>
               <ul className="space-y-3">
                 {solution.audience.map((item) => (
@@ -118,7 +120,7 @@ const SolutionPage = () => {
       <section className="py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-            Problemas que resolve
+            {t("solutionPage.problemsSolved")}
           </h2>
           <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2">
             {solution.problems.map((p) => (
@@ -135,7 +137,7 @@ const SolutionPage = () => {
       <section className="border-t border-border bg-muted/30 py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-            Como funciona
+            {t("solutionPage.howItWorks")}
           </h2>
           <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 lg:grid-cols-4">
             {solution.steps.map((step, i) => (
@@ -154,11 +156,11 @@ const SolutionPage = () => {
         </div>
       </section>
 
-      {/* 5. Diferenciais do produto */}
+      {/* 5. Diferenciais */}
       <section className="py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-            Diferenciais
+            {t("solutionPage.differentials")}
           </h2>
           <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2">
             {solution.differentials.map((d) => (
@@ -176,7 +178,7 @@ const SolutionPage = () => {
         <section className="border-t border-border bg-muted/30 py-16 md:py-24">
           <div className="container">
             <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-              Bobinas do Produto
+              {t("solutionPage.productCoils")}
             </h2>
             <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {solution.bobinas.map((b) => (
@@ -194,7 +196,7 @@ const SolutionPage = () => {
       <section className="py-16 md:py-24">
         <div className="container">
           <h2 className="mb-10 text-center text-3xl font-bold text-foreground md:text-4xl">
-            Especificações Técnicas
+            {t("solutionPage.technicalSpecs")}
           </h2>
           <div className="mx-auto max-w-2xl overflow-hidden rounded-xl border border-border">
             {solution.specs.map((spec, i) => (
@@ -224,17 +226,13 @@ const SolutionPage = () => {
         </section>
       )}
 
-      {/* 7. Provas */}
       <TrustBlock />
-
-      {/* 8. FAQ */}
       <FAQSection items={solution.faq} />
 
-      {/* 9. CTA Final */}
       <CTABanner
-        headline={`Interessado no ${solution.shortTitle || solution.title}?`}
-        subtitle="Solicite uma avaliação técnica personalizada para sua instituição."
-        ctaLabel="Solicitar Avaliação Técnica"
+        headline={t("solutionPage.interestedIn", { product: solution.shortTitle || solution.title })}
+        subtitle={t("solutionPage.interestedSubtitle")}
+        ctaLabel={t("common.requestTechnicalEval")}
       />
     </Layout>
   );
