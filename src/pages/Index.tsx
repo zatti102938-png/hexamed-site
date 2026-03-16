@@ -27,8 +27,8 @@ const Index = () => {
       {/* 1. Hero */}
       <section className="relative overflow-hidden bg-dark-surface text-white">
         <div className="absolute inset-0">
-          <img src={images.home.heroBanner} alt="" className="h-full w-full object-cover opacity-20" />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark-surface via-dark-surface/90 to-dark-surface/60" />
+          <img src={images.home.heroBanner} alt="" className="h-full w-full object-cover opacity-45" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark-surface/75 via-dark-surface/55 to-dark-surface/30" />
         </div>
         <div className="container relative z-10 py-20 md:py-28 lg:py-36">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -163,8 +163,8 @@ const Index = () => {
       {/* Team Hexa */}
       <section className="relative overflow-hidden bg-dark-surface py-16 text-white md:py-24">
         <div className="absolute inset-0">
-          <img src={images.home.timeHexa} alt="" className="h-full w-full object-cover opacity-15" />
-          <div className="absolute inset-0 bg-dark-surface/80" />
+          <img src={images.home.timeHexa} alt="" className="h-full w-full object-cover opacity-35" />
+          <div className="absolute inset-0 bg-dark-surface/55" />
         </div>
         <div className="container relative z-10">
           <div className="grid items-center gap-12 lg:grid-cols-2">

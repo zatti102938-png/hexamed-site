@@ -36,8 +36,8 @@ const HeroSection = ({
       <div className="absolute inset-0 overflow-hidden">
         {backgroundImage ? (
           <>
-            <img src={backgroundImage} alt="" className="h-full w-full object-cover opacity-50" />
-            <div className="absolute inset-0 bg-gradient-to-r from-dark-surface/90 via-dark-surface/70 to-dark-surface/40" />
+            <img src={backgroundImage} alt="" className="h-full w-full object-cover opacity-75" />
+            <div className="absolute inset-0 bg-gradient-to-r from-dark-surface/70 via-dark-surface/45 to-dark-surface/20" />
           </>
         ) : (
           <>

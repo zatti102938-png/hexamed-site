@@ -44,8 +44,8 @@ const HexAIPage = () => {
       {/* Hero */}
       <section className="relative overflow-hidden bg-dark-surface text-white">
         <div className="absolute inset-0">
-          <img src={images.produtos.hexai.hero} alt="" className="h-full w-full object-cover opacity-15" />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark-surface via-dark-surface/90 to-dark-surface/60" />
+          <img src={images.produtos.hexai.hero} alt="" className="h-full w-full object-cover opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark-surface/75 via-dark-surface/55 to-dark-surface/30" />
         </div>
         <div className="container relative z-10 py-20 md:py-28 lg:py-36">
           <div className="mx-auto max-w-3xl text-center">
