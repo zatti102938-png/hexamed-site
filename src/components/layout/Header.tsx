@@ -78,11 +78,13 @@ const Header = () => {
 
                   {/* Mega-menu (grouped) */}
                   {item.groups && openDropdown === item.label && (
-                    <div className="absolute left-1/2 top-full z-50 -translate-x-1/2 rounded-xl border border-border bg-card p-6 shadow-2xl animate-in fade-in-0 zoom-in-95">
-                      <div className="grid grid-cols-4 gap-6">
+                    <div className="fixed left-1/2 top-[calc(var(--header-bottom,80px)+32px)] z-50 w-[720px] -translate-x-1/2 rounded-xl border border-border bg-card p-6 shadow-2xl animate-in fade-in-0 zoom-in-95"
+                      style={{ "--header-bottom": "0px" } as React.CSSProperties}
+                    >
+                      <div className="grid grid-cols-4 gap-8">
                         {item.groups.map((group) => (
-                          <div key={group.groupLabel} className="min-w-[180px]">
-                            <div className="mb-3 border-b border-primary/20 pb-2 text-xs font-bold uppercase tracking-widest text-primary">
+                          <div key={group.groupLabel}>
+                            <div className="mb-3 whitespace-nowrap border-b border-primary/20 pb-2 text-xs font-bold uppercase tracking-widest text-primary">
                               {t(groupKeys[group.groupLabel] || group.groupLabel)}
                             </div>
                             <div className="space-y-0.5">
@@ -90,7 +92,7 @@ const Header = () => {
                                 <Link
                                   key={child.href}
                                   to={child.href}
-                                  className="block rounded-md px-3 py-2 text-sm text-foreground/80 transition-colors hover:bg-primary/10 hover:text-primary"
+                                  className="block whitespace-nowrap rounded-md px-2 py-2 text-sm text-foreground/80 transition-colors hover:bg-primary/10 hover:text-primary"
                                 >
                                   {child.label}
                                 </Link>
@@ -102,7 +104,7 @@ const Header = () => {
                       <div className="mt-4 border-t border-border pt-3">
                         <Link
                           to={item.href}
-                          className="flex items-center gap-1 px-3 text-xs font-semibold text-primary hover:underline"
+                          className="flex items-center gap-1 px-2 text-xs font-semibold text-primary hover:underline"
                         >
                           {t("nav.viewAllProducts")}
                           <ArrowRight className="h-3 w-3" />
