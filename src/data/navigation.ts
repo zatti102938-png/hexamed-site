@@ -23,23 +23,33 @@ export const navigation: NavItem[] = [
     href: "/solucoes",
     groups: [
       {
-        groupLabel: "Esaote — Ressonância Magnética",
+        groupLabel: "Ressonância Magnética",
         items: [
           { label: "Magnifico Open", href: "/solucoes/rm-magnifico-open" },
           { label: "S-Scan", href: "/solucoes/rm-s-scan" },
           { label: "O-Scan", href: "/solucoes/rm-o-scan" },
           { label: "G-Scan", href: "/solucoes/rm-g-scan" },
-          { label: "Bombas Injetoras", href: "/solucoes/bombas-injetoras" },
-          { label: "HexAI", href: "/hexai" },
         ],
       },
       {
-        groupLabel: "Mindray — Radiologia Digital",
+        groupLabel: "Raio-X",
         items: [
           { label: "Detector Flat Panel", href: "/produtos-mindray/detector-flat-panel" },
           { label: "DigiEye 330", href: "/produtos-mindray/digieye-330" },
           { label: "DigiEye 350", href: "/produtos-mindray/digieye-350" },
           { label: "MobiEye 700", href: "/produtos-mindray/mobieye-700" },
+        ],
+      },
+      {
+        groupLabel: "Inteligência Artificial",
+        items: [
+          { label: "HexAI", href: "/hexai" },
+        ],
+      },
+      {
+        groupLabel: "Bombas Injetoras",
+        items: [
+          { label: "Bombas Injetoras", href: "/solucoes/bombas-injetoras" },
         ],
       },
     ],
