@@ -7,8 +7,10 @@
     "support": "Apoyo",
     "contact": "Contacto",
     "viewAllProducts": "Ver todos los productos",
-    "esaoteGroup": "Esaote — Resonancia Magnética",
-    "mindrayGroup": "Mindray — Radiología Digital"
+    "groupRM": "Resonancia Magnética",
+    "groupXray": "Rayos X",
+    "groupAI": "Inteligencia Artificial",
+    "groupInjectors": "Bombas Inyectoras"
   },
   "announcement": {
     "text": "HAZ CLIC AQUÍ Y CONOCE HEXAI — REVOLUCIONA TU CENTRO DE IMAGEN",
