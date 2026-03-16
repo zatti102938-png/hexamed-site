@@ -28,6 +28,7 @@ const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openMobileGroup, setOpenMobileGroup] = useState<string | null>(null);
+  const [openDesktopGroup, setOpenDesktopGroup] = useState<string | null>(null);
   const location = useLocation();
   const { t } = useTranslation();
 
