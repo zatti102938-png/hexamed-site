@@ -86,7 +86,7 @@ export const images = {
     detectorFlat: {
       hero: `${BASE}/mindray/detector-flat/digiEye-280-angle.png`,
       heroFallback: `${BASE}/mindray/detector-flat/detector-flat-hero.webp`,
-      thumb: `${BASE}/mindray/detector-flat/detector-flat-thumb.webp`,
+      thumb: `${BASE}/mindray/detector-flat/digiEye-280-angle.png`,
       gallery01: `${BASE}/mindray/detector-flat/detector-flat-gallery-01.webp`,
       cleanroom: `${BASE}/mindray/detector-flat/detector-flat-cleanroom.jpg`,
       ip54: `${BASE}/mindray/detector-flat/detector-flat-ip54.jpg`,
@@ -95,9 +95,9 @@ export const images = {
       folhetoP2: `${BASE}/mindray/detector-flat/detector-flat-folheto-p2.jpg`,
     },
     digieye330: {
-      hero: `${BASE}/mindray/digieye-330/digieye-330-hero-official.jpg`,
+      hero: `${BASE}/mindray/digieye-330/digieye-330-product.jpg`,
       heroFallback: `${BASE}/mindray/digieye-330/digieye-330-hero.webp`,
-      thumb: `${BASE}/mindray/digieye-330/digieye-330-thumb.webp`,
+      thumb: `${BASE}/mindray/digieye-330/digieye-330-product.jpg`,
       gallery01: `${BASE}/mindray/digieye-330/digieye-330-gallery-01.webp`,
       product: `${BASE}/mindray/digieye-330/digieye-330-product.jpg`,
       detail: `${BASE}/mindray/digieye-330/digieye-330-detail.jpg`,
@@ -106,9 +106,9 @@ export const images = {
       folhetoP2: `${BASE}/mindray/digieye-330/digieye-330-folheto-p2.jpg`,
     },
     digieye350: {
-      hero: `${BASE}/mindray/digieye-350/digieye-350-hero-official.jpg`,
+      hero: `https://mindray.scene7.com/is/image/mindray/digieye-350-fig2-5-pc?scl=1`,
       heroFallback: `${BASE}/mindray/digieye-350/digieye-350-hero.webp`,
-      thumb: `${BASE}/mindray/digieye-350/digieye-350-thumb.webp`,
+      thumb: `https://mindray.scene7.com/is/image/mindray/digieye-350-fig2-5-pc?scl=1`,
       gallery01: `${BASE}/mindray/digieye-350/digieye-350-gallery-01.webp`,
       annotated: `${BASE}/mindray/digieye-350/digieye-350-annotated.jpg`,
       product: `${BASE}/mindray/digieye-350/digieye-350-product.jpg`,
@@ -117,8 +117,8 @@ export const images = {
       folhetoP2: `${BASE}/mindray/digieye-350/digieye-350-folheto-p2.jpg`,
     },
     mobileye700: {
-      hero: `${BASE}/mindray/mobileye/mobileye-700-hero-official.jpg`,
-      thumb: `${BASE}/mindray/mobileye/mobileye-700-thumb.webp`,
+      hero: `${BASE}/mindray/mobileye/mobileye-700-console.jpg`,
+      thumb: `${BASE}/mindray/mobileye/mobileye-700-console.jpg`,
       gallery01: `${BASE}/mindray/mobileye/mobileye-700-gallery-01.webp`,
       console: `${BASE}/mindray/mobileye/mobileye-700-console.jpg`,
       detail: `${BASE}/mindray/mobileye/mobileye-700-detail.jpg`,
