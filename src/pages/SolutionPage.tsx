@@ -18,6 +18,10 @@ const SolutionPage = () => {
 
   if (!solution) return <Navigate to="/solucoes" replace />;
 
+  const visualPool = solution.visuals && solution.visuals.length > 0
+    ? solution.visuals
+    : (solution.image ? [solution.image] : []);
+
   return (
     <Layout>
       <Helmet>
@@ -71,8 +75,12 @@ const SolutionPage = () => {
                   <p className="text-muted-foreground leading-relaxed">{block.description}</p>
                 </div>
                 <div className={`overflow-hidden rounded-2xl ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                  {solution.image ? (
-                    <img src={solution.image} alt={block.title} className="h-full w-full object-contain" />
+                  {visualPool.length > 0 ? (
+                    <img
+                      src={visualPool[i % visualPool.length]}
+                      alt={block.title}
+                      className="h-full w-full object-contain"
+                    />
                   ) : (
                     <div className="bg-gradient-to-br from-primary/5 to-accent/5 p-12">
                       <solution.icon className="mx-auto h-32 w-32 text-primary/20" />
@@ -104,8 +112,12 @@ const SolutionPage = () => {
               </ul>
             </div>
             <div className="overflow-hidden rounded-2xl">
-              {solution.image ? (
-                <img src={solution.image} alt={solution.title} className="h-full w-full object-contain" />
+              {visualPool.length > 0 ? (
+                <img
+                  src={visualPool[(solution.featureBlocks?.length || 0) % visualPool.length]}
+                  alt={solution.title}
+                  className="h-full w-full object-contain"
+                />
               ) : (
                 <div className="bg-gradient-to-br from-primary/5 to-accent/5 p-12">
                   <solution.icon className="mx-auto h-32 w-32 text-primary/20" />

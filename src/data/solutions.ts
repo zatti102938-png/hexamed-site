@@ -18,6 +18,7 @@ export interface Solution {
   description: string;
   icon: typeof Magnet;
   image?: string;
+  visuals?: string[];
   heroHeadline: string;
   heroSubtitle: string;
   audience: string[];
@@ -62,6 +63,12 @@ export const solutions: Record<string, Solution> = {
     description: "Sistema de ressonância magnética aberta 0.4T com tecnologia True-Motion, diagnóstico com implantes metálicos e interface intuitiva.",
     icon: Magnet,
     image: images.produtos.magnificoOpen.hero,
+    visuals: [
+      images.produtos.magnificoOpen.hero,
+      images.produtos.magnificoOpen.truemotion,
+      images.produtos.magnificoOpen.clinical,
+      images.produtos.magnificoOpen.thumb,
+    ],
     heroHeadline: "Magnifico Open: Ressonância Magnética Aberta de Alto Desempenho",
     heroSubtitle: "O Magnifico™ Open é uma solução intuitiva e de fácil utilização, com protocolos desenvolvidos para garantir imagens de alta qualidade. Ideal para clínicas, hospitais e centros de imagem que buscam conforto ao paciente e precisão diagnóstica.",
     highlights: [
@@ -157,6 +164,11 @@ export const solutions: Record<string, Solution> = {
     description: "Sistema de RM musculoesquelética compacto com Tecnologia eXP, ideal para clínicas de ortopedia e medicina esportiva. Instalação em apenas 16m².",
     icon: Magnet,
     image: images.produtos.sScan.thumb,
+    visuals: [
+      images.produtos.sScan.hero,
+      images.produtos.sScan.thumb,
+      images.produtos.sScan.clinical,
+    ],
     heroHeadline: "S-Scan: RM Musculoesquelética para Profissionais de MSK",
     heroSubtitle: "Projetado com Tecnologia eXP, o S-Scan é otimizado para qualquer prática com volume musculoesquelético substancial. Abrange todas as estruturas anatômicas MSK, desde os pés até a cabeça, incluindo coluna lombar e cervical.",
     highlights: [
@@ -247,6 +259,10 @@ export const solutions: Record<string, Solution> = {
     description: "Sistema de RM de extremidades compacto (9m²) e econômico (1 kW). Solução ideal para clínicas independentes e departamentos de radiologia.",
     icon: Magnet,
     image: images.produtos.oScan.thumb,
+    visuals: [
+      images.produtos.oScan.hero,
+      images.produtos.oScan.thumb,
+    ],
     heroHeadline: "O-Scan: RM de Extremidades Compacta e Econômica",
     heroSubtitle: "A eficiência e economia únicas do sistema O-Scan tornam-no ideal para clínicas especializadas independentes ou como unidade adicional no departamento de radiologia, sem comprometer qualidade e eficiência.",
     highlights: [
@@ -328,6 +344,10 @@ export const solutions: Record<string, Solution> = {
     description: "Sistema revolucionário de RM com suporte de peso para aplicações MSK. Design aberto e inclinável para diagnósticos na posição com carga.",
     icon: Magnet,
     image: images.produtos.gScan.thumb,
+    visuals: [
+      images.produtos.gScan.hero,
+      images.produtos.gScan.thumb,
+    ],
     heroHeadline: "G-Scan Brio: RM com Suporte de Peso para MSK",
     heroSubtitle: "Abordagem revolucionária de RM para todas as aplicações musculoesqueléticas. O design aberto e inclinável possibilita exames na posição com carga, aumentando a precisão diagnóstica e a confiança clínica.",
     highlights: [
@@ -419,6 +439,11 @@ export const solutions: Record<string, Solution> = {
     description: "Soluções em bombas injetoras de contraste com manutenção e suporte especializados para centros de diagnóstico por imagem.",
     icon: Syringe,
     image: images.produtos.bombasInjetoras.hero,
+    visuals: [
+      images.produtos.bombasInjetoras.hero,
+      images.produtos.bombasInjetoras.thumb,
+      images.servicos.contratos,
+    ],
     heroHeadline: "Bombas Injetoras de Contraste",
     heroSubtitle: "Equipamentos de injeção de contraste de alta precisão para exames de tomografia e ressonância, com suporte técnico completo e cobertura nacional.",
     audience: [
@@ -463,6 +488,11 @@ export const solutions: Record<string, Solution> = {
     description: "Plataforma de inteligência artificial aplicada ao diagnóstico por imagem que aumenta a precisão, produtividade e assertividade clínica.",
     icon: Brain,
     image: images.produtos.hexai.hero,
+    visuals: [
+      images.produtos.hexai.hero,
+      images.produtos.hexai.thumb,
+      images.home.heroBanner,
+    ],
     heroHeadline: "HexAI: Inteligência Artificial para Diagnóstico por Imagem",
     heroSubtitle: "Potencialize a precisão diagnóstica da sua equipe com IA aplicada à análise de imagens médicas. Mais velocidade, mais assertividade, menos risco.",
     audience: [
