@@ -77,35 +77,39 @@ const Header = () => {
                     )}
                   </Link>
 
-                  {/* Mega-menu (grouped) */}
+                  {/* Mega-menu (accordion style like mobile) */}
                   {item.groups && openDropdown === item.label && (
-                    <div className="fixed left-1/2 top-[calc(var(--header-bottom,80px)+32px)] z-50 w-[720px] -translate-x-1/2 rounded-xl border border-border bg-card p-6 shadow-2xl animate-in fade-in-0 zoom-in-95"
-                      style={{ "--header-bottom": "0px" } as React.CSSProperties}
-                    >
-                      <div className="grid grid-cols-4 gap-8">
+                    <div className="absolute left-0 top-full z-50 min-w-[280px] rounded-lg border border-border bg-card p-3 shadow-2xl animate-in fade-in-0 zoom-in-95">
+                      <div className="space-y-1">
                         {item.groups.map((group) => (
                           <div key={group.groupLabel}>
-                            <div className="mb-3 whitespace-nowrap border-b border-primary/20 pb-2 text-xs font-bold uppercase tracking-widest text-primary">
+                            <button
+                              onClick={() => setOpenDesktopGroup(openDesktopGroup === group.groupLabel ? null : group.groupLabel)}
+                              className="flex w-full items-center justify-between rounded-md px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-primary hover:bg-primary/5"
+                            >
                               {t(groupKeys[group.groupLabel] || group.groupLabel)}
-                            </div>
-                            <div className="space-y-0.5">
-                              {group.items.map((child) => (
-                                <Link
-                                  key={child.href}
-                                  to={child.href}
-                                  className="block whitespace-nowrap rounded-md px-2 py-2 text-sm text-foreground/80 transition-colors hover:bg-primary/10 hover:text-primary"
-                                >
-                                  {child.label}
-                                </Link>
-                              ))}
-                            </div>
+                              <ChevronDown className={cn("h-3.5 w-3.5 transition-transform", openDesktopGroup === group.groupLabel && "rotate-180")} />
+                            </button>
+                            {openDesktopGroup === group.groupLabel && (
+                              <div className="ml-3 space-y-0.5 border-l-2 border-primary/20 pl-3 pb-1">
+                                {group.items.map((child) => (
+                                  <Link
+                                    key={child.href}
+                                    to={child.href}
+                                    className="block rounded-md px-2 py-2 text-sm text-foreground/80 transition-colors hover:bg-primary/10 hover:text-primary"
+                                  >
+                                    {child.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
                           </div>
                         ))}
                       </div>
-                      <div className="mt-4 border-t border-border pt-3">
+                      <div className="mt-2 border-t border-border pt-2">
                         <Link
                           to={item.href}
-                          className="flex items-center gap-1 px-2 text-xs font-semibold text-primary hover:underline"
+                          className="flex items-center gap-1 px-3 py-1 text-xs font-semibold text-primary hover:underline"
                         >
                           {t("nav.viewAllProducts")}
                           <ArrowRight className="h-3 w-3" />
