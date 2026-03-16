@@ -14,15 +14,16 @@ export const images = {
     ogDefault: `${BASE}/global/og-default.jpg`,
   },
   home: {
-    heroBanner: `${BASE}/home/hero-banner.webp`,
-    heroMobile: `${BASE}/home/hero-mobile.webp`,
-    cardProdutos: `${BASE}/home/card-produtos-official.png`,
-    cardServicos: `${BASE}/home/card-servicos-official.jpg`,
-    manutencaoThumb: `${BASE}/home/manutencao-thumb-official.webp`,
-    laboratorioThumb: `${BASE}/home/laboratorio-thumb-official.png`,
-    timeHexa: `${BASE}/home/time-hexa.webp`,
-    ceoVideoCover: `${BASE}/home/ceo-video-cover.webp`,
-    depoimentoBg: `${BASE}/home/depoimento-bg.webp`,
+    // Banners oficiais extraídos do site original
+    heroBanner: `${BASE}/home/hexa-wp-content-design-sem-nome-6-003.webp`,
+    heroMobile: `${BASE}/home/hexa-wp-content-design-sem-nome-7-004.webp`,
+    cardProdutos: `${BASE}/home/hexa-wp-content-magnifico-open-050.png`,
+    cardServicos: `${BASE}/home/hexa-wp-content-imagem-manutencao-059.webp`,
+    manutencaoThumb: `${BASE}/home/hexa-wp-content-imagem-manutencao-059.webp`,
+    laboratorioThumb: `${BASE}/home/hexa-wp-content-reparo-de-pecas-e-eletronicas-foto-061.webp`,
+    timeHexa: `${BASE}/home/hexa-wp-content-cheerful-female-person-consulting-with-her-colleag-2023-11-27-05-09-20-utc-1024x683-021.png`,
+    ceoVideoCover: `${BASE}/home/hexa-wp-content-capa-video-fabio-4-097.webp`,
+    depoimentoBg: `${BASE}/home/hexa-wp-content-hexamedical-website-19-1024x576-081.jpg`,
   },
   produtos: {
     magnificoOpen: {
