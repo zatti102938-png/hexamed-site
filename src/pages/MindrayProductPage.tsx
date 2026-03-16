@@ -44,23 +44,6 @@ const MindrayProductPage = () => {
         backgroundImage={product.image.hero}
       />
 
-      {/* Product Image Gallery */}
-      <section className="border-b border-border bg-card py-12 md:py-16">
-        <div className="container">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {product.galleryImages.map((img, i) => (
-              <div key={i} className="overflow-hidden rounded-xl border border-border">
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="h-64 w-full object-contain bg-white p-4"
-                  loading={i === 0 ? "eager" : "lazy"}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Benefits */}
       <section className="py-12 md:py-16">
