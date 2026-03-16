@@ -6,7 +6,13 @@ import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
 import { Play } from "lucide-react";
 
-const videos = [
+type SupportVideo = {
+  id: string; // YouTube video ID
+  title: string;
+  description: string;
+};
+
+const videos: SupportVideo[] = [
   { id: "VIDEO_ID_1", title: "Como ligar o S-Scan", description: "Passo a passo para inicializar o equipamento S-Scan Esaote." },
   { id: "VIDEO_ID_2", title: "Posicionamento do paciente — Coluna", description: "Técnica correta de posicionamento para exames de coluna no S-Scan." },
   { id: "VIDEO_ID_3", title: "Troca de bobinas — S-Scan", description: "Como realizar a troca segura de bobinas no S-Scan." },
@@ -17,8 +23,11 @@ const videos = [
   { id: "VIDEO_ID_8", title: "Resolução de erros comuns", description: "Como diagnosticar e resolver os erros mais frequentes." },
 ];
 
+const isRealVideoId = (id: string) => !!id && !id.startsWith("VIDEO_ID_");
+
 const Apoio = () => {
   const { t } = useTranslation();
+  const hasPublishedVideos = videos.some((video) => isRealVideoId(video.id));
 
   return (
     <Layout>
@@ -42,27 +51,49 @@ const Apoio = () => {
               {t("apoio.videosSubtitle")}
             </p>
           </div>
+
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {videos.map((video, i) => (
-              <div
-                key={i}
-                className="group flex flex-col rounded-xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-              >
-                <div className="relative flex h-44 items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/20 text-primary transition-transform group-hover:scale-110">
-                    <Play className="h-6 w-6" />
+            {videos.map((video, i) => {
+              const published = isRealVideoId(video.id);
+              return (
+                <article
+                  key={i}
+                  className="group flex flex-col rounded-xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                >
+                  {published ? (
+                    <div className="relative h-44 bg-black">
+                      <iframe
+                        className="h-full w-full"
+                        src={`https://www.youtube.com/embed/${video.id}`}
+                        title={video.title}
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
+                    </div>
+                  ) : (
+                    <div className="relative flex h-44 items-center justify-center bg-gradient-to-br from-primary/10 to-accent/10">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/20 text-primary transition-transform group-hover:scale-110">
+                        <Play className="h-6 w-6" />
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="flex flex-1 flex-col p-5">
+                    <h3 className="mb-1 font-bold text-foreground">{video.title}</h3>
+                    <p className="text-sm text-muted-foreground">{video.description}</p>
                   </div>
-                </div>
-                <div className="flex flex-1 flex-col p-5">
-                  <h3 className="mb-1 font-bold text-foreground">{video.title}</h3>
-                  <p className="text-sm text-muted-foreground">{video.description}</p>
-                </div>
-              </div>
-            ))}
+                </article>
+              );
+            })}
           </div>
-          <p className="mt-8 text-center text-sm text-muted-foreground">
-            {t("apoio.comingSoon")}
-          </p>
+
+          {!hasPublishedVideos && (
+            <p className="mt-8 text-center text-sm text-muted-foreground">
+              {t("apoio.comingSoon")} Substitua os IDs VIDEO_ID_x pelos IDs reais do YouTube para publicar os vídeos.
+            </p>
+          )}
         </div>
       </section>
 
