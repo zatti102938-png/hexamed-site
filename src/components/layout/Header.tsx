@@ -18,8 +18,10 @@ const navKeys: Record<string, string> = {
 };
 
 const groupKeys: Record<string, string> = {
-  "Esaote — Ressonância Magnética": "nav.esaoteGroup",
-  "Mindray — Radiologia Digital": "nav.mindrayGroup",
+  "Ressonância Magnética": "nav.groupRM",
+  "Raio-X": "nav.groupXray",
+  "Inteligência Artificial": "nav.groupAI",
+  "Bombas Injetoras": "nav.groupInjectors",
 };
 
 const Header = () => {
