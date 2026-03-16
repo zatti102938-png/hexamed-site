@@ -13,17 +13,23 @@ type SupportVideo = {
 };
 
 const videos: SupportVideo[] = [
-  { id: "VIDEO_ID_1", title: "Como ligar o S-Scan", description: "Passo a passo para inicializar o equipamento S-Scan Esaote." },
-  { id: "VIDEO_ID_2", title: "Posicionamento do paciente — Coluna", description: "Técnica correta de posicionamento para exames de coluna no S-Scan." },
-  { id: "VIDEO_ID_3", title: "Troca de bobinas — S-Scan", description: "Como realizar a troca segura de bobinas no S-Scan." },
-  { id: "VIDEO_ID_4", title: "Calibração diária do equipamento", description: "Procedimento de calibração diária para garantir qualidade de imagem." },
-  { id: "VIDEO_ID_5", title: "Posicionamento — Joelho", description: "Técnica de posicionamento para exames de joelho." },
-  { id: "VIDEO_ID_6", title: "Posicionamento — Ombro", description: "Técnica de posicionamento para exames de ombro." },
-  { id: "VIDEO_ID_7", title: "Manutenção básica do operador", description: "Verificações que o operador pode fazer diariamente." },
-  { id: "VIDEO_ID_8", title: "Resolução de erros comuns", description: "Como diagnosticar e resolver os erros mais frequentes." },
+  { id: "SdIAEsge0Yo", title: "S-Scan: visão geral de operação", description: "Introdução prática ao uso do equipamento e fluxo inicial de trabalho." },
+  { id: "BVSXoYklYkw", title: "Preparação do exame no S-Scan", description: "Configuração inicial e checagens antes de iniciar a rotina de aquisição." },
+  { id: "MewFTpT3jZc", title: "Posicionamento do paciente — Coluna", description: "Boas práticas para posicionamento seguro e reprodutível em exames de coluna." },
+  { id: "7R1YuaNlmBg", title: "Posicionamento do paciente — Joelho", description: "Técnica recomendada para ganho de qualidade em exames de joelho." },
+  { id: "7DxwXZS2bpQ", title: "Posicionamento do paciente — Ombro", description: "Ajustes de posicionamento e estabilidade para exames de ombro." },
+  { id: "QEIscmXXsho", title: "Troca e seleção de bobinas", description: "Procedimento correto para seleção e troca de bobinas no dia a dia." },
+  { id: "2BL7qsijFUk", title: "Calibração e validação diária", description: "Rotina de calibração para manter consistência e qualidade de imagem." },
+  { id: "5kbIFdms24U", title: "Checklist de operação segura", description: "Checklist essencial de segurança e eficiência para operadores." },
+  { id: "vIw36ukspR8", title: "Protocolos de exame: ajuste rápido", description: "Ajuste de protocolos para otimizar tempo e padronização de exames." },
+  { id: "v6VkzqegyMs", title: "Qualidade de imagem: correções comuns", description: "Como corrigir artefatos e melhorar a nitidez com ajustes simples." },
+  { id: "tZVo_wCGb9g", title: "Fluxo de trabalho do operador", description: "Organização da rotina para aumentar produtividade e reduzir retrabalho." },
+  { id: "8w-0I87m0t4", title: "Manutenção básica do operador", description: "Cuidados operacionais preventivos para melhor desempenho do equipamento." },
+  { id: "SYkG_bwn5EI", title: "Erros frequentes e como resolver", description: "Guia rápido para diagnóstico de falhas comuns no atendimento diário." },
+  { id: "uOdZrhVXwvA", title: "Boas práticas finais de suporte", description: "Recomendações finais para operação estável e suporte técnico eficiente." },
 ];
 
-const isRealVideoId = (id: string) => !!id && !id.startsWith("VIDEO_ID_");
+const isRealVideoId = (id: string) => !!id;
 
 const Apoio = () => {
   const { t } = useTranslation();
