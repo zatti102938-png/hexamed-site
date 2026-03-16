@@ -78,11 +78,11 @@ const Header = () => {
 
                   {/* Mega-menu (grouped) */}
                   {item.groups && openDropdown === item.label && (
-                    <div className="absolute left-1/2 top-full z-50 -translate-x-1/2 rounded-lg border border-border bg-card p-4 shadow-xl animate-in fade-in-0 zoom-in-95">
-                      <div className="flex gap-8">
+                    <div className="absolute left-1/2 top-full z-50 -translate-x-1/2 rounded-xl border border-border bg-card p-6 shadow-2xl animate-in fade-in-0 zoom-in-95">
+                      <div className="grid grid-cols-4 gap-6">
                         {item.groups.map((group) => (
-                          <div key={group.groupLabel} className="min-w-[200px]">
-                            <div className="mb-2 px-3 text-xs font-bold uppercase tracking-widest text-primary">
+                          <div key={group.groupLabel} className="min-w-[180px]">
+                            <div className="mb-3 border-b border-primary/20 pb-2 text-xs font-bold uppercase tracking-widest text-primary">
                               {t(groupKeys[group.groupLabel] || group.groupLabel)}
                             </div>
                             <div className="space-y-0.5">
@@ -99,7 +99,7 @@ const Header = () => {
                           </div>
                         ))}
                       </div>
-                      <div className="mt-3 border-t border-border pt-3">
+                      <div className="mt-4 border-t border-border pt-3">
                         <Link
                           to={item.href}
                           className="flex items-center gap-1 px-3 text-xs font-semibold text-primary hover:underline"
