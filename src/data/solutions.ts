@@ -346,6 +346,7 @@ export const solutions: Record<string, Solution> = {
     image: images.produtos.gScan.thumb,
     visuals: [
       images.produtos.gScan.hero,
+      images.produtos.gScan.tilt,
       images.produtos.gScan.thumb,
     ],
     heroHeadline: "G-Scan Brio: RM com Suporte de Peso para MSK",

@@ -45,8 +45,8 @@ export const images = {
     },
     gScan: {
       hero: `${BASE}/esaote/g-scan-brio-hero-official.webp`,
-      thumb: `${BASE}/esaote/esaote-wp-content-esaote-g-scan-brio-046.jpg`,
-      logo: `${BASE}/esaote/logo-g-scan-brio.svg`,
+      thumb: `${BASE}/esaote/esaote-wp-content-esaote-g-scan-brio-046.webp`,
+      tilt: `${BASE}/esaote/g-scan-brio-tilt-functionality.webp`,
     },
     bombasInjetoras: {
       hero: `${BASE}/servicos/servico-wp-content-imagem-manutencao-059.webp`,
