@@ -27,8 +27,8 @@ export const images = {
   },
   produtos: {
     magnificoOpen: {
-      hero: `${BASE}/esaote/magnifico-open-hero-official.jpg`,
-      thumb: `${BASE}/esaote/esaote-wp-content-magnifico-open-050.png`,
+      hero: `${BASE}/esaote/magnifico-open-hero-official.png`,
+      thumb: `${BASE}/esaote/magnifico-open-thumb-official.jpg`,
       truemotion: `${BASE}/esaote/magnifico-open-truemotion.png`,
       clinical: `${BASE}/esaote/magnifico-open-clinical.png`,
     },
