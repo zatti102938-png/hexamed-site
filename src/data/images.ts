@@ -40,7 +40,7 @@ export const images = {
     },
     oScan: {
       hero: `${BASE}/esaote/o-scan-hero-official.webp`,
-      thumb: `${BASE}/esaote/esaote-wp-content-esaote-o-scan-047.webp`,
+      thumb: `${BASE}/esaote/o-scan-thumb-official.png`,
       logo: `${BASE}/esaote/logo-o-scan.svg`,
     },
     gScan: {
