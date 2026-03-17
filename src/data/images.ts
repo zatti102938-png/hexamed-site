@@ -34,7 +34,7 @@ export const images = {
     },
     sScan: {
       hero: `${BASE}/esaote/s-scan-hero-official.webp`,
-      thumb: `${BASE}/esaote/esaote-wp-content-esaote-s-scan-048.png`,
+      thumb: `${BASE}/esaote/s-scan-thumb-official.png`,
       logo: `${BASE}/esaote/logo-s-scan.svg`,
       clinical: `${BASE}/esaote/s-scan-clinical.png`,
     },
